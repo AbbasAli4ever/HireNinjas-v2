@@ -14,7 +14,7 @@ const partnerQuote =
 
 export const TalentMarketingPartnerSection = () => {
   return (
-    <section className="w-full px-4 py-4 sm:px-6 lg:px-0">
+    <section className="w-full px-4 py-4 sm:px-6">
       <Card className="mx-auto w-full max-w-[1160px] rounded-[32px] border-0 bg-white shadow-none sm:rounded-[40px] lg:rounded-[56px]">
         <CardContent className="p-5 sm:p-8 lg:p-12">
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">

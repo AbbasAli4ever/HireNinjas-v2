@@ -20,8 +20,8 @@ const sectionData = {
 
 export const PreVettedProfessionalsSection = () => {
   return (
-    <section className="relative w-full px-4 py-6 sm:px-6 lg:px-0">
-      <Card className="w-full rounded-[32px] border-0 bg-white shadow-none sm:rounded-[40px] xl:rounded-[56px]">
+    <section className="relative w-full px-4 py-6 sm:px-6">
+      <Card className="mx-auto w-full max-w-[1160px] rounded-[32px] border-0 bg-white shadow-none sm:rounded-[40px] xl:rounded-[56px]">
         <CardContent className="p-5 sm:p-8 lg:p-10 xl:p-12">
           <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-8">
             <div className="relative min-w-0">

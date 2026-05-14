@@ -14,8 +14,8 @@ const contactItems = [
 export const SiteFooter = () => {
   return (
     <footer className="border-t border-[#ece8f3] bg-[#fafaff]">
-      <div className="mx-auto w-full max-w-[1440px] px-4 pb-9 pt-16 sm:px-6 md:px-10 lg:px-[120px]">
-        <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-10 px-0 lg:px-10">
+      <div className="mx-auto w-full max-w-[1160px] px-4 pb-9 pt-16 sm:px-6 lg:px-8">
+        <div className="flex w-full flex-col gap-10">
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)]">
             <section className="flex h-fit flex-col items-start gap-3.5">
               <div className="flex w-full items-center gap-2.5">

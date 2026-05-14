@@ -60,8 +60,9 @@ const TalentCard = ({ title, flag, image }: TalentCardProps) => {
 
 export const HeroSection = () => {
   return (
-    <section className="relative w-full overflow-hidden rounded-[16.67px] bg-[#14101f] px-5 py-8 sm:px-8 lg:px-[92px] lg:py-[101px]">
+    <section className="relative w-full overflow-hidden rounded-[16.67px] bg-[#14101f] py-8 lg:py-[101px]">
       <div className="pointer-events-none absolute left-[-281px] top-1/2 h-[525px] w-[393px] -translate-y-[206px] rounded-[196.5px/262.5px] bg-[#7b15e9] opacity-10 blur-[117px]" />
+      <div className="mx-auto w-full max-w-[1160px] px-5 sm:px-8">
       <div className="relative z-10 flex flex-col gap-10 lg:min-h-[727px] lg:flex-row lg:items-start lg:justify-between lg:gap-6">
         <header className="flex w-full max-w-[722px] flex-col gap-8 lg:pt-[61px]">
           <div className="flex flex-col items-start gap-[21.3px]">
@@ -131,6 +132,7 @@ export const HeroSection = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

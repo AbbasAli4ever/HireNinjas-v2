@@ -37,9 +37,9 @@ const serviceCards = [
 
 export const PerformanceDrivenDigitalMarketingServicesSection = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-white px-4 py-[70px] sm:px-6 lg:px-[140px]">
+    <section className="relative w-full overflow-hidden bg-white py-[70px]">
       <div className="absolute inset-x-[-10%] top-[-8.33%] h-[58.34%] blur-[10px] [background:radial-gradient(50%_50%_at_20%_30%,rgba(139,58,229,0.18)_0%,rgba(139,58,229,0)_60%),radial-gradient(50%_50%_at_85%_20%,rgba(189,140,255,0.35)_0%,rgba(189,140,255,0)_60%)]" />
-      <div className="relative mx-auto flex w-full max-w-screen-xl flex-col items-start gap-[50px]">
+      <div className="relative mx-auto flex w-full max-w-[1160px] flex-col items-start gap-[50px] px-4 sm:px-6">
         <header className="flex w-full flex-col gap-8 lg:flex-row lg:items-end lg:gap-[50px]">
           <div className="flex flex-1 flex-col items-start gap-[18px]">
             <div className="flex w-full flex-col items-start">

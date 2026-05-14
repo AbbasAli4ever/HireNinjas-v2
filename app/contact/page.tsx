@@ -111,10 +111,10 @@ export default function ContactPage() {
       <SiteHeader />
       <main>
         {/* HERO */}
-        <section className="relative w-full overflow-hidden bg-white px-4 pb-0 pt-[80px] sm:px-6 lg:px-[120px]">
+        <section className="relative w-full overflow-hidden bg-white pb-0 pt-[80px]">
           <div className="pointer-events-none absolute left-[20%] top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-[#8b3ae5] opacity-[0.10] blur-[100px]" />
           <div className="pointer-events-none absolute right-[-5%] top-0 h-[420px] w-[460px] rounded-full bg-[#bd8cff] opacity-[0.22] blur-[80px]" />
-          <div className="relative z-10 mx-auto flex w-full max-w-[1200px] flex-col items-center gap-5 pb-[60px] text-center">
+          <div className="relative z-10 mx-auto flex w-full max-w-[1160px] flex-col items-center gap-5 pb-[60px] px-4 sm:px-6 text-center">
             <div className="inline-flex items-center gap-2.5 rounded-[999px] border border-[#00000029] px-3.5 py-2">
               <div className="h-1.5 w-1.5 rounded-[3px] bg-[#6ce5b1] shadow-[0px_0px_0px_4px_#6ce5b12e]" />
               <p className="[font-family:'Inter',Helvetica] text-xs font-normal tracking-[1.68px] text-black uppercase whitespace-nowrap">
@@ -143,8 +143,8 @@ export default function ContactPage() {
         </section>
 
         {/* FORM + SIDEBAR */}
-        <section className="relative w-full px-4 py-[60px] sm:px-6 lg:px-[120px]">
-          <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-10 lg:flex-row lg:items-start lg:gap-14">
+        <section className="relative w-full py-[60px]">
+          <div className="mx-auto flex w-full max-w-[1160px] flex-col gap-10 px-4 sm:px-6 lg:flex-row lg:items-start lg:gap-14">
             {/* FORM CARD */}
             <div className="flex-1 rounded-[24px] border border-[#ece8f3] bg-white p-7 shadow-[0px_4px_32px_rgba(139,58,229,0.08)] sm:p-10">
               <div className="mb-8 flex flex-col gap-1.5">

@@ -26,8 +26,8 @@ const steps = [
 
 export const FourStepProcessSection = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-white px-4 py-[70px] sm:px-6 lg:px-[140px]">
-      <div className="relative z-10 mx-auto flex w-full max-w-screen-xl flex-col items-start gap-[50px]">
+    <section className="relative w-full overflow-hidden bg-white py-[70px]">
+      <div className="relative z-10 mx-auto flex w-full max-w-[1160px] flex-col items-start gap-[50px] px-4 sm:px-6">
         <header className="grid w-full grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-[86.4px]">
           <div className="flex w-full flex-col items-start gap-[17.26px]">
             <Badge variant="outline" className="rounded-[999px] border-[#14101f14] bg-[#ffffff66] px-3.5 py-[7px] [font-family:'Inter',Helvetica] text-xs font-normal tracking-[1.68px] text-[#6a6478] hover:bg-[#ffffff66]">

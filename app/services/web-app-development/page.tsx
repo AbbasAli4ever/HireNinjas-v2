@@ -48,10 +48,10 @@ export default function WebAppDevelopmentPage() {
       <SiteHeader />
       <main>
         {/* HERO */}
-        <section className="relative w-full overflow-hidden bg-white px-4 pb-0 pt-[96px] sm:px-6 lg:px-[120px]">
+        <section className="relative w-full overflow-hidden bg-white pb-0 pt-[96px]">
           <div className="pointer-events-none absolute left-[20%] top-0 h-[580px] w-[720px] -translate-x-1/2 rounded-full bg-[#8b3ae5] opacity-[0.12] blur-[100px]" />
           <div className="pointer-events-none absolute right-[-5%] top-0 h-[460px] w-[500px] rounded-full bg-[#bd8cff] opacity-[0.25] blur-[80px]" />
-          <div className="relative z-10 mx-auto flex w-full max-w-[1200px] flex-col items-start gap-8 lg:flex-row lg:items-center lg:justify-between">
+          <div className="relative z-10 mx-auto flex w-full max-w-[1160px] flex-col items-start gap-8 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="flex w-full max-w-[580px] flex-col gap-6 lg:pb-[80px]">
               <div className="inline-flex items-center gap-2.5 self-start rounded-[999px] border border-[#00000029] px-3.5 py-2">
                 <div className="flex h-1.5 w-1.5 items-center justify-center rounded-[3px] bg-[#6ce5b1]">
@@ -142,8 +142,8 @@ export default function WebAppDevelopmentPage() {
         </section>
 
         {/* SERVICES GRID */}
-        <section className="relative w-full px-4 py-[80px] sm:px-6 lg:px-[140px]">
-          <div className="mx-auto w-full max-w-[1200px]">
+        <section className="relative w-full px-4 py-[80px] sm:px-6">
+          <div className="mx-auto w-full max-w-[1160px] px-4 sm:px-6">
             <div className="mb-12 flex flex-col gap-4">
               <div className="inline-flex items-center gap-2.5 self-start rounded-[999px] border border-[#00000029] px-3.5 py-2">
                 <div className="h-1.5 w-1.5 rounded-[3px] bg-[#6ce5b1] shadow-[0px_0px_0px_4px_#6ce5b12e]" />
@@ -166,8 +166,8 @@ export default function WebAppDevelopmentPage() {
         </section>
 
         {/* WHY US */}
-        <section className="relative w-full bg-[#fafaff] px-4 py-[80px] sm:px-6 lg:px-[140px]">
-          <div className="mx-auto w-full max-w-[1200px]">
+        <section className="relative w-full bg-[#fafaff] px-4 py-[80px] sm:px-6">
+          <div className="mx-auto w-full max-w-[1160px] px-4 sm:px-6">
             <div className="mb-12 flex flex-col gap-4">
               <div className="inline-flex items-center gap-2.5 self-start rounded-[999px] border border-[#00000029] px-3.5 py-2">
                 <div className="h-1.5 w-1.5 rounded-[3px] bg-[#6ce5b1] shadow-[0px_0px_0px_4px_#6ce5b12e]" />
@@ -190,8 +190,8 @@ export default function WebAppDevelopmentPage() {
         </section>
 
         {/* TECH STACK */}
-        <section className="relative w-full px-4 py-[80px] sm:px-6 lg:px-[140px]">
-          <div className="mx-auto w-full max-w-[1200px]">
+        <section className="relative w-full px-4 py-[80px] sm:px-6">
+          <div className="mx-auto w-full max-w-[1160px] px-4 sm:px-6">
             <div className="mb-12 flex flex-col gap-4">
               <div className="inline-flex items-center gap-2.5 self-start rounded-[999px] border border-[#00000029] px-3.5 py-2">
                 <div className="h-1.5 w-1.5 rounded-[3px] bg-[#6ce5b1] shadow-[0px_0px_0px_4px_#6ce5b12e]" />
@@ -217,8 +217,8 @@ export default function WebAppDevelopmentPage() {
         </section>
 
         {/* DELIVERABLES */}
-        <section className="relative w-full bg-[#fafaff] px-4 py-[80px] sm:px-6 lg:px-[140px]">
-          <div className="mx-auto w-full max-w-[1200px]">
+        <section className="relative w-full bg-[#fafaff] px-4 py-[80px] sm:px-6">
+          <div className="mx-auto w-full max-w-[1160px] px-4 sm:px-6">
             <div className="mb-12 flex flex-col gap-4">
               <div className="inline-flex items-center gap-2.5 self-start rounded-[999px] border border-[#00000029] px-3.5 py-2">
                 <div className="h-1.5 w-1.5 rounded-[3px] bg-[#6ce5b1] shadow-[0px_0px_0px_4px_#6ce5b12e]" />
@@ -256,8 +256,8 @@ export default function WebAppDevelopmentPage() {
         </section>
 
         {/* PROCESS */}
-        <section className="relative w-full px-4 py-[80px] sm:px-6 lg:px-[140px]">
-          <div className="mx-auto w-full max-w-[1200px]">
+        <section className="relative w-full px-4 py-[80px] sm:px-6">
+          <div className="mx-auto w-full max-w-[1160px] px-4 sm:px-6">
             <div className="mb-12 flex flex-col gap-4">
               <div className="inline-flex items-center gap-2.5 self-start rounded-[999px] border border-[#00000029] px-3.5 py-2">
                 <div className="h-1.5 w-1.5 rounded-[3px] bg-[#6ce5b1] shadow-[0px_0px_0px_4px_#6ce5b12e]" />
@@ -282,30 +282,32 @@ export default function WebAppDevelopmentPage() {
         </section>
 
         {/* CTA */}
-        <section className="relative w-full overflow-hidden px-4 py-[80px] sm:px-6 lg:px-[140px]">
-          <div className="relative mx-auto w-full max-w-[1200px] overflow-hidden rounded-[28px] bg-[#4a0d8c] px-8 py-14 sm:px-14 lg:px-[80px]">
-            <div className="pointer-events-none absolute right-[-10%] top-[-30%] h-[500px] w-[500px] rounded-full bg-[#8b3ae5] opacity-40 blur-[80px]" />
-            <div className="relative z-10 flex flex-col items-start gap-5 lg:max-w-[600px]">
-              <div className="inline-flex items-center gap-2.5 rounded-[999px] border border-[#ffffff29] px-3.5 py-2">
-                <div className="h-1.5 w-1.5 rounded-[3px] bg-[#6ce5b1] shadow-[0px_0px_0px_4px_#6ce5b12e]" />
-                <p className="[font-family:'Inter',Helvetica] text-xs font-normal tracking-[1.68px] text-white uppercase whitespace-nowrap">Start Building</p>
-              </div>
-              <h2 className="[font-family:'Satoshi-Black',Helvetica] text-[36px] font-black leading-[1.1] tracking-[-0.8px] text-white sm:text-[48px]">
-                Ready to build your next digital product?
-              </h2>
-              <p className="[font-family:'Montserrat',Helvetica] text-[15px] font-normal leading-[26px] text-[#f5efe6c7] sm:text-base">
-                Tell us what you&apos;re building and we&apos;ll scope it, design it and ship it — on time, on budget, built to scale across Dubai and the UAE.
-              </p>
-              <div className="flex flex-wrap items-center gap-4">
-                <Button className="h-auto rounded-[999px] bg-white px-2 py-2 pl-[22px] pr-2 text-[#14101f] hover:bg-white/95">
-                  <span className="inline-flex items-center pl-3.5 [font-family:'Inter',Helvetica] text-[14.5px] font-medium">Start Your Project</span>
-                  <span className="ml-3 grid h-9 w-9 place-items-center rounded-[18px] bg-[#3a0d8c]">
-                    <Image width={16} height={16} alt="Arrow" src="/figmaAssets/component-2.svg" className="h-4 w-4" />
-                  </span>
-                </Button>
-                <Button variant="ghost" className="h-auto rounded-[999px] border border-solid border-[#f5efe629] bg-transparent px-[22px] py-3.5 [font-family:'Inter',Helvetica] text-[14.5px] font-medium text-[#f5efe6] hover:bg-white/5 hover:text-[#f5efe6]">
-                  Free Consultation
-                </Button>
+        <section className="relative w-full overflow-hidden py-[80px]">
+          <div className="mx-auto w-full max-w-[1160px] px-4 sm:px-6">
+            <div className="relative overflow-hidden rounded-[28px] bg-[#4a0d8c] px-8 py-14 sm:px-14 lg:px-[80px]">
+              <div className="pointer-events-none absolute right-[-10%] top-[-30%] h-[500px] w-[500px] rounded-full bg-[#8b3ae5] opacity-40 blur-[80px]" />
+              <div className="relative z-10 flex flex-col items-start gap-5 lg:max-w-[600px]">
+                <div className="inline-flex items-center gap-2.5 rounded-[999px] border border-[#ffffff29] px-3.5 py-2">
+                  <div className="h-1.5 w-1.5 rounded-[3px] bg-[#6ce5b1] shadow-[0px_0px_0px_4px_#6ce5b12e]" />
+                  <p className="[font-family:'Inter',Helvetica] text-xs font-normal tracking-[1.68px] text-white uppercase whitespace-nowrap">Start Building</p>
+                </div>
+                <h2 className="[font-family:'Satoshi-Black',Helvetica] text-[36px] font-black leading-[1.1] tracking-[-0.8px] text-white sm:text-[48px]">
+                  Ready to build your next digital product?
+                </h2>
+                <p className="[font-family:'Montserrat',Helvetica] text-[15px] font-normal leading-[26px] text-[#f5efe6c7] sm:text-base">
+                  Tell us what you&apos;re building and we&apos;ll scope it, design it and ship it — on time, on budget, built to scale across Dubai and the UAE.
+                </p>
+                <div className="flex flex-wrap items-center gap-4">
+                  <Button className="h-auto rounded-[999px] bg-white px-2 py-2 pl-[22px] pr-2 text-[#14101f] hover:bg-white/95">
+                    <span className="inline-flex items-center pl-3.5 [font-family:'Inter',Helvetica] text-[14.5px] font-medium">Start Your Project</span>
+                    <span className="ml-3 grid h-9 w-9 place-items-center rounded-[18px] bg-[#3a0d8c]">
+                      <Image width={16} height={16} alt="Arrow" src="/figmaAssets/component-2.svg" className="h-4 w-4" />
+                    </span>
+                  </Button>
+                  <Button variant="ghost" className="h-auto rounded-[999px] border border-solid border-[#f5efe629] bg-transparent px-[22px] py-3.5 [font-family:'Inter',Helvetica] text-[14.5px] font-medium text-[#f5efe6] hover:bg-white/5 hover:text-[#f5efe6]">
+                    Free Consultation
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

@@ -12,7 +12,7 @@ const reasons = [
 export const TalentSearchSection = () => {
   return (
     <section className="w-full bg-[#f9f9f9]">
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col px-6 py-[70px] md:px-10 lg:px-[140px]">
+      <div className="mx-auto flex w-full max-w-[1160px] flex-col px-4 py-[70px] sm:px-6">
         <header className="flex flex-col items-start">
           <Badge
             variant="outline"

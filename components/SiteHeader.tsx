@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronDownIcon } from "lucide-react";
@@ -7,11 +9,6 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
-} from "@/components/ui/navigation-menu";
 
 const servicesData = [
   {
@@ -50,7 +47,7 @@ const industriesData = {
 export const SiteHeader = () => {
   return (
     <header className="sticky top-0 z-50 border-b border-[#ece8f3] bg-[#fffefed1] backdrop-blur-[7px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(7px)_brightness(100%)]">
-      <div className="mx-auto flex h-[72px] w-full max-w-[1480px] items-center justify-between px-4 sm:px-6 lg:px-[140px]">
+      <div className="mx-auto flex h-[72px] w-full max-w-[1160px] items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="inline-flex items-center gap-2.5">
           <span className="relative flex h-[30px] w-[30px] items-center justify-center rounded-[9px] bg-[linear-gradient(135deg,rgba(139,58,229,1)_0%,rgba(89,31,151,1)_100%)] shadow-[0px_6px_18px_-8px_#8a39e4b2]">
             <span className="relative flex items-center justify-center [font-family:'Satoshi-Bold',Helvetica] text-sm font-bold leading-[22.4px] tracking-[-0.40px] text-white">
@@ -61,9 +58,10 @@ export const SiteHeader = () => {
             HireNinjas
           </span>
         </Link>
-        <NavigationMenu className="hidden lg:flex">
-          <NavigationMenuList className="gap-6">
-            <NavigationMenuItem>
+
+        <nav className="hidden lg:flex">
+          <ul className="flex items-center gap-6 list-none">
+            <li>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" className="h-auto gap-1.5 px-0 py-1.5 hover:bg-transparent">
@@ -100,8 +98,8 @@ export const SiteHeader = () => {
                   </div>
                 </DropdownMenuContent>
               </DropdownMenu>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
+            </li>
+            <li>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" className="h-auto gap-1.5 px-0 py-1.5 hover:bg-transparent">
@@ -142,19 +140,20 @@ export const SiteHeader = () => {
                   </div>
                 </DropdownMenuContent>
               </DropdownMenu>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
+            </li>
+            <li>
               <Button asChild variant="ghost" className="h-auto px-0 py-[5.5px] hover:bg-transparent">
                 <Link href="/contact" className="[font-family:'Montserrat',Helvetica] text-sm font-medium leading-[22.4px] text-[#3a3447]">Consult</Link>
               </Button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
+            </li>
+            <li>
               <Button asChild variant="ghost" className="h-auto px-0 py-[5.5px] hover:bg-transparent">
                 <Link href="/contact" className="[font-family:'Montserrat',Helvetica] text-sm font-medium leading-[22.4px] text-[#3a3447]">Contact</Link>
               </Button>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+            </li>
+          </ul>
+        </nav>
+
         <Button asChild className="hidden h-auto rounded-[999px] bg-[#8b39e5] px-2 py-2 pl-[22px] pr-2 hover:bg-[#7f32d5] lg:inline-flex">
           <Link href="/contact">
             <span className="inline-flex items-center pl-3.5">

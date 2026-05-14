@@ -43,8 +43,8 @@ const industryCards = [
 
 export const IndustriesWeServeSection = () => {
   return (
-    <section className="w-full bg-[#4a0d8c] px-4 py-[70px] sm:px-6 lg:px-[140px]">
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center gap-[50px]">
+    <section className="w-full bg-[#4a0d8c] py-[70px]">
+      <div className="mx-auto flex w-full max-w-[1160px] flex-col items-center gap-[50px] px-4 sm:px-6">
         <header className="flex w-full max-w-[914px] flex-col items-center gap-6">
           <h2 className="mt-[-1.00px] self-stretch text-center font-h-2 text-[length:var(--h-2-font-size)] font-[number:var(--h-2-font-weight)] leading-[var(--h-2-line-height)] tracking-[var(--h-2-letter-spacing)] text-white [font-style:var(--h-2-font-style)] max-md:text-3xl">
             Built for Ambitious Growth-Focused Companies, supports companies across

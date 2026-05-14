@@ -11,8 +11,8 @@ const challenges = [
 
 export const CommonGrowthChallengesSection = () => {
   return (
-    <section className="w-full px-4 py-[70px] sm:px-6 lg:px-[140px]">
-      <div className="mx-auto flex w-full max-w-[1160px] flex-col items-center gap-[50px]">
+    <section className="w-full py-[70px]">
+      <div className="mx-auto flex w-full max-w-[1160px] flex-col items-center gap-[50px] px-4 sm:px-6">
         <header className="flex w-full max-w-[590px] flex-col items-center justify-center gap-6 text-center">
           <p className="[font-family:'Inter',Helvetica] text-xs font-normal leading-[18px] tracking-[1.68px] text-[#6a6478]">
             PROBLEM - SOLUTION

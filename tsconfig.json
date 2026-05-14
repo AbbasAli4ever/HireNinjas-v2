@@ -38,10 +38,6 @@
     ".next/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules",
-    "client",
-    "server",
-    "script",
-    "vite.config.ts"
+    "node_modules"
   ]
 }
