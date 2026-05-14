@@ -1,0 +1,1 @@
+export { DigitalPlatformBenefitsSection } from "./DigitalPlatformBenefitsSection";
