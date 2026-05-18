@@ -113,12 +113,12 @@ export const GrowthProcessStepsSection = (): JSX.Element => {
     <section className="w-full bg-[radial-gradient(50%_50%_at_80%_0%,rgba(248,241,255,1)_0%,rgba(248,241,255,0)_60%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] px-6 py-[70px] md:px-10 lg:px-[140px]">
       <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-12">
         <header className="flex w-full max-w-[760px] flex-col items-start gap-[17.33px]">
-          <div className="text-xs tracking-[1.68px] leading-[18px] text-black [font-family:'Inter',Helvetica]">
+          {/* <div className="text-xs tracking-[1.68px] leading-[18px] text-black [font-family:'Inter',Helvetica]">
             What I see in the image: a light section with a subtle radial
             lavender glow, a small pill label at the top left, a bold two-line
             heading underneath, and a single row of five slim white process
             cards with light borders and pale purple step numbers.
-          </div>
+          </div> */}
           <Badge
             variant="outline"
             className="h-auto rounded-[999px] border border-solid border-[#00000029] bg-transparent px-3.5 py-[7px] text-black hover:bg-transparent"

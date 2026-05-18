@@ -145,7 +145,8 @@ export const StrategicToolkitSection = (): JSX.Element => {
           {toolkitCards.map((card) => (
             <Card
               key={card.id}
-              className={`relative overflow-hidden rounded-2xl border border-solid border-[#ece8f3] bg-white shadow-none ${card.className}${card.dark ? " !bg-[#0f0a1f]" : ""}`}
+              className={`relative overflow-hidden rounded-2xl border border-solid border-[#ece8f3] bg-white shadow-none ${card.className}`}
+              style={card.dark ? { background: "linear-gradient(100deg, #2D0255 0%, #1A0A3D 100%)" } : undefined}
             >
               <CardContent
                 className={
@@ -158,7 +159,7 @@ export const StrategicToolkitSection = (): JSX.Element => {
                   <p
                     className={
                       card.dark
-                        ? "[font-family:'Inter',Helvetica] text-xs font-medium tracking-[1.68px] leading-[18px] text-[#6ce5b1]"
+                        ? "[font-family:'Inter',Helvetica] text-xs font-medium tracking-[1.68px] leading-[18px] text-[#BD8CFF]"
                         : "[font-family:'Inter',Helvetica] text-xs font-medium tracking-[1.68px] leading-[18px] text-[#8b3ae5]"
                     }
                   >

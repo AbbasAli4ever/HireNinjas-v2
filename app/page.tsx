@@ -1,4 +1,3 @@
-import { SiteHeader } from "@/components/SiteHeader";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { TalentMarketingPartnerSection } from "@/components/sections/TalentMarketingPartnerSection";
 import { PreVettedProfessionalsSection } from "@/components/sections/PreVettedProfessionalsSection";
@@ -12,17 +11,16 @@ import { CallToActionSection } from "@/components/sections/CallToActionSection";
 export default function HomePage() {
   return (
     <div className="w-full bg-[#fafaff]">
-      <SiteHeader />
       <main>
-        <HeroSection />
+       <HeroSection />
         <TalentMarketingPartnerSection />
-        <PreVettedProfessionalsSection />
+         <PreVettedProfessionalsSection />
         <PerformanceDrivenDigitalMarketingServicesSection />
         <TalentSearchSection />
-        <IndustriesWeServeSection />
+       <IndustriesWeServeSection />
         <FourStepProcessSection />
         <CommonGrowthChallengesSection />
-        <CallToActionSection />
+         <CallToActionSection />
       </main>
     </div>
   );

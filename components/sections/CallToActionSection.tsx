@@ -11,31 +11,26 @@ export const CallToActionSection = () => {
     <section className="relative w-full bg-white">
       <div className="mx-auto w-full max-w-[1160px] px-4 py-10 sm:px-6 lg:px-8 lg:py-[70px]">
         <Card className="border-0 bg-transparent shadow-none">
-          <CardContent className="rounded-[28px] bg-[#4a0d8c] px-6 py-10 sm:px-10 md:px-16 lg:px-40 lg:py-[50px]">
-            <div className="flex flex-col items-center justify-center gap-[21.3px] text-center">
+          <CardContent className="rounded-[20px] bg-[#4a0d8c] px-5 py-10 sm:rounded-[28px] sm:px-10 sm:py-12 md:px-16 lg:px-40 lg:py-[50px]">
+            <div className="flex flex-col items-center justify-center gap-5 text-center sm:gap-[21.3px]">
               <header className="max-w-[760px]">
-                <h2 className="mt-[-1.00px] [font-family:'Satoshi-Black',Helvetica] text-[34px] font-normal leading-[1.05] text-transparent sm:text-[44px] lg:text-[56px] lg:leading-[56px]">
-                  <span className="font-black tracking-[0] leading-[67.2px] text-white">
-                    Forget guesswork.
-                    <br />
+                <h2 className="mt-[-1.00px] [font-family:'Satoshi-Black',Helvetica] text-[30px] font-normal leading-[1.05] text-transparent sm:text-[40px] md:text-[44px] lg:text-[56px] lg:leading-[56px]">
+                  <span className="font-black leading-[1.05] tracking-[0] text-white">
+                    Forget guesswork.{" "}
                   </span>
-                  <span className="[font-family:'ABeeZee',Helvetica] italic tracking-[-0.79px] leading-[67.2px] text-white">
+                  <span className="[font-family:'ABeeZee',Helvetica] italic tracking-[-0.79px] text-white">
                     Start scaling.
                   </span>
                 </h2>
               </header>
-              <p className="max-w-[820px] [font-family:'Inter',Helvetica] text-[15px] font-normal leading-[26.4px] tracking-[0] text-[#f5efe6c7] sm:text-[16px] lg:text-[17px]">
-                With HireNinjas, you can strengthen teams and create smarter marketing systems,
-                <br />
-                this way everyone wins.
-                <br />
-                <br />
-                No matter the situation, whether you are hiring talent or expanding brand recognition
-                <br />
-                in Dubai and Abu Dhabi, our services help you move faster with confidence.
+              <p className="max-w-[820px] [font-family:'Inter',Helvetica] text-sm font-normal leading-6 tracking-[0] text-[#f5efe6c7] sm:text-[15px] sm:leading-[26.4px] lg:text-[17px]">
+                With HireNinjas, you can strengthen teams and create smarter marketing systems, this way everyone wins.
+                <br className="hidden sm:block" />
+                <br className="hidden sm:block" />
+                No matter the situation, whether you are hiring talent or expanding brand recognition in Dubai and Abu Dhabi, our services help you move faster with confidence.
               </p>
-              <nav aria-label="Call to action" className="flex flex-col items-center gap-4 sm:flex-row sm:gap-6">
-                <Button type="button" className="h-auto rounded-[999px] bg-white pl-[22px] pr-2 py-1.5 text-[#14101f] hover:bg-white/95">
+              <nav aria-label="Call to action" className="flex w-full flex-col items-center gap-3 sm:w-auto sm:flex-row sm:gap-6">
+                <Button type="button" className="h-auto w-full rounded-[999px] bg-white py-1.5 pl-[22px] pr-2 text-[#14101f] hover:bg-white/95 sm:w-auto">
                   <span className="inline-flex items-center gap-3">
                     <span className="inline-flex flex-col items-center pl-3.5">
                       <span className="[font-family:'Inter',Helvetica] text-[14.5px] font-medium leading-[normal] tracking-[0] text-center text-[#14101f]">
@@ -43,11 +38,11 @@ export const CallToActionSection = () => {
                       </span>
                     </span>
                     <span className="grid h-9 w-9 place-items-center rounded-[18px] bg-[#3a0d8c]">
-                      <Image width={16} height={16} alt="Arrow" src="/figmaAssets/component-2.svg" className="h-4 w-4" />
+                      <Image width={16} height={16} alt="Arrow" src="/figmaAssets/arrow-white.svg" className="h-4 w-4" />
                     </span>
                   </span>
                 </Button>
-                <Button type="button" variant="ghost" className="h-auto rounded-[999px] border border-solid border-[#f5efe629] bg-transparent px-[22px] py-3.5 [font-family:'Inter',Helvetica] text-[14.5px] font-medium leading-[normal] tracking-[0] text-[#f5efe6] hover:bg-white/5 hover:text-[#f5efe6]">
+                <Button type="button" variant="ghost" className="h-auto w-full rounded-[999px] border border-solid border-[#f5efe629] bg-transparent px-[22px] py-3.5 [font-family:'Inter',Helvetica] text-[14.5px] font-medium leading-[normal] tracking-[0] text-[#f5efe6] hover:bg-white/5 hover:text-[#f5efe6] sm:w-auto">
                   See case studies
                 </Button>
               </nav>
@@ -55,7 +50,7 @@ export const CallToActionSection = () => {
           </CardContent>
         </Card>
       </div>
-      <footer className="border-t border-[#ece8f3] bg-[#fafaff]">
+      {/* <footer className="border-t border-[#ece8f3] bg-[#fafaff]">
         <div className="mx-auto w-full max-w-[1160px] px-4 pb-9 pt-16 sm:px-6 lg:px-8">
           <div className="flex w-full flex-col gap-10">
             <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)]">
@@ -110,7 +105,7 @@ export const CallToActionSection = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </section>
   );
 };

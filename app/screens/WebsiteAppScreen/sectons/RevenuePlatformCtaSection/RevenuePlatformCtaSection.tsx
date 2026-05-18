@@ -15,12 +15,13 @@ const ctaButtons = [
 
 export const RevenuePlatformCtaSection = (): JSX.Element => {
   return (
-    <section className="w-full px-4 py-0 sm:px-6 lg:px-10">
+    <section className="w-full px-4 py-[80px] sm:px-6 lg:px-10">
       <Card className="relative w-full overflow-hidden rounded-3xl border-0 bg-transparent shadow-none">
-        <CardContent className="relative flex w-full flex-col items-start gap-[15.2px] overflow-hidden rounded-3xl p-8 sm:p-10 lg:p-20 [background:radial-gradient(50%_50%_at_100%_0%,rgba(189,140,255,0.6)_0%,rgba(189,140,255,0)_60%),linear-gradient(156deg,rgba(89,31,151,1)_0%,rgba(45,2,85,1)_100%)]">
+        <CardContent className="relative flex w-full flex-col items-start gap-[15.2px] overflow-hidden rounded-3xl p-8 sm:p-10 lg:p-20 [background:linear-gradient(157deg,rgba(89,31,151,1)_0%,rgba(45,2,85,1)_100%)]">
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute right-0 top-1/2 h-[671px] w-[60%] -translate-y-[66%] translate-x-1/2 blur-[10px] [background:radial-gradient(50%_50%_at_50%_50%,rgba(189,140,255,0.5)_0%,rgba(189,140,255,0)_70%)]"
+            className="pointer-events-none absolute right-0 top-1/2 h-[671px] w-[60%] blur-[10px] [background:radial-gradient(70.71%_70.71%_at_50%_50%,rgba(189,140,255,0.50)_0%,rgba(189,140,255,0.00)_70%)]"
+            style={{ right: "-116px", top: "-207.743px", width: "696px", height: "695.575px" }}
           />
           <Badge className="relative inline-flex h-auto items-center gap-2 rounded-[999px] border border-solid border-[#ffffff2e] bg-[#ffffff1f] px-3.5 pb-[7.69px] pt-[7.5px] text-white hover:bg-[#ffffff1f]">
             <span className="h-1.5 w-1.5 rounded-[3px] bg-white" />

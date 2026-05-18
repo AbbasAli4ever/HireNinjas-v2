@@ -1,9 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { BudgetGrowthCTASection } from "./sections/BudgetGrowthCTASection";
-import { FooterLinksSection } from "./sections/FooterLinksSection";
 import { GrowthStrategyOverviewSection } from "./sections/GrowthStrategyOverviewSection";
 import { StrategicToolkitSection } from "./sections/StrategicToolkitSection";
-import { GlobalNavigationSection } from "./sections/GlobalNavigationSection";
 import { HeroMarketingOverviewSection } from "./sections/HeroMarketingOverviewSection";
 import { StrategicPrinciplesSection } from "./sections/StrategicPrinciplesSection";
 import { GrowthProcessStepsSection } from "./sections/GrowthProcessStepsSection";
@@ -27,9 +25,6 @@ export const DigitalMarketing = (): JSX.Element => {
   return (
     <main className="w-full bg-white" data-model-id="84:1317">
       <div className="flex w-full flex-col bg-white">
-        <header className="w-full">
-          <GlobalNavigationSection />
-        </header>
         <section className="w-full">
           <HeroMarketingOverviewSection />
         </section>
@@ -69,9 +64,6 @@ export const DigitalMarketing = (): JSX.Element => {
           </section>
         ))}
 
-        <footer className="w-full">
-          <FooterLinksSection />
-        </footer>
       </div>
     </main>
   );

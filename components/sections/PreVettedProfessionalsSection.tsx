@@ -23,20 +23,20 @@ export const PreVettedProfessionalsSection = () => {
     <section className="relative w-full px-4 py-6 sm:px-6">
       <Card className="mx-auto w-full max-w-[1160px] rounded-[32px] border-0 bg-white shadow-none sm:rounded-[40px] xl:rounded-[56px]">
         <CardContent className="p-5 sm:p-8 lg:p-10 xl:p-12">
-          <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-8">
-            <div className="relative min-w-0">
-              <div className="relative overflow-hidden rounded-3xl aspect-square">
+          <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-8 [&>*:first-child]:order-2 [&>*:last-child]:order-1 lg:[&>*:first-child]:order-1 lg:[&>*:last-child]:order-2">
+            <div className="relative min-w-0 pb-4 sm:pb-6 lg:pb-0">
+              <div className="relative overflow-hidden rounded-2xl aspect-square sm:rounded-3xl">
                 <Image
                   fill
                   alt={sectionData.image.alt}
                   src={sectionData.image.src}
-                  className="rounded-3xl object-cover"
+                  className="rounded-2xl object-cover sm:rounded-3xl"
                 />
               </div>
-              <div className="relative -mt-24 ml-4 mr-4 sm:ml-5 sm:mr-10 lg:mr-16 xl:mr-[85px]">
-                <Card className="rounded-lg border-[10px] border-[#ffffff1f] bg-white shadow-[0px_8px_18px_#00000005,0px_33px_33px_#00000005,0px_75px_45px_#00000003,0px_133px_53px_transparent,0px_208px_58px_transparent]">
-                  <CardContent className="p-5 sm:p-6">
-                    <p className="[font-family:'Manrope',Helvetica] text-base font-semibold leading-[25.6px] tracking-[0] text-[#161616]">
+              <div className="relative -mt-28 ml-3 mr-3 sm:-mt-36 sm:ml-8 sm:mr-10 lg:-mt-44 lg:mr-16 xl:mr-[85px]">
+                <Card className="rounded-lg border-[6px] border-[#ffffff1f] bg-white shadow-[0px_8px_18px_#00000005,0px_33px_33px_#00000005,0px_75px_45px_#00000003,0px_133px_53px_transparent,0px_208px_58px_transparent] sm:border-[10px]">
+                  <CardContent className="p-4 sm:p-5 lg:p-6">
+                    <p className="[font-family:'Manrope',Helvetica] text-sm font-semibold leading-[22px] tracking-[0] text-[#161616] sm:text-base sm:leading-[25.6px]">
                       {sectionData.callout}
                     </p>
                   </CardContent>
@@ -56,18 +56,14 @@ export const PreVettedProfessionalsSection = () => {
                 </span>
               </Badge>
               <header className="w-full">
-                <h2 className="flex flex-wrap items-center [font-family:'Satoshi-Bold',Helvetica] text-4xl font-normal leading-[48px] text-transparent sm:text-5xl">
-                  <span className="font-h-2 text-[length:var(--h-2-font-size)] font-[number:var(--h-2-font-weight)] leading-[var(--h-2-line-height)] tracking-[var(--h-2-letter-spacing)] text-[#0e0e0e] [font-style:var(--h-2-font-style)]">
-                    {sectionData.titleStart}
-                  </span>
-                  <span className="font-h-2 text-[length:var(--h-2-font-size)] font-[number:var(--h-2-font-weight)] leading-[var(--h-2-line-height)] tracking-[var(--h-2-letter-spacing)] text-[#3a0d8c] [font-style:var(--h-2-font-style)]">
-                    {sectionData.titleHighlight}
-                  </span>
+                <h2 className="[font-family:'Satoshi-Bold',Helvetica] text-[28px] font-black leading-[1.1] tracking-[-0.5px] sm:text-4xl sm:leading-[1.1] sm:tracking-[-1px] xl:text-5xl xl:leading-[1.1]">
+                  <span className="text-[#0e0e0e]">{sectionData.titleStart}</span>
+                  <span className="text-[#3a0d8c]">{sectionData.titleHighlight}</span>
                 </h2>
               </header>
-              <div className="w-full [font-family:'Manrope',Helvetica] text-base font-medium leading-6 tracking-[0] text-[#1e1e1e] opacity-[0.56]">
+              <div className="w-full [font-family:'Manrope',Helvetica] text-sm font-medium leading-6 tracking-[0] text-[#1e1e1e] opacity-[0.56] sm:text-base">
                 <p>{sectionData.descriptionFirst}</p>
-                <p className="mt-6">{sectionData.descriptionSecond}</p>
+                <p className="mt-4 sm:mt-6">{sectionData.descriptionSecond}</p>
               </div>
             </div>
           </div>

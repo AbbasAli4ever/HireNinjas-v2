@@ -1,0 +1,1 @@
+export {IndustryUseCaseSection} from "./IndustryUseCaseSection";

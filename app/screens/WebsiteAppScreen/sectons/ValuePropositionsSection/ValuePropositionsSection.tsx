@@ -5,35 +5,21 @@ const valuePropositions = [
   {
     title: ["Conversion-Focused", "Design Approach"],
     description: [
-      "At hireninjas we take an innovative and",
-      "conversion-centric design approach",
-      "when developing websites - not simply",
-      "building beautiful websites but instead",
-      "engineering user journeys for lead",
-      "generation, engagement and",
-      "measurable business outcomes.",
+      "At hireninjas we take an innovative and conversion-centric design approach when developing websites - not simply building beautiful websites but instead engineering user journeys for lead generation, engagement and measurable business outcomes.",
     ],
     iconSrc: "https://c.animaapp.com/mp5dxvs5vBeNIx/img/component-4-8.svg",
   },
   {
     title: ["Built for performance", "& scalability"],
     description: [
-      "Our websites and apps are tailored for",
-      "speed, mobile responsiveness, and",
-      "long-term scalability so your platform",
-      "grows with your business.",
+      "Our websites and apps are tailored for speed, mobile responsiveness, and long-term scalability so your platform grows with your business.",
     ],
     iconSrc: "https://c.animaapp.com/mp5dxvs5vBeNIx/img/component-4-12.svg",
   },
   {
     title: ["UAE Market-", "Ready Solutions"],
     description: [
-      "At Hireninjas, we develop platforms",
-      "tailored specifically for businesses",
-      "operating across Dubai and UAE",
-      "markets, supporting multilingual",
-      "audiences, regional integrations and",
-      "local payment ecosystems.",
+      "At Hireninjas, we develop platforms tailored specifically for businesses operating across Dubai and UAE markets, supporting multilingual audiences, regional integrations and local payment ecosystems.",
     ],
     iconSrc: "https://c.animaapp.com/mp5dxvs5vBeNIx/img/component-4-9.svg",
   },

@@ -54,12 +54,31 @@ export const HeroMarketingOverviewSection = (): JSX.Element => {
               DIGITAL MARKETING STRATEGY
             </span>
           </Badge>
-          <header className="flex w-full flex-col items-start pb-[0.6px]">
-            <img
-              className="relative h-auto w-full max-w-[667px]"
-              alt="Digital marketing strategy for brands looking to scale faster"
-              src="https://c.animaapp.com/mp3z2ouuSvWBo9/img/digital-marketing-strategy-for-brands-looking-to-scale-faster.svg"
-            />
+          <header className="flex w-full xl:w-[550px] flex-col items-start pb-[0.6px]">
+            <h1
+              style={{
+                fontFamily: '"Satoshi", Helvetica, sans-serif',
+                fontSize: "72px",
+                fontWeight: 700,
+                lineHeight: "73.44px",
+                letterSpacing: "-2.52px",
+              }}
+            >
+              <span style={{ color: "#0F0A1F", display: "block" }}>
+                Digital Marketing Strategy for
+              </span>
+              <span
+                style={{
+                  display: "block",
+                  background: "linear-gradient(101deg, #8B3AE5 0%, #591F97 60%, #0F0A1F 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+                Brands Looking to Scale Faster
+              </span>
+            </h1>
           </header>
           <p className="max-w-[667.29px] [font-family:'Montserrat',Helvetica] text-lg font-normal leading-[28.8px] tracking-[0] text-[#3a3447]">
             Data-driven marketing roadmaps created to assist businesses
@@ -83,7 +102,7 @@ export const HeroMarketingOverviewSection = (): JSX.Element => {
                   <img
                     className="h-4 w-4"
                     alt="Component"
-                    src="https://c.animaapp.com/mp3z2ouuSvWBo9/img/component-2.svg"
+                    src="/figmaAssets/arrow-purple.svg"
                   />
                 </span>
               </span>
@@ -116,7 +135,7 @@ export const HeroMarketingOverviewSection = (): JSX.Element => {
         <div className="relative flex w-full justify-center self-center">
           <div className="relative w-full max-w-[430px]">
             <div className="relative min-h-[512.38px] w-full overflow-hidden rounded-3xl border border-solid border-[#ece8f3] [background:url(https://c.animaapp.com/mp3z2ouuSvWBo9/img/background-border.png)_50%_50%_/_cover,radial-gradient(50%_50%_at_0%_0%,rgba(248,241,255,1)_0%,rgba(255,255,255,1)_60%)]">
-              <Card className="absolute bottom-5 left-5 rounded-3xl border-0 bg-neutral-10 shadow-[4px_4px_56px_#0000001a]">
+              <Card className="absolute bottom-5 left-5 rounded-3xl border-0 bg-white shadow-[4px_4px_56px_#0000001a]">
                 <CardContent className="relative flex flex-col items-start gap-2 p-3">
                   <div className="absolute left-0 top-0 h-[calc(100%_+_1px)] w-full rounded-[14px] bg-[#ffffff01] shadow-[0px_18px_40px_-22px_#140a282e]" />
                   <div className="relative flex w-full flex-col items-start pb-[0.59px]">
@@ -153,7 +172,7 @@ export const HeroMarketingOverviewSection = (): JSX.Element => {
                       </span>
                     ))}
                   </div>
-                  <Card className="absolute -right-20 top-[-47px] w-[153px] rounded-xl border-0 bg-neutral-10 shadow-[4px_4px_56px_#0000001a]">
+                  <Card className="absolute -right-20 top-[-47px] w-[153px] rounded-xl border-0 bg-white shadow-[4px_4px_56px_#0000001a]">
                     <CardContent className="relative flex flex-col items-start p-3">
                       <div className="absolute left-0 top-0 h-full w-full rounded-[14px] bg-[#ffffff01] shadow-[0px_18px_40px_-22px_#140a282e]" />
                       <div className="relative flex w-full flex-col items-start pb-[0.59px]">
@@ -180,7 +199,7 @@ export const HeroMarketingOverviewSection = (): JSX.Element => {
               </Card>
             </div>
             <img
-              className="pointer-events-none absolute left-[-72px] top-[214px] h-[140px] w-[152px]"
+              className="pointer-events-none absolute left-[-172px] top-[200px] h-[80px] w-[140px]"
               alt="Group"
               src="https://c.animaapp.com/mp3z2ouuSvWBo9/img/group-1.png"
             />

@@ -23,8 +23,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { SiteHeader } from "@/components/SiteHeader";
-import { SiteFooter } from "@/components/SiteFooter";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import { insertConsultationSchema } from "@shared/schema";
@@ -108,7 +106,6 @@ export default function ContactPage() {
 
   return (
     <div className="w-full bg-white">
-      <SiteHeader />
       <main>
         {/* HERO */}
         <section className="relative w-full overflow-hidden bg-white pb-0 pt-[80px]">
@@ -309,7 +306,7 @@ export default function ContactPage() {
                         width={16}
                         height={16}
                         alt="Arrow"
-                        src="/figmaAssets/component-2.svg"
+                        src="/figmaAssets/arrow.svg"
                         className="h-4 w-4"
                       />
                     </span>
@@ -384,7 +381,6 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
-      <SiteFooter />
     </div>
   );
 }

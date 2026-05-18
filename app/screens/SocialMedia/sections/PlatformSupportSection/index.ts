@@ -1,0 +1,1 @@
+export { PlatformSupportSection } from "./PlatformSupportSection";

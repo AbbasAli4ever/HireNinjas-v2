@@ -16,7 +16,7 @@ export const SiteFooter = () => {
     <footer className="border-t border-[#ece8f3] bg-[#fafaff]">
       <div className="mx-auto w-full max-w-[1160px] px-4 pb-9 pt-16 sm:px-6 lg:px-8">
         <div className="flex w-full flex-col gap-10">
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)]">
+          <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)]">
             <section className="flex h-fit flex-col items-start gap-3.5">
               <div className="flex w-full items-center gap-2.5">
                 <div className="relative flex h-[30px] w-[30px] items-center justify-center rounded-[9px] bg-[linear-gradient(135deg,rgba(139,58,229,1)_0%,rgba(89,31,151,1)_100%)]">
@@ -32,7 +32,7 @@ export const SiteFooter = () => {
                 </div>
               </div>
               <p className="[font-family:'Montserrat',Helvetica] text-sm font-normal leading-[22.4px] tracking-[0] text-[#3a3447]">
-                Performance-led digital agency for<br />ambitious brands across Dubai and the UAE.
+                Performance-led digital agency for ambitious brands across Dubai and the UAE.
               </p>
             </section>
             <nav aria-label="Services" className="flex h-fit flex-col items-start gap-4">

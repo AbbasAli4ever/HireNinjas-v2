@@ -1,0 +1,1 @@
+export {FunnelCapabilitiesSection} from "./FunnelCapabilitiesSection";

@@ -67,7 +67,7 @@ const serviceCards = [
 export const DevelopmentServicesSection = (): JSX.Element => {
   return (
     <section
-      className="relative w-full px-8 py-0 md:px-10 lg:px-[120px]"
+      className="relative w-full px-8 py-[80px] md:px-10 lg:px-[0px]"
       aria-labelledby="development-services-heading"
     >
       <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-12">

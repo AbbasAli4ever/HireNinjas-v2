@@ -28,7 +28,7 @@ export const DigitalPlatformBenefitsSection = (): JSX.Element => {
   return (
     <section className="w-full bg-[radial-gradient(50%_50%_at_80%_0%,rgba(248,241,255,1)_0%,rgba(248,241,255,0)_60%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] px-4 py-16 sm:px-6 lg:px-10 xl:px-40 xl:py-24">
       <div className="mx-auto max-w-[1240px]">
-        <p className="mb-8 text-sm text-[#3a3447] [font-family:'Montserrat',Helvetica]">
+        {/* <p className="mb-8 text-sm text-[#3a3447] [font-family:'Montserrat',Helvetica]">
           The highlighted section in the image is a wide white card on a soft
           white-to-lilac background. Inside it, the layout is split into two
           columns: the left side contains a rounded purple-outline badge, a
@@ -36,7 +36,7 @@ export const DigitalPlatformBenefitsSection = (): JSX.Element => {
           four stacked benefit rows, each with a purple circular icon chip and
           concise supporting text. The whole section is clean, spacious, softly
           bordered, and centered within the page.
-        </p>
+        </p> */}
         <Card className="relative overflow-hidden rounded-3xl border border-[#ece8f3] bg-white shadow-[0px_30px_60px_-40px_#5032c833]">
           <CardContent className="p-6 sm:p-8 lg:p-12 xl:p-16">
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:gap-12">

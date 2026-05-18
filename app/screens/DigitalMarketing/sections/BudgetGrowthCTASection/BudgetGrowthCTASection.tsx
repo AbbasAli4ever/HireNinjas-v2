@@ -10,7 +10,7 @@ const ctaContent = {
   ],
   primaryAction: {
     label: "Book consultation",
-    iconSrc: "https://c.animaapp.com/mp3z2ouuSvWBo9/img/component-2.svg",
+    iconSrc: "/figmaAssets/arrow-white.svg",
   },
   secondaryAction: {
     label: "Review the Roadmap",
@@ -21,8 +21,12 @@ export const BudgetGrowthCTASection = (): JSX.Element => {
   return (
     <section className="w-full px-4 sm:px-6 lg:px-[140px]">
       <Card className="relative w-full overflow-hidden rounded-3xl border-0 bg-transparent shadow-none">
-        <CardContent className="relative flex flex-col items-start gap-[15.1px] overflow-hidden rounded-3xl px-6 py-10 sm:px-10 sm:py-14 lg:p-20 [background:radial-gradient(50%_50%_at_100%_0%,rgba(189,140,255,0.6)_0%,rgba(189,140,255,0)_60%),linear-gradient(157deg,rgba(89,31,151,1)_0%,rgba(45,2,85,1)_100%)]">
-          <div className="pointer-events-none absolute right-0 top-1/2 h-[696px] w-[60%] -translate-y-[62%] blur-[10px] [background:radial-gradient(50%_50%_at_50%_50%,rgba(189,140,255,0.5)_0%,rgba(189,140,255,0)_70%)]" />
+        <CardContent className="relative flex flex-col items-start gap-[15.1px] overflow-hidden rounded-3xl px-6 py-10 sm:px-10 sm:py-14 lg:p-20 [background:linear-gradient(157deg,rgba(89,31,151,1)_0%,rgba(45,2,85,1)_100%)]">
+          {/* Right-side spotlight glow */}
+          <div
+            className="pointer-events-none absolute blur-[10px] [background:radial-gradient(70.71%_70.71%_at_50%_50%,rgba(189,140,255,0.50)_0%,rgba(189,140,255,0.00)_70%)]"
+            style={{ right: "-116px", top: "-207.743px", width: "696px", height: "695.575px" }}
+          />
           <div className="relative inline-flex items-center gap-2 rounded-[999px] border border-solid border-[#ffffff2e] bg-[#ffffff1f] px-3.5 pb-[7.69px] pt-[7.5px]">
             <span className="h-1.5 w-1.5 rounded-[3px] bg-white" />
             <span className="[font-family:'Montserrat',Helvetica] text-xs font-semibold leading-[19.2px] tracking-[1.68px] text-white whitespace-nowrap">

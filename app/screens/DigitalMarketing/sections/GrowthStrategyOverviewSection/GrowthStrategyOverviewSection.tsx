@@ -35,7 +35,7 @@ const strategyItems = [
 
 export const GrowthStrategyOverviewSection = (): JSX.Element => {
   return (
-    <section className="w-full px-5 py-16 sm:px-8 lg:px-[140px] lg:py-20">
+    <section className="w-full px-5 py-16 sm:px-8 lg:px-[90px] lg:py-20">
       <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-12">
         <header className="flex w-full max-w-[760px] flex-col items-start gap-4">
           <div className="inline-flex items-center gap-2.5 rounded-[999px] border border-solid border-[#00000029] px-3.5 py-[7px]">
