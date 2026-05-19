@@ -37,7 +37,6 @@ const sectionOrder = [
     wrapperClassName: "w-full px-8 md:px-10 lg:px-[37px] py-12 md:py-14",
     useCard: true,
   },
-
 ];
 
 export const SeoPpc = (): JSX.Element => {
