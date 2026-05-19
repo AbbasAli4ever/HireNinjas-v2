@@ -18,8 +18,9 @@ export const CompetitiveEdgeSection = (): JSX.Element => {
     <section className="relative w-full px-5 py-0 sm:px-6 lg:px-10">
       <div className="mx-auto w-full max-w-[1200px]">
         <Card className="relative overflow-hidden rounded-3xl border-0 bg-transparent shadow-none">
-          <div className="absolute inset-0 rounded-3xl [background:radial-gradient(50%_50%_at_100%_0%,rgba(189,140,255,0.6)_0%,rgba(189,140,255,0)_60%),linear-gradient(157deg,rgba(89,31,151,1)_0%,rgba(45,2,85,1)_100%)]" />
-          <div className="absolute right-0 top-0 h-full w-[60%] blur-[10px] [background:radial-gradient(50%_50%_at_50%_50%,rgba(189,140,255,0.5)_0%,rgba(189,140,255,0)_70%)]" />
+          <div className="absolute inset-0 rounded-3xl [background:linear-gradient(157deg,rgba(89,31,151,1)_0%,rgba(45,2,85,1)_100%)]" />
+          <div className="absolute right-0 top-0 h-full w-[60%] blur-[10px] [background:radial-gradient(70.71%_70.71%_at_50%_50%,rgba(189,140,255,0.50)_0%,rgba(189,140,255,0.00)_70%)]"
+            style={{ right: "-116px", top: "-207.743px", width: "696px", height: "695.575px" }} />
           <CardContent className="relative z-10 flex flex-col items-start gap-[15.1px] p-6 sm:p-8 lg:p-20">
             <Badge className="h-auto rounded-[999px] border border-solid border-[#ffffff2e] bg-[#ffffff1f] px-3.5 pb-[7.69px] pt-[7.5px] text-white hover:bg-[#ffffff1f]">
               <span className="mr-2 inline-block h-1.5 w-1.5 rounded-[3px] bg-white" />
@@ -62,7 +63,7 @@ export const CompetitiveEdgeSection = (): JSX.Element => {
                       <img
                         className="h-4 w-4"
                         alt="Component"
-                        src="https://c.animaapp.com/mpb6dv7tQ8BPXz/img/component-2.svg"
+                        src="/figmaAssets/arrow-white.svg"
                       />
                     </span>
                   </Button>

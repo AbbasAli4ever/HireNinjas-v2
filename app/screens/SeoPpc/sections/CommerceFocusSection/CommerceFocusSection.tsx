@@ -21,7 +21,7 @@ const descriptionLines = [
 export const CommerceFocusSection = (): JSX.Element => {
   return (
     <section className="relative w-full px-4 py-0 sm:px-6 lg:px-10">
-      <Card className="relative w-full overflow-hidden rounded-3xl border border-[#f0e2ff] bg-[linear-gradient(180deg,rgba(248,241,255,1)_0%,rgba(255,255,255,1)_100%)] shadow-none">
+      <Card className="relative mx-auto w-full max-w-[1200px] overflow-hidden rounded-3xl border border-[#f0e2ff] bg-[linear-gradient(180deg,rgba(248,241,255,1)_0%,rgba(255,255,255,1)_100%)] shadow-none">
         <div className="pointer-events-none absolute inset-y-[-18%] right-[-4%] w-[62%] rounded-full [background:radial-gradient(50%_50%_at_50%_50%,rgba(189,140,255,0.5)_0%,rgba(189,140,255,0)_70%)] blur-[10px]" />
         <CardContent className="relative z-10 flex flex-col items-start gap-[15.4px] px-6 py-10 sm:px-10 sm:py-14 lg:p-20">
           <Badge

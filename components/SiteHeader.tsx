@@ -29,7 +29,7 @@ const servicesColumns = [
     items: [
       { title: "Web & App Development",   description: "High-performance digital products",  href: "/services/web-app-development",        disabled: false },
       { title: "Social Media",            description: "Content + community + paid",         href: "/services/social-media",               disabled: false },
-      { title: "Video Production",        description: "Cinematic brand storytelling",       href: "#",                                    disabled: false },
+      { title: "Video Production",        description: "Cinematic brand storytelling",       href: "/services/video-production",           disabled: false },
       { title: "Branding & Identity",     description: "Logos, systems, brand voice",        href: "#",                                    disabled: false },
       { title: "Staff Augmentation",      description: "Build teams in days, not months",    href: "#",                                    disabled: false },
     ],

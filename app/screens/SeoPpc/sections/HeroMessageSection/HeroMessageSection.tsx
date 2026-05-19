@@ -55,7 +55,7 @@ const resultCards = [
       </>
     ),
     badge: "#1",
-    badgeClassName: "bg-[#f0e2ff] text-[#8a39e4]",
+    badgeClassName: "bg-[#F1E3FF] text-[#8a39e4]",
     cardClassName: "border-[#ece8f3] bg-white",
   },
   {
@@ -81,11 +81,43 @@ export const HeroMessageSection = (): JSX.Element => {
             </span>
           </Badge>
           <div className="w-full pb-[0.6px]">
-            <img
-              className="h-auto w-full max-w-[667px]"
-              alt="Seo PPC for businesses to dominate search results"
-              src="https://c.animaapp.com/mpb6dv7tQ8BPXz/img/seo---ppc-for-businesses-to-dominate-search-results.svg"
-            />
+            <header className="flex w-full max-w-[600px] flex-col items-start pb-[0.6px]">
+            <h1
+              style={{
+                fontFamily: '"Satoshi", Helvetica, sans-serif',
+                fontSize: "56px",
+                fontWeight: 700,
+                lineHeight: "110%",
+                letterSpacing: "-2.52px",
+              }}
+            >
+              <span style={{ color: "#0F0A1F", display: "inline" }}>
+                SEO & PPC for <br/> bussinesses to{" "}
+              </span>
+               <span
+                style={{
+                  display: "inline",
+                  background: "linear-gradient(101deg, #8B3AE5 0%, #591F97 60%, #0F0A1F 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+                dominate <br/>
+              </span>
+              <span
+                style={{
+                  display: "inline",
+                  background: "linear-gradient(101deg, #8B3AE5 0%, #591F97 60%, #0F0A1F 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+               search results
+              </span>
+            </h1>
+          </header>
           </div>
           <div className="w-full max-w-[667.29px]">
             <p className="[font-family:'Montserrat',Helvetica] text-lg font-normal leading-[28.8px] text-[#3a3447]">
@@ -124,12 +156,12 @@ export const HeroMessageSection = (): JSX.Element => {
             {featureItems.map((item) => (
               <div
                 key={item.title}
-                className="flex min-h-[55.98px] flex-col justify-between border-l-2 border-[#d9bbff] pl-4"
+                className="flex min-h-[55.98px] flex-col justify-start border-l-2 border-[#d9bbff] pl-4"
               >
                 <div className="[font-family:'Satoshi-Bold',Helvetica] text-[22px] font-bold leading-[35.2px] tracking-[-0.44px] text-[#0f0a1f]">
                   {item.title}
                 </div>
-                <div className="[font-family:'Montserrat',Helvetica] text-[13px] font-normal leading-[20.8px] text-[#6b6478]">
+                <div className="[font-family:'Montserrat',Helvetica] text-[12px] font-normal leading-[20.8px] text-[#6b6478]">
                   {item.description}
                 </div>
               </div>
@@ -171,7 +203,7 @@ export const HeroMessageSection = (): JSX.Element => {
 
                     {item.badge ? (
                       <Badge
-                        className={`absolute right-[15px] top-[15px] h-auto rounded-[999px] px-[9px] py-1 hover:${item.badgeClassName}`}
+                        className={`absolute right-[15px] top-[15px] h-auto rounded-[999px] px-[9px] py-1 ${item.badgeClassName}`}
                       >
                         <span className="[font-family:'Montserrat',Helvetica] text-[10px] font-bold leading-4 tracking-[0.40px]">
                           {item.badge}

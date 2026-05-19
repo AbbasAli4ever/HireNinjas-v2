@@ -173,7 +173,9 @@ export const TechnicalServicesSection = (): JSX.Element => {
                 </div>
                 <div
                   className={`w-full ${card.dark ? "max-w-[595.8px]" : ""}`}
-                ></div>
+                >
+                  {_renderDescription(card.description, card.dark)}
+                </div>
               </CardContent>
             </Card>
           ))}
