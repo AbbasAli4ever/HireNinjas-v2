@@ -21,7 +21,7 @@ const servicesColumns = [
       { title: "Lead Generation",         description: "Funnels that fill the pipeline",     href: "/services/lead-generation",            disabled: false },
       { title: "SEO & PPC",               description: "Top-of-search visibility",           href: "/services/seo-ppc",                    disabled: false },
       { title: "Marketing Consultations", description: "Senior strategy on demand",          href: "#",                                    disabled: false },
-      { title: "AI-Powered Marketing",    description: "Automation + predictive growth",     href: "#",                                    disabled: false },
+      { title: "AI-Powered Marketing",    description: "Automation + predictive growth",     href: "/services/ai-powered-marketing",       disabled: false },
     ],
   },
   {
@@ -40,7 +40,7 @@ const industriesColumns = [
   {
     heading: "SECTORS",
     items: [
-      { title: "B2B & Enterprise", description: "ABM + complex sales cycles",      href: "#", disabled: false },
+      { title: "B2B & Enterprise", description: "ABM + complex sales cycles",      href: "/industries/b2b-enterprise", disabled: false },
       { title: "Real Estate",      description: "Off-plan, HNWI, investor leads",  href: "#", disabled: false },
     ],
   },

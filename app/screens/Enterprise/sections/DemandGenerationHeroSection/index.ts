@@ -1,0 +1,1 @@
+export { DemandGenerationHeroSection } from "./DemandGenerationHeroSection";

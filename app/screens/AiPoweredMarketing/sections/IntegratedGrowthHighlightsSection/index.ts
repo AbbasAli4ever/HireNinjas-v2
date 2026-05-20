@@ -1,0 +1,1 @@
+export { IntegratedGrowthHighlightsSection } from "./IntegratedGrowthHighlightsSection";
