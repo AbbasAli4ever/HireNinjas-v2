@@ -18,7 +18,7 @@ const ctaContent = {
 
 export const IdentityGrowthCtaSection = (): JSX.Element => {
   return (
-    <section className="w-full  max-w-[1200px]  ">
+    <section className="w-full max-w-[1200px]  ">
       <Card className="relative w-full  overflow-hidden rounded-3xl border-0 bg-transparent shadow-none">
         <CardContent className="relative flex flex-col items-start gap-8 overflow-hidden rounded-3xl px-6 py-10 sm:px-10 sm:py-12 lg:gap-[32.1px] lg:px-20 lg:py-20 [background:radial-gradient(50%_50%_at_100%_0%,rgba(189,140,255,0.6)_0%,rgba(189,140,255,0)_60%),linear-gradient(157deg,rgba(89,31,151,1)_0%,rgba(45,2,85,1)_100%)]">
           <div

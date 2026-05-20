@@ -41,12 +41,7 @@ const servicesColumns = [
         href: "/services/marketing-consultations",
         disabled: false,
       },
-      {
-        title: "AI-Powered Marketing",
-        description: "Automation + predictive growth",
-        href: "#",
-        disabled: false,
-      },
+      { title: "AI-Powered Marketing",    description: "Automation + predictive growth",     href: "/services/ai-powered-marketing",       disabled: false },
     ],
   },
   {
@@ -67,7 +62,7 @@ const servicesColumns = [
       {
         title: "Video Production",
         description: "Cinematic brand storytelling",
-        href: "#",
+        href: "/services/video-production",
         disabled: false,
       },
       {
@@ -79,7 +74,7 @@ const servicesColumns = [
       {
         title: "Staff Augmentation",
         description: "Build teams in days, not months",
-        href: "#",
+        href: "/services/staff-augmentation",
         disabled: false,
       },
     ],
@@ -93,13 +88,13 @@ const industriesColumns = [
       {
         title: "B2B & Enterprise",
         description: "ABM + complex sales cycles",
-        href: "#",
+        href: "/industries/b2b-enterprise",
         disabled: false,
       },
       {
         title: "Real Estate",
         description: "Off-plan, HNWI, investor leads",
-        href: "#",
+        href: "/industries/real-estate",
         disabled: false,
       },
     ],
@@ -107,18 +102,8 @@ const industriesColumns = [
   {
     heading: "COMING SOON",
     items: [
-      {
-        title: "SaaS & Tech",
-        description: "In development",
-        href: "#",
-        disabled: true,
-      },
-      {
-        title: "Healthcare",
-        description: "In development",
-        href: "#",
-        disabled: true,
-      },
+      { title: "SaaS & Tech",  description: "In development", href: "/industries/saas-tech", disabled: false },
+     { title: "Healthcare",   description: "In development", href: "/industries/healthcare", disabled: false },
     ],
   },
 ];
