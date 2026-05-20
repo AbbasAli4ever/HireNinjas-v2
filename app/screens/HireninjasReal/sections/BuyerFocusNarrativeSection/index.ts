@@ -1,0 +1,1 @@
+export {BuyerFocusNarrativeSection} from "./BuyerFocusNarrativeSection";

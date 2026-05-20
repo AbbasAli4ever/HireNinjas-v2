@@ -41,14 +41,14 @@ const industriesColumns = [
     heading: "SECTORS",
     items: [
       { title: "B2B & Enterprise", description: "ABM + complex sales cycles",      href: "/industries/b2b-enterprise", disabled: false },
-      { title: "Real Estate",      description: "Off-plan, HNWI, investor leads",  href: "#", disabled: false },
+      { title: "Real Estate",      description: "Off-plan, HNWI, investor leads",  href: "/industries/real-estate", disabled: false },
     ],
   },
   {
     heading: "COMING SOON",
     items: [
-      { title: "SaaS & Tech",  description: "In development", href: "#", disabled: true },
-      { title: "Healthcare",   description: "In development", href: "#", disabled: true },
+      { title: "SaaS & Tech",  description: "In development", href: "/industries/saas-tech", disabled: false },
+      { title: "Healthcare",   description: "In development", href: "/industries/healthcare", disabled: false },
     ],
   },
 ];

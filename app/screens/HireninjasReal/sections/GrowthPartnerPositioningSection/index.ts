@@ -1,0 +1,1 @@
+export {GrowthPartnerPositioningSection} from "./GrowthPartnerPositioningSection";

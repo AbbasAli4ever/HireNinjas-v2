@@ -1,0 +1,1 @@
+export {PatientAcquisitionStorySection} from "./PatientAcquisitionStorySection";
