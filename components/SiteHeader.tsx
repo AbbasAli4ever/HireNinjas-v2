@@ -20,28 +20,38 @@ const servicesColumns = [
       {
         title: "Digital Strategy",
         description: "Roadmaps for predictable growth",
-        href: "/services/digital-marketing-strategy",
+        href: "/digital-strategy",
+        icon: "/navbar/digital.svg",
         disabled: false,
       },
       {
         title: "Lead Generation",
         description: "Funnels that fill the pipeline",
-        href: "/services/lead-generation",
+        href: "/lead-generation",
+        icon: "/navbar/lead.svg",
         disabled: false,
       },
       {
         title: "SEO & PPC",
         description: "Top-of-search visibility",
-        href: "/services/seo-ppc",
+        href: "/seo-ppc",
+        icon: "/navbar/seo.svg",
         disabled: false,
       },
       {
         title: "Marketing Consultations",
         description: "Senior strategy on demand",
-        href: "/services/marketing-consultations",
+        href: "/marketing-consultations",
+        icon: "/navbar/marketing.svg",
         disabled: false,
       },
-      { title: "AI-Powered Marketing",    description: "Automation + predictive growth",     href: "/services/ai-powered-marketing",       disabled: false },
+      {
+        title: "AI-Powered Marketing",
+        description: "Automation + predictive growth",
+        href: "/ai-marketing",
+        icon: "/navbar/ai.svg",
+        disabled: false,
+      },
     ],
   },
   {
@@ -50,31 +60,36 @@ const servicesColumns = [
       {
         title: "Web & App Development",
         description: "High-performance digital products",
-        href: "/services/web-app-development",
+        href: "/website-development",
+        icon: "/navbar/web.svg",
         disabled: false,
       },
       {
         title: "Social Media",
         description: "Content + community + paid",
-        href: "/services/social-media",
+        href: "/social-media",
+        icon: "/navbar/social.svg",
         disabled: false,
       },
       {
         title: "Video Production",
         description: "Cinematic brand storytelling",
-        href: "/services/video-production",
+        href: "/video-production",
+        icon: "/navbar/video.svg",
         disabled: false,
       },
       {
         title: "Branding & Identity",
         description: "Logos, systems, brand voice",
-        href: "/services/branding-identity",
+        href: "/branding",
+        icon: "/navbar/branding.svg",
         disabled: false,
       },
       {
         title: "Staff Augmentation",
         description: "Build teams in days, not months",
-        href: "/services/staff-augmentation",
+        href: "/staff-augmentation",
+        icon: "/navbar/staff.svg",
         disabled: false,
       },
     ],
@@ -83,27 +98,71 @@ const servicesColumns = [
 
 const industriesColumns = [
   {
+    key: "sectors-1",
     heading: "SECTORS",
     items: [
       {
-        title: "B2B & Enterprise",
+        title: "B2B Marketing",
         description: "ABM + complex sales cycles",
-        href: "/industries/b2b-enterprise",
+        href: "/industries/b2b-marketing",
+        icon: "/navbar/b2b.svg",
         disabled: false,
       },
       {
         title: "Real Estate",
         description: "Off-plan, HNWI, investor leads",
         href: "/industries/real-estate",
+        icon: "/navbar/real.svg",
+        disabled: false,
+      },
+      {
+        title: "Healthcare",
+        description: "Patient acquisition & trust",
+        href: "/industries/healthcare",
+        icon: "/navbar/health.svg",
+        disabled: false,
+      },
+      {
+        title: "Education Marketing",
+        description: "Enrolment & applicant journeys",
+        href: "/industries/education-marketing",
+        icon: "/navbar/education.svg",
         disabled: false,
       },
     ],
   },
   {
-    heading: "COMING SOON",
+    key: "sectors-2",
+    heading: "",
     items: [
-      { title: "SaaS & Tech",  description: "In development", href: "/industries/saas-tech", disabled: false },
-     { title: "Healthcare",   description: "In development", href: "/industries/healthcare", disabled: false },
+      {
+        title: "Hospitality",
+        description: "Bookings, brand & guest experience",
+        href: "/industries/hospitality",
+        icon: "/navbar/tour.svg",
+        disabled: false,
+      },
+      {
+        title: "Automotive Marketing",
+        description: "Showroom traffic & test-drive leads",
+        href: "/industries/automotive-marketing",
+        icon: "/navbar/auto.svg",
+        disabled: false,
+      },
+      {
+        title: "E-commerce Marketing",
+        description: "Conversion-first revenue growth",
+        href: "/industries/ecommerce-marketing",
+        icon: "/navbar/ecommerce.svg",
+        disabled: false,
+      },
+      {
+        title: "Finance & Fintech",
+        description: "Compliant performance marketing",
+        href: "/industries/finance-fintech-marketing",
+        icon: "/navbar/finance.svg",
+        disabled: false,
+      },
     ],
   },
 ];
@@ -112,6 +171,7 @@ type NavItem = {
   title: string;
   description: string;
   href: string;
+  icon?: string;
   disabled: boolean;
 };
 
@@ -119,6 +179,7 @@ const MenuItem = ({
   title,
   description,
   href,
+  icon,
   disabled,
   onSelect,
 }: NavItem & { onSelect: () => void }) => (
@@ -132,7 +193,11 @@ const MenuItem = ({
     }`}
   >
     <span className="flex h-[35px] w-8 flex-col items-start pt-[3px]">
-      <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#f7f1ff]" />
+      <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#f7f1ff]">
+        {icon && (
+          <img src={icon} alt="" aria-hidden="true" className="h-4 w-4" />
+        )}
+      </span>
     </span>
     <span className="inline-flex flex-col items-start pt-[3px]">
       <span className="[font-family:'Satoshi-Bold',Helvetica] text-sm font-bold leading-[16.8px] text-[#0f0a1f]">
@@ -174,16 +239,13 @@ export const SiteHeader = () => {
     <header className="sticky top-0 left-0 z-50 w-full border-b border-[#ece8f3] bg-[#fffefed1] backdrop-blur-[7px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(7px)_brightness(100%)]">
       <div className="mx-auto flex h-[72px] w-full max-w-[1480px] items-center justify-between gap-6 px-4 sm:px-6 lg:px-[140px]">
         {/* Logo */}
-        <Link href="/" className="flex shrink-0 items-center gap-2.5">
-          <div className="relative flex h-[30px] w-[30px] items-center justify-center rounded-[9px] bg-[linear-gradient(135deg,rgba(139,58,229,1)_0%,rgba(89,31,151,1)_100%)] shadow-[0px_6px_18px_-8px_#8a39e4b2]">
-            <span className="relative flex items-center justify-center [font-family:'Satoshi-Bold',Helvetica] text-sm font-bold leading-[22.4px] tracking-[-0.40px] text-white">
-              H
-            </span>
-          </div>
-          <span className="[font-family:'Satoshi-Bold',Helvetica] text-xl font-bold leading-8 tracking-[-0.40px] text-[#0f0a1f]">
-            HireNinjas
-          </span>
-        </Link>
+         <a href="/" className="shrink-0">
+          <img
+            className="h-10 w-[180px] object-cover"
+            alt="Hire Ninjas"
+            src="/navbar/navlogo.svg"
+          />
+        </a>
 
         {/* Desktop Nav */}
         <nav className="hidden min-w-0 flex-1 items-center justify-center xl:flex">
@@ -198,7 +260,7 @@ export const SiteHeader = () => {
                 <NavigationMenuTrigger className="h-auto bg-transparent px-0 py-1.5 [font-family:'Montserrat',Helvetica] text-sm font-medium text-[#3a3447] hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent">
                   Services
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="border border-[#ece8f3] bg-white p-6 shadow-[0px_30px_70px_-30px_#140a2840]">
+                <NavigationMenuContent className="rounded-2xl border border-[#ece8f3] bg-white p-6 shadow-[0px_30px_70px_-30px_#140a2840]">
                   <div className="grid w-[900px] max-w-[calc(100vw-2rem)] grid-cols-1 gap-x-6 gap-y-2 md:grid-cols-2">
                     {servicesColumns.map((column) => (
                       <section
@@ -228,14 +290,14 @@ export const SiteHeader = () => {
                 <NavigationMenuTrigger className="h-auto bg-transparent px-0 py-1.5 [font-family:'Montserrat',Helvetica] text-sm font-medium text-[#3a3447] hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent">
                   Industries
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="border border-[#ece8f3] bg-white p-6 shadow-[0px_30px_70px_-30px_#140a2840]">
-                  <div className="grid w-[560px] max-w-[calc(100vw-2rem)] grid-cols-1 gap-x-6 gap-y-2 md:grid-cols-2">
+                <NavigationMenuContent className="rounded-2xl border border-[#ece8f3] bg-white p-6 shadow-[0px_30px_70px_-30px_#140a2840]">
+                  <div className="grid w-[640px] max-w-[calc(100vw-2rem)] grid-cols-1 gap-x-6 gap-y-2 md:grid-cols-2">
                     {industriesColumns.map((column) => (
                       <section
-                        key={column.heading}
+                        key={column.key}
                         className="flex flex-col items-start pt-1"
                       >
-                        <h2 className="[font-family:'Satoshi-Bold',Helvetica] text-[11px] font-bold leading-[17.6px] tracking-[1.54px] text-[#6b6478]">
+                        <h2 className="min-h-[18px] [font-family:'Satoshi-Bold',Helvetica] text-[11px] font-bold leading-[17.6px] tracking-[1.54px] text-[#6b6478]">
                           {column.heading}
                         </h2>
                         <div className="mt-[14px] flex w-full flex-col">
@@ -426,10 +488,12 @@ export const SiteHeader = () => {
               {mobileExpandedSection === "industries" && (
                 <div className="pb-4">
                   {industriesColumns.map((column) => (
-                    <div key={column.heading} className="mb-3">
-                      <p className="mb-2 [font-family:'Satoshi-Bold',Helvetica] text-[10px] font-bold tracking-[1.4px] text-[#6b6478]">
-                        {column.heading}
-                      </p>
+                    <div key={column.key} className="mb-3">
+                      {column.heading && (
+                        <p className="mb-2 [font-family:'Satoshi-Bold',Helvetica] text-[10px] font-bold tracking-[1.4px] text-[#6b6478]">
+                          {column.heading}
+                        </p>
+                      )}
                       {column.items.map((item) => (
                         <Link
                           key={item.title}

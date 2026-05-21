@@ -9,9 +9,9 @@ const toolkitCards = [
     description: (
       <>
         At Hireninjas, we conduct detailed competitor benchmarking,
-        <br />
+        <br className="hidden xl:inline" />
         persona creation, and market opportunity evaluation so every
-        <br />
+        <br className="hidden xl:inline" />
         strategic decision is informed by real commercial insights.
       </>
     ),
@@ -25,9 +25,9 @@ const toolkitCards = [
     description: (
       <>
         Locate and leverage the top acquisition channels for your
-        <br />
+        <br className="hidden xl:inline" />
         business, such as SEO, paid media, social platforms, email
-        <br />
+        <br className="hidden xl:inline" />
         marketing and conversion-focused landing funnels.
       </>
     ),
@@ -41,17 +41,17 @@ const toolkitCards = [
     description: (
       <>
         At Hireninjas, we help businesses map
-        <br />
+        <br className="hidden xl:inline" />
         the complete customer lifecycle from
-        <br />
+        <br className="hidden xl:inline" />
         initial interactions through to repeat
-        <br />
+        <br className="hidden xl:inline" />
         purchases - from friction points and
-        <br />
+        <br className="hidden xl:inline" />
         potential conversion opportunities
-        <br />
+        <br className="hidden xl:inline" />
         to improved engagement and
-        <br />
+        <br className="hidden xl:inline" />
         conversion rates.
       </>
     ),
@@ -65,13 +65,13 @@ const toolkitCards = [
     description: (
       <>
         Custom performance measurement
-        <br />
+        <br className="hidden xl:inline" />
         systems will help your team
-        <br />
+        <br className="hidden xl:inline" />
         understand what success looks like
-        <br />
+        <br className="hidden xl:inline" />
         and how campaigns contribute to
-        <br />
+        <br className="hidden xl:inline" />
         revenue growth.
       </>
     ),
@@ -85,13 +85,13 @@ const toolkitCards = [
     description: (
       <>
         Our campaign architects create full
-        <br />
+        <br className="hidden xl:inline" />
         funnel-level campaign frameworks with
-        <br />
+        <br className="hidden xl:inline" />
         messaging hierarchies, creative
-        <br />
+        <br className="hidden xl:inline" />
         direction, audience targeting logic and
-        <br />
+        <br className="hidden xl:inline" />
         budget allocation models.
       </>
     ),
@@ -106,9 +106,9 @@ const toolkitCards = [
       <>
         As markets change rapidly, we adapt and refine your roadmap on a
         quarterly
-        <br />
+        <br className="hidden xl:inline" />
         basis using performance data and trend insights to maintain momentum and
-        <br />
+        <br className="hidden xl:inline" />
         competitive advantage.
       </>
     ),
@@ -119,9 +119,9 @@ const toolkitCards = [
 
 export const StrategicToolkitSection = (): JSX.Element => {
   return (
-    <section className="w-full px-4 py-16 sm:px-6 lg:px-10 xl:px-0">
-      <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-12">
-        <header className="flex w-full max-w-[760px] flex-col items-start gap-[17.33px]">
+    <section className="w-full px-2 py-12 sm:px-8 sm:py-16 md:px-4 lg:px-8 xl:px-0">
+      <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-8 sm:gap-10 lg:gap-12">
+        <header className="flex w-full max-w-[760px] flex-col items-start gap-4 lg:gap-[17.33px]">
           <Badge
             variant="outline"
             className="h-auto rounded-[999px] border border-solid border-[#00000029] bg-transparent px-3.5 py-[7px] hover:bg-transparent"
@@ -129,14 +129,14 @@ export const StrategicToolkitSection = (): JSX.Element => {
             <span className="mr-2.5 flex h-1.5 w-1.5 items-start justify-center rounded-[3px] bg-[#6ce5b1]">
               <span className="h-1.5 w-1.5 rounded-[3px] bg-[#ffffff01] shadow-[0px_0px_0px_4px_#6ce5b12e]" />
             </span>
-            <span className="[font-family:'Inter',Helvetica] text-xs font-normal tracking-[1.68px] leading-[18px] text-black">
+            <span className="[font-family:'Inter',Helvetica] text-[7px] sm:text-xs font-normal tracking-[1.68px] leading-[18px] text-black">
               WHAT IS INCLUDED IN YOUR ROADMAP FOR SUCCESS
             </span>
           </Badge>
           <div className="w-full">
-            <h2 className="font-h-2 text-[length:var(--h-2-font-size)] font-[number:var(--h-2-font-weight)] leading-[var(--h-2-line-height)] tracking-[var(--h-2-letter-spacing)] text-[#0f0a1f] [font-style:var(--h-2-font-style)]">
+            <h2 className="text-[32px] leading-[1.15] tracking-[-1px] sm:text-[40px] sm:tracking-[-1.4px] lg:text-5xl xl:font-h-2 xl:text-[length:var(--h-2-font-size)] xl:font-[number:var(--h-2-font-weight)] xl:leading-[var(--h-2-line-height)] xl:tracking-[var(--h-2-letter-spacing)] text-[#0f0a1f] font-bold [font-family:'Satoshi-Bold',Helvetica] xl:[font-style:var(--h-2-font-style)]">
               A complete strategic toolkit ,
-              <br />
+              <br className="hidden xl:inline" />
               assembled around your goals.
             </h2>
           </div>
@@ -151,8 +151,8 @@ export const StrategicToolkitSection = (): JSX.Element => {
               <CardContent
                 className={
                   card.dark
-                    ? "flex flex-col items-start gap-2.5 p-7"
-                    : "flex flex-col items-start gap-2.5 p-7"
+                    ? "flex flex-col items-start gap-2.5 p-5 sm:p-6 xl:p-7"
+                    : "flex flex-col items-start gap-2.5 p-5 sm:p-6 xl:p-7"
                 }
               >
                 <div className="flex w-full flex-col items-start">

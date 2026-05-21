@@ -41,11 +41,11 @@ export const WebsiteAppScreen = (): JSX.Element => {
         </section>
         <DevelopmentShowcaseSection />
         <ValuePropositionsSection />
-        <div className="w-full px-[8%]">
+        <div className="w-full px-0 xl:px-[8%]">
           <DevelopmentServicesSection />
         </div>
         <DigitalPlatformBenefitsSection />
-        <div className="w-full px-[8%]">
+        <div className="w-full px-0 xl:px-[8%]">
           <RevenuePlatformCtaSection />
         </div>
       </div>

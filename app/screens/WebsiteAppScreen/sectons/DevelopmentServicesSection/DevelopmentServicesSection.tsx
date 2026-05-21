@@ -8,7 +8,7 @@ const serviceCards = [
     title: "Custom Website Design",
     description:
       "At Hireninjas, we specialise in crafting tailored websites tailored specifically for each of our client businesses, creating stunning interfaces designed with brand consistency in mind and standing out from competitors through templated solutions.",
-    icon: "https://c.animaapp.com/mp5dxvs5vBeNIx/img/component-4-5.svg",
+    icon: "/web-development/card.svg",
     colSpan: "lg:col-span-6",
     dark: false,
   },
@@ -18,7 +18,7 @@ const serviceCards = [
     title: "Mobile App Development",
     description:
       "Create intuitive mobile applications for iOS and Android using native or cross-platform frameworks that offer seamless user experiences with long-term engagement potential.",
-    icon: "https://c.animaapp.com/mp5dxvs5vBeNIx/img/component-4-11.svg",
+    icon: "/web-development/phone.svg",
     colSpan: "lg:col-span-6",
     dark: false,
   },
@@ -28,7 +28,7 @@ const serviceCards = [
     title: "E-Commerce Development",
     description:
       "Create scalable online stores using Shopify, WooCommerce or custom frameworks - each featuring secure payment gateway integration and conversion-focused checkout experiences for maximum conversions.",
-    icon: "https://c.animaapp.com/mp5dxvs5vBeNIx/img/component-4-4.svg",
+    icon: "/web-development/cart.svg",
     colSpan: "lg:col-span-4",
     dark: false,
   },
@@ -38,7 +38,7 @@ const serviceCards = [
     title: "CMS Integration",
     description:
       "Our CMS services integrate flexible content management systems such as WordPress and Webflow into your organization so your internal team can update content effortlessly without technical complexity.",
-    icon: "https://c.animaapp.com/mp5dxvs5vBeNIx/img/component-4.svg",
+    icon: "/web-development/data.svg",
     colSpan: "lg:col-span-4",
     dark: false,
   },
@@ -48,7 +48,7 @@ const serviceCards = [
     title: "API and CRM Integration",
     description:
       "Integrate your website with CRM platforms, ERP systems, marketing automation tools and third-party services in order to streamline operations and increase data visibility.",
-    icon: "https://c.animaapp.com/mp5dxvs5vBeNIx/img/component-4-2.svg",
+    icon: "/web-development/link.svg",
     colSpan: "lg:col-span-4",
     dark: false,
   },
@@ -58,7 +58,7 @@ const serviceCards = [
     title: "Security & Hosting — Wrestle Your Platform Cleanly",
     description:
       "Get protection with SSL encryption, CDN performance layers, automated backups and managed hosting environments designed to keep your platform safe.",
-    icon: "https://c.animaapp.com/mp5dxvs5vBeNIx/img/component-4-10.svg",
+    icon: "/web-development/shield.svg",
     colSpan: "lg:col-span-12",
     dark: true,
   },
@@ -67,21 +67,21 @@ const serviceCards = [
 export const DevelopmentServicesSection = (): JSX.Element => {
   return (
     <section
-      className="relative w-full px-8 py-[80px] md:px-10 lg:px-[0px]"
+      className="relative w-full px-4 py-12 sm:px-8 sm:py-16 md:px-12 lg:px-16 lg:py-20 xl:px-0 xl:py-[80px]"
       aria-labelledby="development-services-heading"
     >
-      <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-12">
-        <header className="flex w-full max-w-[760px] flex-col items-start gap-[16.83px]">
-          <Badge className="inline-flex h-auto rounded-[999px] border border-solid border-[#f0e2ff] bg-[#f7f1ff] px-3.5 pb-[7.69px] pt-[7.5px] [font-family:'Montserrat',Helvetica] text-xs font-semibold tracking-[1.68px] text-[#8a39e4] hover:bg-[#f7f1ff]">
+      <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-8 sm:gap-10 lg:gap-12">
+        <header className="flex w-full max-w-[760px] flex-col items-start gap-4 lg:gap-[16.83px]">
+          <Badge className="inline-flex h-auto rounded-[999px] border border-solid border-[#f0e2ff] bg-[#f7f1ff] px-3.5 pb-[7.69px] pt-[7.5px] [font-family:'Montserrat',Helvetica] text-[10px] sm:text-xs font-semibold tracking-[1.68px] text-[#8a39e4] hover:bg-[#f7f1ff]">
             OUR WEBSITE AND APP DEVELOPMENT SERVICES
           </Badge>
           <div className="w-full">
             <h2
               id="development-services-heading"
-              className="mt-[-1.00px] self-stretch [font-family:'Satoshi-Bold',Helvetica] text-[36px] font-bold leading-[1.08] tracking-[-0.92px] text-[#0f0a1f] sm:text-[42px] lg:text-[46px]"
+              className="mt-[-1.00px] self-stretch [font-family:'Satoshi-Bold',Helvetica] text-[28px] font-bold leading-[1.15] tracking-[-0.8px] text-[#0f0a1f] sm:text-[36px] sm:tracking-[-0.92px] md:text-[42px] lg:text-[46px] xl:leading-[1.08]"
             >
-              A full development stack
-              <br />— from pixel to production.
+              <span className="xl:block">A full development stack </span>
+              <span className="xl:block">— from pixel to production.</span>
             </h2>
           </div>
         </header>
@@ -95,7 +95,7 @@ export const DevelopmentServicesSection = (): JSX.Element => {
                   : "border-[#ece8f3] bg-white"
               } ${card.colSpan}`}
             >
-              <CardContent className="flex h-full flex-col items-start gap-2.5 p-7">
+              <CardContent className="flex h-full flex-col items-start gap-2.5 p-5 sm:p-6 xl:p-7">
                 <div
                   className={`grid h-11 w-11 place-items-center rounded-[11px] ${
                     card.dark ? "bg-[#ffffff1a]" : "bg-[#f7f1ff]"

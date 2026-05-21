@@ -41,7 +41,7 @@ export const DigitalMarketing = (): JSX.Element => {
         <section className="w-full">
           <StrategicPrinciplesSection />
         </section>
-        {centeredSections.slice(1, 2).map((section) => (
+         {centeredSections.slice(1, 2).map((section) => (
           <section key={section.key} className="w-full bg-white py-6 md:py-7">
             <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-10">
               <Card className="mx-auto w-full max-w-[1314px] border-0 bg-transparent shadow-none">
@@ -51,18 +51,18 @@ export const DigitalMarketing = (): JSX.Element => {
           </section>
         ))}
 
-        <section className="w-full">
+       <section className="w-full">
           <GrowthProcessStepsSection />
         </section>
-        {centeredSections.slice(2).map((section) => (
+       {centeredSections.slice(2).map((section) => (
           <section key={section.key} className="w-full bg-white py-6 md:py-7">
-            <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-10">
+            <div className="mx-auto w-full max-w-[1440px] px-2 md:px-8 lg:px-10">
               <Card className="mx-auto w-full max-w-[1314px] border-0 bg-transparent shadow-none">
                 <CardContent className="p-0">{section.component}</CardContent>
               </Card>
             </div>
           </section>
-        ))}
+        ))} 
 
       </div>
     </main>

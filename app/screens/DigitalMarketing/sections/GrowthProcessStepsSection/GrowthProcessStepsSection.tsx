@@ -110,9 +110,9 @@ const steps = [
 
 export const GrowthProcessStepsSection = (): JSX.Element => {
   return (
-    <section className="w-full bg-[radial-gradient(50%_50%_at_80%_0%,rgba(248,241,255,1)_0%,rgba(248,241,255,0)_60%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] px-6 py-[70px] md:px-10 lg:px-[140px]">
-      <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-12">
-        <header className="flex w-full max-w-[760px] flex-col items-start gap-[17.33px]">
+    <section className="w-full bg-[radial-gradient(50%_50%_at_80%_0%,rgba(248,241,255,1)_0%,rgba(248,241,255,0)_60%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] px-4 py-12 sm:px-8 sm:py-16 md:px-12 lg:px-16 lg:py-[70px] xl:px-[140px]">
+      <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-8 sm:gap-10 lg:gap-12">
+        <header className="flex w-full max-w-[760px] flex-col items-start gap-4 lg:gap-[17.33px]">
           {/* <div className="text-xs tracking-[1.68px] leading-[18px] text-black [font-family:'Inter',Helvetica]">
             What I see in the image: a light section with a subtle radial
             lavender glow, a small pill label at the top left, a bold two-line
@@ -126,15 +126,14 @@ export const GrowthProcessStepsSection = (): JSX.Element => {
             <span className="mr-2.5 flex h-1.5 w-1.5 items-center justify-center rounded-[3px] bg-[#6ce5b1]">
               <span className="h-1.5 w-1.5 rounded-[3px] bg-[#ffffff01] shadow-[0px_0px_0px_4px_#6ce5b12e]" />
             </span>
-            <span className="[font-family:'Inter',Helvetica] text-xs font-normal tracking-[1.68px] leading-[18px]">
+            <span className="[font-family:'Inter',Helvetica] text-[10px] sm:text-xs font-normal tracking-[1.68px] leading-[18px]">
               OUR DIGITAL STRATEGY PROCESS
             </span>
           </Badge>
           <div className="w-full">
-            <h2 className="font-h-2 text-[length:var(--h-2-font-size)] font-[number:var(--h-2-font-weight)] leading-[var(--h-2-line-height)] tracking-[var(--h-2-letter-spacing)] text-[#0f0a1f] [font-style:var(--h-2-font-style)]">
-              Five steps from baseline
-              <br />
-              to compounding growth.
+            <h2 className="text-[32px] leading-[1.15] tracking-[-1px] sm:text-[40px] sm:tracking-[-1.4px] lg:text-5xl xl:font-h-2 xl:text-[length:var(--h-2-font-size)] xl:font-[number:var(--h-2-font-weight)] xl:leading-[var(--h-2-line-height)] xl:tracking-[var(--h-2-letter-spacing)] text-[#0f0a1f] font-bold [font-family:'Satoshi-Bold',Helvetica] xl:[font-style:var(--h-2-font-style)]">
+              <span className="xl:block">Five steps from baseline </span>
+              <span className="xl:block">to compounding growth.</span>
             </h2>
           </div>
         </header>
@@ -167,7 +166,12 @@ export const GrowthProcessStepsSection = (): JSX.Element => {
                     {step.description.map((line, index) => (
                       <span key={`${step.number}-description-${index}`}>
                         {line}
-                        {index < step.description.length - 1 && <br />}
+                        {index < step.description.length - 1 && (
+                          <>
+                            {" "}
+                            <br className="hidden xl:inline" />
+                          </>
+                        )}
                       </span>
                     ))}
                   </p>

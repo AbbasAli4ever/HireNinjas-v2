@@ -35,36 +35,35 @@ const strategyItems = [
 
 export const GrowthStrategyOverviewSection = (): JSX.Element => {
   return (
-    <section className="w-full px-5 py-16 sm:px-8 lg:px-[90px] lg:py-20">
-      <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-12">
+    <section className="w-full px-2 py-12 sm:px-8 sm:py-16 md:px-4 lg:px-8 lg:py-20 xl:px-[90px]">
+      <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-8 sm:gap-10 lg:gap-12">
         <header className="flex w-full max-w-[760px] flex-col items-start gap-4">
           <div className="inline-flex items-center gap-2.5 rounded-[999px] border border-solid border-[#00000029] px-3.5 py-[7px]">
             <span className="flex h-1.5 w-1.5 items-start justify-center rounded-[3px] bg-[#6ce5b1]">
               <span className="h-1.5 w-1.5 rounded-[3px] bg-[#ffffff01] shadow-[0px_0px_0px_4px_#6ce5b12e]" />
             </span>
-            <p className="flex w-fit items-center whitespace-nowrap [font-family:'Inter',Helvetica] text-xs font-normal leading-[18px] tracking-[1.68px] text-black">
+            <p className="flex w-fit items-center whitespace-nowrap [font-family:'Inter',Helvetica] text-[9px] sm:text-xs font-normal leading-[18px] tracking-[1.68px] text-black">
               BUILD A SMARTER DIGITAL GROWTH ROADMAP
             </p>
           </div>
-          <h2 className="self-stretch font-h-2 text-[length:var(--h-2-font-size)] font-[number:var(--h-2-font-weight)] leading-[var(--h-2-line-height)] tracking-[var(--h-2-letter-spacing)] text-[#0f0a1f] [font-style:var(--h-2-font-style)]">
-            Strategy, tailored to commercial
-            <br />
-            goals not guesswork.
+          <h2 className="self-stretch text-[32px] leading-[1.15] tracking-[-1px] sm:text-[40px] sm:tracking-[-1.4px] lg:text-5xl xl:font-h-2 xl:text-[length:var(--h-2-font-size)] xl:font-[number:var(--h-2-font-weight)] xl:leading-[var(--h-2-line-height)] xl:tracking-[var(--h-2-letter-spacing)] text-[#0f0a1f] font-bold [font-family:'Satoshi-Bold',Helvetica] xl:[font-style:var(--h-2-font-style)]">
+            <span className="xl:block">Strategy, tailored to commercial </span>
+            <span className="xl:block">goals not guesswork.</span>
           </h2>
         </header>
-        <div className="grid w-full grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,530px)_minmax(0,1fr)] lg:gap-[60px]">
+        <div className="grid w-full grid-cols-1 items-start gap-8 xl:grid-cols-[minmax(0,530px)_minmax(0,1fr)] xl:gap-[60px]">
           <article className="flex w-full flex-col items-start gap-[15.3px]">
             {paragraphs.map((paragraph, index) => (
               <p
                 key={`paragraph-${index}`}
-                className="[font-family:'Montserrat',Helvetica] text-base font-normal leading-[25.6px] tracking-[0] text-[#3a3447]"
+                className="[font-family:'Montserrat',Helvetica] text-sm sm:text-base font-normal leading-[1.6] xl:leading-[25.6px] tracking-[0] text-[#3a3447]"
               >
                 {paragraph}
               </p>
             ))}
           </article>
           <Card className="w-full rounded-2xl border border-solid border-[#f0e2ff] bg-[linear-gradient(180deg,rgba(248,241,255,1)_0%,rgba(255,255,255,1)_100%)] shadow-none">
-            <CardContent className="flex flex-col gap-3 p-7">
+            <CardContent className="flex flex-col gap-3 p-2 sm:p-6 xl:p-7">
               {strategyItems.map((item) => (
                 <button
                   key={item.id}

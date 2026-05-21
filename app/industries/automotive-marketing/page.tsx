@@ -1,5 +1,5 @@
 import { IndustriesEducation } from "@/app/screens/IndustriesEducation/IndustriesEducation";
 
-export default function SaasTechPage() {
+export default function AutomotiveMarketingPage() {
   return <IndustriesEducation />;
 }

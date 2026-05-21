@@ -2,6 +2,6 @@
 
 import { DigitalMarketing } from "@/app/screens/DigitalMarketing";
 
-export default function DigitalMarketingStrategyPage() {
+export default function DigitalStrategyPage() {
   return <DigitalMarketing />;
 }

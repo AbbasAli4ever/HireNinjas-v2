@@ -1,5 +1,5 @@
 import { AiPoweredMarketing } from "@/app/screens/AiPoweredMarketing/AiPoweredMarketing";
 
-export default function AiPoweredMarketingPage() {
+export default function AiMarketingPage() {
   return <AiPoweredMarketing />;
 }

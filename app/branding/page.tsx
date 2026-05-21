@@ -2,6 +2,6 @@
 
 import { Branding } from "@/app/screens/Branding";
 
-export default function BrandingIdentityPage() {
+export default function BrandingPage() {
   return <Branding />;
 }

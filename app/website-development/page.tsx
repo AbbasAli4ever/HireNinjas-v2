@@ -2,6 +2,6 @@
 
 import { WebsiteAppScreen } from "@/app/screens/WebsiteAppScreen";
 
-export default function WebAppDevelopmentPage() {
+export default function WebsiteDevelopmentPage() {
   return <WebsiteAppScreen />;
 }
