@@ -30,7 +30,7 @@ export const VideoProduction = (): JSX.Element => {
         ))}
 
         <section className="w-full bg-[#FFFFFF] py-6 sm:py-8 md:py-10">
-          <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 md:px-8">
+          <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 md:px-8" >
             
               <GrowthCTASection />
            

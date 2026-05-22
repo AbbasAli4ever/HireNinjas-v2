@@ -11,7 +11,7 @@ const industryCards = [
       </>
     ),
     imageSrc:
-      "https://c.animaapp.com/mpaw8ml1N6JcQv/img/magnific-minimalistic-monochrome-i-2946479372-1.png",
+      "/lead-generation/real.svg",
     cardHeight: "min-h-[261px]",
     cardRotation: "rotate-[10deg]",
     imageWrapClass: "w-[150px] h-[115px]",
@@ -21,7 +21,7 @@ const industryCards = [
   {
     title: "Healthcare Providers & Clinics",
     imageSrc:
-      "https://c.animaapp.com/mpaw8ml1N6JcQv/img/magnific-minimalistic-monochrome-i-2946531379-1.png",
+      "/lead-generation/health.svg",
     cardHeight: "min-h-[261px]",
     cardRotation: "rotate-[5deg]",
     imageWrapClass: "w-[151px] h-[115px]",
@@ -31,7 +31,7 @@ const industryCards = [
   {
     title: "B2B Service Companies",
     imageSrc:
-      "https://c.animaapp.com/mpaw8ml1N6JcQv/img/magnific-minimalistic-monochrome-i-2946640160-1.png",
+      "/lead-generation/b2b.svg",
     cardHeight: "min-h-[261px]",
     cardRotation: "",
     imageWrapClass: "w-[149px] h-[115px]",
@@ -40,7 +40,7 @@ const industryCards = [
   {
     title: "SaaS & Tech Firms",
     imageSrc:
-      "https://c.animaapp.com/mpaw8ml1N6JcQv/img/magnific-minimalistic-monochrome-i-2946695405-1.png",
+      "/lead-generation/tech.svg",
     cardHeight: "min-h-[261px]",
     cardRotation: "rotate-[-5deg]",
     imageWrapClass: "w-[119px] h-[115px]",
@@ -50,7 +50,7 @@ const industryCards = [
   {
     title: "Education & Training Institutes",
     imageSrc:
-      "https://c.animaapp.com/mpaw8ml1N6JcQv/img/magnific-minimalistic-monochrome-i-2946668694-1.png",
+      "/lead-generation/education.svg",
     cardHeight: "min-h-[261px]",
     cardRotation: "rotate-[-10deg]",
     imageWrapClass: "w-[126px] h-[115px]",
@@ -61,21 +61,21 @@ const industryCards = [
 
 export const IndustryUseCaseSection = (): JSX.Element => {
   return (
-    <section className="relative w-full overflow-hidden bg-white px-4 py-12 sm:px-6 md:px-10 md:py-16 lg:px-16 xl:px-24">
+    <section className="relative w-full overflow-hidden bg-white px-4 py-10 sm:px-6 sm:py-12 md:px-10 md:py-16 lg:px-16 xl:px-24">
       <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center">
-        <header className="flex w-full max-w-[760px] flex-col items-center gap-[16.83px] text-center">
-          <Badge className="h-auto rounded-[999px] border border-[#f0e2ff] bg-[#f7f1ff] px-3.5 pb-[7.69px] pt-[7.5px] text-xs font-semibold tracking-[1.68px] text-[#8a39e4] hover:bg-[#f7f1ff] [font-family:'Montserrat',Helvetica]">
+        <header className="flex w-full max-w-[760px] flex-col items-center gap-3 text-center sm:gap-[16.83px]">
+          <Badge className="h-auto rounded-[999px] border border-[#f0e2ff] bg-[#f7f1ff] px-3.5 pb-[7.69px] pt-[7.5px] text-[10px] font-semibold tracking-[1.2px] text-[#8a39e4] hover:bg-[#f7f1ff] [font-family:'Montserrat',Helvetica] sm:text-xs sm:tracking-[1.68px]">
             INDUSTRIES WE GENERATE LEADS FOR
           </Badge>
-          <h2 className="w-full [font-family:'Satoshi-Bold',Helvetica] text-[32px] font-bold leading-[36px] tracking-[-0.64px] text-[#0f0a1f] sm:text-[38px] sm:leading-[42px] md:text-[46px] md:leading-[49.7px] md:tracking-[-0.92px]">
+          <h2 className="w-full [font-family:'Satoshi-Bold',Helvetica] text-[26px] font-bold leading-[32px] tracking-[-0.52px] text-[#0f0a1f] sm:text-[32px] sm:leading-[36px] sm:tracking-[-0.64px] md:text-[38px] md:leading-[42px] lg:text-[46px] lg:leading-[49.7px] lg:tracking-[-0.92px]">
             HireNinjas supports lead generation campaigns for:
           </h2>
         </header>
-        <div className="mt-10 grid w-full max-w-[980px] grid-cols-2 place-items-center gap-x-3 gap-y-6 sm:grid-cols-3 md:mt-14 md:flex md:flex-wrap md:items-start md:justify-center md:gap-0">
+        <div className="mt-8 grid w-full max-w-[980px] grid-cols-2 place-items-center gap-x-3 gap-y-5 sm:grid-cols-3 sm:mt-10 md:mt-14 md:flex md:flex-wrap md:items-start md:justify-center md:gap-0">
           {industryCards.map((card, index) => (
             <Card
               key={`industry-card-${index}`}
-              className={`w-[189px] border border-[#ece8f3] bg-white p-2 shadow-none ${card.cardHeight} ${card.cardRotation} ${
+              className={`w-[155px] border border-[#ece8f3] bg-white p-2 shadow-none sm:w-[175px] md:w-[189px] ${card.cardHeight} ${card.cardRotation} ${
                 index === 0 ? "md:mt-[23px]" : ""
               } ${index === 1 ? "md:mt-[8px] md:-ml-[16px]" : ""} ${
                 index === 2 ? "md:-ml-[16px] z-30" : ""
@@ -83,8 +83,8 @@ export const IndustryUseCaseSection = (): JSX.Element => {
                 index === 4 ? "md:mt-[25px] md:-ml-[16px] z-10" : ""
               } rounded-2xl`}
             >
-              <CardContent className="flex h-full flex-col items-start gap-2.5 p-0">
-                <div className="relative h-[195px] w-[173px] overflow-hidden rounded-2xl bg-[#f3f3f3]">
+              <CardContent className="flex h-full flex-col items-start gap-2 p-0 sm:gap-2.5">
+                <div className="relative h-[155px] w-full overflow-hidden rounded-2xl bg-[#f3f3f3] sm:h-[175px] md:h-[195px] md:w-[173px]">
                   <div
                     className={`relative left-1/2 top-1/2 ${card.imageWrapClass} -translate-x-1/2 -translate-y-1/2`}
                   >
@@ -102,7 +102,7 @@ export const IndustryUseCaseSection = (): JSX.Element => {
                     )}
                   </div>
                 </div>
-                <div className="flex flex-1 items-center justify-center self-stretch text-center [font-family:'Satoshi_Variable-Medium',Helvetica] text-base font-medium leading-[19.2px] tracking-[0] text-[#0f0a1f]">
+                <div className="flex flex-1 items-center justify-center self-stretch px-1 text-center [font-family:'Satoshi_Variable-Medium',Helvetica] text-[13px] font-medium leading-[1.4] tracking-[0] text-[#0f0a1f] sm:text-sm md:text-base md:leading-[19.2px]">
                   {card.title}
                 </div>
               </CardContent>

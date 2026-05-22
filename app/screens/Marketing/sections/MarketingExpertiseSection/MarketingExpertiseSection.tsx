@@ -21,8 +21,8 @@ const differentiators = [
 export const MarketingExpertiseSection = (): JSX.Element => {
   return (
     <section className="w-full bg-[#fafaff] border-y border-[#ece8f3]">
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start gap-[50px] px-6 py-[70px] sm:px-10 lg:px-[140px]">
-        <header className="flex w-full max-w-[760px] flex-col items-start gap-4">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start gap-8 px-5 py-10 sm:gap-[50px] sm:px-8 sm:py-14 lg:px-8 lg:py-[70px] xl:px-[140px]">
+        <header className="flex w-full max-w-[760px] flex-col items-start gap-3 sm:gap-4">
           <div className="inline-flex items-center gap-2.5 rounded-[999px] border border-solid border-[#00000029] px-3.5 py-[7px]">
             <span className="flex h-1.5 w-1.5 items-center justify-center rounded-[3px] bg-[#6ce5b1]">
               <span className="h-1.5 w-1.5 rounded-[3px] bg-[#ffffff01] shadow-[0px_0px_0px_4px_#6ce5b12e]" />
@@ -31,10 +31,9 @@ export const MarketingExpertiseSection = (): JSX.Element => {
               HIRING HIRENINJAS FOR MARKETING CONSULTATIONS
             </span>
           </div>
-          <h2 className="self-stretch font-satoshi text-[length:var(--h-2-font-size)] font-[number:var(--h-2-font-weight)] leading-[var(--h-2-line-height)] tracking-[var(--h-2-letter-spacing)] text-[#0f0a1f] [font-style:var(--h-2-font-style)]">
-            Senior expertise. Action-ready
-            <br />
-            output.
+          <h2 className="self-stretch font-satoshi text-[28px] font-bold leading-[34px] tracking-[-0.56px] text-[#0f0a1f] sm:text-[34px] sm:leading-[38px] sm:tracking-[-0.68px] md:text-[40px] md:leading-[44px] lg:text-[46px] lg:leading-[49.7px] lg:tracking-[-0.92px]">
+            <span className="inline xl:block">Senior expertise. Action-ready</span>{" "}
+            <span className="inline xl:block">output.</span>
           </h2>
         </header>
         <div className="w-full max-w-[1200px]">
@@ -44,19 +43,19 @@ export const MarketingExpertiseSection = (): JSX.Element => {
                 key={item.title}
                 className="h-full rounded-2xl border border-solid border-[#ece8f3] bg-white shadow-none"
               >
-                <CardContent className="flex h-full flex-col items-start gap-8 p-8">
-                  <div className="grid h-12 w-12 grid-cols-[48px] grid-rows-[48px] rounded-xl bg-[#f7f1ff]">
+                <CardContent className="flex h-full flex-col items-start gap-5 p-5 sm:gap-6 sm:p-6 lg:gap-8 lg:p-8">
+                  <div className="grid h-10 w-10 grid-cols-[40px] grid-rows-[40px] rounded-xl bg-[#f7f1ff] sm:h-11 sm:w-11 sm:grid-cols-[44px] sm:grid-rows-[44px] lg:h-12 lg:w-12 lg:grid-cols-[48px] lg:grid-rows-[48px]">
                     <img
-                      className="col-[1_/_2] row-[1_/_2] h-[22px] w-[22px] self-center justify-self-center"
+                      className="col-[1_/_2] row-[1_/_2] h-5 w-5 self-center justify-self-center sm:h-[22px] sm:w-[22px]"
                       alt="Component"
-                      src="https://c.animaapp.com/mpcclquhSkUmAZ/img/component-4-2.svg"
+                      src="/marketing/chat.svg"
                     />
                   </div>
-                  <div className="flex w-full flex-col items-start gap-4">
-                    <h3 className="font-satoshi text-[23px] font-bold leading-[27.6px] tracking-[-0.46px] text-[#0f0a1f]">
+                  <div className="flex w-full flex-col items-start gap-3 sm:gap-4">
+                    <h3 className="font-satoshi text-[18px] font-bold leading-[22px] tracking-[-0.36px] text-[#0f0a1f] sm:text-[20px] sm:leading-[24px] lg:text-[23px] lg:leading-[27.6px] lg:tracking-[-0.46px]">
                       {item.title}
                     </h3>
-                    <p className="font-montserrat text-[15px] font-normal leading-6 tracking-[0] text-[#3a3447]">
+                    <p className="font-montserrat text-[13px] font-normal leading-[1.6] tracking-[0] text-[#3a3447] sm:text-[14px] lg:text-[15px] lg:leading-6">
                       {item.description}
                     </p>
                   </div>

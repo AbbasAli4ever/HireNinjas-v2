@@ -5,32 +5,32 @@ const talentCards = [
   {
     title: "Front End Developer",
     availability: "Available · 48h",
-    avatar: "https://c.animaapp.com/mpccdn8iGwnAdb/img/background.png",
+    avatar: "/video/av.svg",
   },
   {
     title: "PPC Manager",
     availability: "Available · 72h",
-    avatar: "https://c.animaapp.com/mpccdn8iGwnAdb/img/background-1.png",
+    avatar: "/video/av1.svg",
   },
   {
     title: "UI/UX Designer",
     availability: "Available · 24h",
-    avatar: "https://c.animaapp.com/mpccdn8iGwnAdb/img/background-2.png",
+    avatar: "/video/av2.svg",
   },
   {
     title: "Full Stack Dev",
     availability: "Available · 48h",
-    avatar: "https://c.animaapp.com/mpccdn8iGwnAdb/img/background-3.png",
+    avatar: "/video/av3.svg",
   },
   {
     title: "SEO Specialist",
     availability: "Available · 24h",
-    avatar: "https://c.animaapp.com/mpccdn8iGwnAdb/img/background-5.png",
+    avatar: "/video/av4.svg",
   },
   {
     title: "Business Analyst",
     availability: "Available · 72h",
-    avatar: "https://c.animaapp.com/mpccdn8iGwnAdb/img/background-4.png",
+    avatar: "/video/av5.svg",
   },
 ];
 
@@ -47,25 +47,25 @@ const stats = [
 
 export const VideoHeroSection = (): JSX.Element => {
   return (
-    <section className="relative w-full overflow-hidden px-6 pb-20 pt-24 md:px-10 lg:px-[140px]">
+    <section className="relative w-full overflow-hidden px-5 pb-14 pt-14 sm:px-8 sm:pb-16 sm:pt-16 lg:px-8 lg:pb-20 lg:pt-24 xl:px-[140px]">
       <div className="pointer-events-none absolute left-[-10%] top-[-10%] h-[70%] w-[120%] blur-[10px] [background:radial-gradient(50%_50%_at_20%_30%,rgba(139,58,229,0.18)_0%,rgba(139,58,229,0)_60%),radial-gradient(50%_50%_at_85%_20%,rgba(189,140,255,0.35)_0%,rgba(189,140,255,0)_60%)]" />
-      <div className="relative mx-auto grid max-w-[1200px] items-center gap-10 lg:min-h-[620.77px] lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-16">
-        <header className="flex w-full flex-col items-start gap-[20.9px] self-center">
+      <div className="relative mx-auto grid max-w-[1200px] items-center gap-8 sm:gap-10 lg:min-h-[620.77px] lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-16">
+        <header className="flex w-full flex-col items-start gap-4 self-center sm:gap-[20.9px]">
           <div className="inline-flex items-center gap-2 rounded-[999px] border border-solid border-[#f0e2ff] bg-[#f7f1ff] px-3.5 pb-[7.69px] pt-[7.5px]">
             <span className="h-1.5 w-1.5 rounded-[3px] bg-[#8a39e4]" />
-            <span className="relative flex w-fit items-center whitespace-nowrap [font-family:'Montserrat',Helvetica] text-xs font-semibold leading-[19.2px] tracking-[1.68px] text-[#8a39e4]">
+            <span className="relative flex w-fit items-center whitespace-nowrap [font-family:'Montserrat',Helvetica] text-[10px] font-semibold leading-[19.2px] tracking-[1.2px] text-[#8a39e4] sm:text-xs sm:tracking-[1.68px]">
               CINEMATIC EXCELLENCE
             </span>
           </div>
           <div className="flex w-full flex-col items-start">
-            <h1 className="relative mt-[-1.00px] self-stretch text-[40px] font-bold leading-[44px] tracking-[-1.8px] text-[#0f0a1f] sm:text-[48px] sm:leading-[52px] lg:text-[56px] lg:leading-[61.6px] lg:tracking-[-2.52px]" style={{
+            <h1 className="relative mt-[-1.00px] self-stretch text-[32px] font-bold leading-[38px] tracking-[-1.2px] text-[#0f0a1f] sm:text-[42px] sm:leading-[48px] sm:tracking-[-1.8px] lg:text-[50px] lg:leading-[56px] lg:tracking-[-2px] xl:text-[56px] xl:leading-[61.6px] xl:tracking-[-2.52px]" style={{
                 fontFamily: '"Satoshi", Helvetica, sans-serif',}}>
-              Video Production <br />
-              Built for Impact
+              <span className="inline xl:block">Video Production</span>{" "}
+              <span className="inline xl:block">Built for Impact</span>
             </h1>
           </div>
-          <div className="relative flex w-full max-w-[667.29px] flex-col items-start">
-            <p className="relative mt-[-1.00px] flex self-stretch [font-family:'Montserrat',Helvetica] text-base font-normal leading-[26px] tracking-[0] text-[#3a3447] sm:text-lg sm:leading-[28.8px]">
+          <div className="relative flex w-full flex-col items-start xl:max-w-[667.29px]">
+            <p className="relative mt-[-1.00px] flex self-stretch [font-family:'Montserrat',Helvetica] text-[14px] font-normal leading-[1.6] tracking-[0] text-[#3a3447] sm:text-base sm:leading-[26px] lg:text-[17px] lg:leading-[28.8px]">
               Dubai-based cinematic video production services designed to
               reinforce brand storytelling, increase engagement, and support
               high-performing marketing campaigns.
@@ -73,15 +73,15 @@ export const VideoHeroSection = (): JSX.Element => {
           </div>
           <nav
             aria-label="Primary hero actions"
-            className="flex flex-wrap items-start gap-4 sm:gap-6"
+            className="flex w-full flex-col gap-3 pt-1 sm:w-auto sm:flex-row sm:items-center sm:gap-4 sm:pt-0"
           >
-            <Button className="h-12 rounded-[999px] bg-[#8b39e5] pl-[22px] pr-2 text-white hover:bg-[#7d31d6]">
-              <span className="inline-flex flex-col items-center pl-3.5">
-                <span className="[font-family:'Inter',Helvetica] text-[14.5px] font-medium leading-[normal] tracking-[0] text-center text-white">
+            <Button className="h-12 w-full justify-between rounded-[999px] bg-[#8b39e5] pl-[22px] pr-2 text-white hover:bg-[#7d31d6] sm:w-auto sm:justify-start">
+              <span className="inline-flex flex-1 items-center justify-center pl-3.5 sm:flex-none sm:justify-start">
+                <span className="[font-family:'Inter',Helvetica] text-[13.5px] font-medium leading-[normal] tracking-[0] text-white sm:text-[14.5px]">
                   Book a Free Consultation
                 </span>
               </span>
-              <span className="grid h-9 w-9 place-items-center rounded-[18px] bg-white">
+              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-[18px] bg-white">
                 <img
                   className="h-4 w-4"
                   alt="Component"
@@ -91,21 +91,21 @@ export const VideoHeroSection = (): JSX.Element => {
             </Button>
             <Button
               variant="outline"
-              className="h-12 rounded-[999px] border-[#8b39e529] px-[22px] py-3.5 [font-family:'Inter',Helvetica] text-[14.5px] font-medium leading-[normal] tracking-[0] text-[#8b39e5] hover:bg-[#f7f1ff] hover:text-[#8b39e5]"
+              className="h-12 w-full rounded-[999px] border-[#8b39e529] px-[22px] py-3.5 [font-family:'Inter',Helvetica] text-[13.5px] font-medium leading-[normal] tracking-[0] text-[#8b39e5] hover:bg-[#f7f1ff] hover:text-[#8b39e5] sm:w-auto sm:text-[14.5px]"
             >
               View Reel
             </Button>
           </nav>
-          <div className="flex w-full flex-wrap items-start gap-6 pt-1">
+          <div className="grid w-full grid-cols-2 gap-4 pt-1 sm:flex sm:flex-wrap sm:gap-6">
             {stats.map((stat) => (
               <div
                 key={stat.value}
-                className="flex min-w-[175px] flex-col border-l-2 border-[#d9bbff] pl-4"
+                className="flex flex-col border-l-2 border-[#d9bbff] pl-4 sm:min-w-[175px]"
               >
-                <div className="[font-family:'Satoshi-Bold',Helvetica] text-[22px] font-bold leading-[35.2px] tracking-[-0.44px] text-[#0f0a1f]">
+                <div className="[font-family:'Satoshi-Bold',Helvetica] text-[18px] font-bold leading-[28px] tracking-[-0.36px] text-[#0f0a1f] sm:text-[22px] sm:leading-[35.2px] sm:tracking-[-0.44px]">
                   {stat.value}
                 </div>
-                <div className="[font-family:'Montserrat',Helvetica] text-[13px] font-normal leading-[20.8px] tracking-[0] text-[#6b6478]">
+                <div className="[font-family:'Montserrat',Helvetica] text-[12px] font-normal leading-[19px] tracking-[0] text-[#6b6478] sm:text-[13px] sm:leading-[20.8px]">
                   {stat.label}
                 </div>
               </div>
@@ -113,9 +113,9 @@ export const VideoHeroSection = (): JSX.Element => {
           </div>
         </header>
         <aside className="relative self-center">
-          <Card className="relative w-full overflow-hidden rounded-2xl border border-solid border-[#f0e2ff] bg-[linear-gradient(180deg,rgba(248,241,255,1)_0%,rgba(255,255,255,1)_100%)] shadow-none lg:h-[512.38px]">
-            <CardContent className="relative p-[23px]">
-              <div className="grid grid-cols-2 gap-2.5 lg:grid-rows-[113.19px_113.19px_113.19px]">
+          <Card className="relative w-full overflow-hidden rounded-2xl border border-solid border-[#f0e2ff] bg-[linear-gradient(180deg,rgba(248,241,255,1)_0%,rgba(255,255,255,1)_100%)] shadow-none sm:max-w-[420px] sm:mx-auto lg:max-w-none lg:h-[460px] xl:h-[512.38px]">
+            <CardContent className="relative p-4 sm:p-[23px]">
+              <div className="grid grid-cols-2 gap-2 sm:gap-2.5 lg:grid-rows-[auto_auto_auto] xl:grid-rows-[113.19px_113.19px_113.19px]">
                 {talentCards.map((card, index) => {
                   const orderClasses =
                     index === 4

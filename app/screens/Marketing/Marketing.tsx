@@ -42,7 +42,7 @@ export const Marketing = (): JSX.Element => {
           aria-label="Brand strategy callouts"
           className="w-full bg-[#f5f5f5] py-6 sm:py-8 md:py-10"
         >
-          <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center gap-6 px-4 sm:px-6 md:gap-8 md:px-10 lg:px-[10%]">
+          <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center gap-6 px-4 sm:px-6 md:gap-8 md:px-8">
             {centeredSections.map((section) => (
               <Card
                 key={section.key}

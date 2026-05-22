@@ -11,7 +11,7 @@ const sectionOrder = [
   {
     key: "search",
     component: SearchIntelligenceSection,
-    wrapperClassName: "w-full px-8 md:px-10 lg:px-[31px] py-6 md:py-7",
+    wrapperClassName: "w-full px-4 sm:px-8 md:px-10 lg:px-[31px] py-4 sm:py-6 md:py-7",
     useCard: true,
   },
   {
@@ -22,19 +22,19 @@ const sectionOrder = [
   {
     key: "technical",
     component: TechnicalServicesSection,
-    wrapperClassName: "w-full px-8 md:px-10 lg:px-[31px] pt-6 md:pt-7",
+    wrapperClassName: "w-full px-4 sm:px-8 md:px-10 lg:px-[31px] pt-4 sm:pt-6 md:pt-7",
     useCard: true,
   },
   {
     key: "commerce",
     component: CommerceFocusSection,
-    wrapperClassName: "w-full px-8 md:px-10 lg:px-[31px] pt-6",
+    wrapperClassName: "w-full px-4 sm:px-8 md:px-10 lg:px-[31px] pt-4 sm:pt-6",
     useCard: true,
   },
   {
     key: "competitive",
     component: CompetitiveEdgeSection,
-    wrapperClassName: "w-full px-8 md:px-10 lg:px-[37px] py-12 md:py-14",
+    wrapperClassName: "w-full px-4 sm:px-8 md:px-10 lg:px-[37px] py-8 sm:py-12 md:py-14",
     useCard: true,
   },
 ];

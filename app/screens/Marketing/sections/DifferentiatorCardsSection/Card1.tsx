@@ -8,7 +8,7 @@ interface Card1Props {
 export const Card1 = ({ id, label, title, description }: Card1Props): JSX.Element => {
   return (
     <div
-      className="relative w-full overflow-hidden rounded-2xl border border-solid border-[#ece8f3] p-7"
+      className="relative w-full overflow-hidden rounded-2xl border border-solid border-[#ece8f3] p-5 sm:p-6 lg:p-7"
       style={{
         background:
           "linear-gradient(135deg, #fdfbff 0%, #f3ecff 55%, #ebe1ff 100%)",
@@ -22,11 +22,11 @@ export const Card1 = ({ id, label, title, description }: Card1Props): JSX.Elemen
           </p>
         </div>
         <div className="flex w-full flex-col items-start pb-0 pt-[3.99px]">
-          <h3 className="font-satoshi self-stretch text-[23px] font-bold leading-[27.6px] tracking-[-0.46px] text-[#0f0a1f]">
+          <h3 className="font-satoshi self-stretch text-[18px] font-bold leading-[22px] tracking-[-0.36px] text-[#0f0a1f] sm:text-[20px] sm:leading-[24px] lg:text-[23px] lg:leading-[27.6px] lg:tracking-[-0.46px]">
             {title}
           </h3>
         </div>
-        <p className="font-montserrat self-stretch text-[15px] font-normal leading-6 tracking-[0] text-[#3a3447]">
+        <p className="font-montserrat self-stretch text-[13px] font-normal leading-[1.6] tracking-[0] text-[#3a3447] sm:text-[14px] lg:text-[15px] lg:leading-6">
           {description}
         </p>
       </div>

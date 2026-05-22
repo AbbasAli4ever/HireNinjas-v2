@@ -41,7 +41,7 @@ const services = [
 
 export const ProductionServicesGridSection = (): JSX.Element => {
   return (
-    <section className="w-full border-y border-[#ece8f3] bg-white px-5 py-[70px] sm:px-8 lg:px-[140px]">
+    <section className="w-full border-y border-[#ece8f3] bg-white px-5 py-10 sm:px-8 sm:py-14 lg:px-8 lg:py-[70px] xl:px-[140px]">
       <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-12">
         <header className="flex w-full flex-col items-start gap-4">
           <div className="inline-flex items-center gap-2.5 rounded-[999px] border border-solid border-[#00000029] px-3.5 py-[7px]">
@@ -53,9 +53,9 @@ export const ProductionServicesGridSection = (): JSX.Element => {
             </span>
           </div>
           <div className="flex w-full flex-col items-start">
-            <h2 className="mt-[-1.00px] self-stretch [font-family:'Satoshi-Bold',Helvetica] text-[34px] font-bold leading-[38px] tracking-[-0.68px] text-[#0f0a1f] sm:text-[40px] sm:leading-[44px] sm:tracking-[-0.8px] lg:text-[46px] lg:leading-[49.7px] lg:tracking-[-0.92px]">
-              A complete production toolkit, <br />
-              assembled around your goals.
+            <h2 className="mt-[-1.00px] self-stretch [font-family:'Satoshi-Bold',Helvetica] text-[28px] font-bold leading-[34px] tracking-[-0.56px] text-[#0f0a1f] sm:text-[34px] sm:leading-[38px] sm:tracking-[-0.68px] md:text-[40px] md:leading-[44px] md:tracking-[-0.8px] lg:text-[46px] lg:leading-[49.7px] lg:tracking-[-0.92px]">
+              <span className="inline xl:block">A complete production toolkit,</span>{" "}
+              <span className="inline xl:block">assembled around your goals.</span>
             </h2>
           </div>
         </header>
@@ -65,12 +65,12 @@ export const ProductionServicesGridSection = (): JSX.Element => {
               key={service.title}
               className="relative overflow-hidden rounded-2xl border border-solid border-[#ece8f3] bg-white shadow-none"
             >
-              <CardContent className="flex h-full flex-col items-start gap-2.5 p-7">
+              <CardContent className="flex h-full flex-col items-start gap-2.5 p-5 sm:p-6 lg:p-7">
                 <div className="grid h-11 w-11 grid-cols-[44px] grid-rows-[44px] rounded-[11px] bg-[#f7f1ff]">
                   <img
                     className="relative col-[1_/_2] row-[1_/_2] h-[22px] w-[22px] self-center justify-self-center"
                     alt="Component"
-                    src="https://c.animaapp.com/mpccdn8iGwnAdb/img/component-4-1.svg"
+                    src="/video/chat.svg"
                   />
                 </div>
                 <div className="flex w-full flex-col items-start px-0 pb-[0.8px] pt-[7px]">
@@ -79,12 +79,12 @@ export const ProductionServicesGridSection = (): JSX.Element => {
                   </p>
                 </div>
                 <div className="flex w-full flex-col items-start px-0 pb-0 pt-[3.99px]">
-                  <h3 className="mt-[-1.00px] flex self-stretch items-center [font-family:'Satoshi-Bold',Helvetica] text-[23px] font-bold leading-[27.6px] tracking-[-0.46px] text-[#0f0a1f]">
+                  <h3 className="mt-[-1.00px] flex self-stretch items-center [font-family:'Satoshi-Bold',Helvetica] text-[18px] font-bold leading-[22px] tracking-[-0.36px] text-[#0f0a1f] sm:text-[20px] sm:leading-[24px] lg:text-[23px] lg:leading-[27.6px] lg:tracking-[-0.46px]">
                     {service.title}
                   </h3>
                 </div>
                 <div className="flex w-full flex-col items-start">
-                  <p className="mt-[-1.00px] flex self-stretch items-center [font-family:'Montserrat',Helvetica] text-[15px] font-normal leading-6 tracking-[0] text-[#3a3447]">
+                  <p className="mt-[-1.00px] flex self-stretch items-center [font-family:'Montserrat',Helvetica] text-[13px] font-normal leading-[1.6] tracking-[0] text-[#3a3447] sm:text-[14px] lg:text-[15px] lg:leading-6">
                     {service.description}
                   </p>
                 </div>

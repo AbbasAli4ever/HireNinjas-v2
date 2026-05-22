@@ -32,8 +32,8 @@ const workflowSteps = [
 export const WorkflowStepsSection = (): JSX.Element => {
   return (
     <section className="w-full bg-[#fafaff] border-y border-[#ece8f3]">
-      <div className="mx-auto flex w-full max-w-[1480px] flex-col items-start gap-12 px-6 py-[70px] sm:px-10 lg:px-[140px]">
-        <header className="flex w-full max-w-[760px] flex-col items-start gap-[17px]">
+      <div className="mx-auto flex w-full max-w-[1480px] flex-col items-start gap-8 px-5 py-10 sm:gap-10 sm:px-8 sm:py-14 lg:gap-12 lg:px-8 lg:py-[70px] xl:px-[140px]">
+        <header className="flex w-full max-w-[760px] flex-col items-start gap-3 sm:gap-[17px]">
           <Badge
             variant="outline"
             className="inline-flex h-auto items-center gap-2.5 rounded-[999px] border-[#00000029] bg-transparent px-3.5 py-[7px] hover:bg-transparent"
@@ -46,10 +46,9 @@ export const WorkflowStepsSection = (): JSX.Element => {
             </span>
           </Badge>
           <div className="w-full pb-[0.67px]">
-            <h2 className="[font-family:'Satoshi-Bold',Helvetica] text-[38px] font-bold leading-[42px] tracking-[-0.92px] text-[#0f0a1f] sm:text-[46px] sm:leading-[49.7px]">
-              Five steps from baseline
-              <br />
-              to final delivery.
+            <h2 className="[font-family:'Satoshi-Bold',Helvetica] text-[28px] font-bold leading-[34px] tracking-[-0.56px] text-[#0f0a1f] sm:text-[34px] sm:leading-[38px] sm:tracking-[-0.68px] md:text-[40px] md:leading-[44px] lg:text-[46px] lg:leading-[49.7px] lg:tracking-[-0.92px]">
+              <span className="inline xl:block">Five steps from baseline</span>{" "}
+              <span className="inline xl:block">to final delivery.</span>
             </h2>
           </div>
         </header>
