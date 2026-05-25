@@ -8,7 +8,7 @@ import { ValuePropositionSection } from "./sections/ValuePropositionSection";
 export const StaffAugmentation = (): JSX.Element => {
   return (
     <main
-      className="flex w-full min-w-full flex-col bg-white"
+      className="flex w-full flex-col bg-white"
       data-model-id="435:9183"
     >
       <StaffAugmentationHeroSection />

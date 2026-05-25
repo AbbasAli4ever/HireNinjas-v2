@@ -1,5 +1,5 @@
-import { IndustriesEducation } from "@/app/screens/IndustriesEducation/IndustriesEducation";
+import { EcommerceRetail } from "@/app/screens/EcommerceRetail/EcommerceRetail";
 
 export default function EcommerceMarketingPage() {
-  return <IndustriesEducation />;
+  return <EcommerceRetail />;
 }

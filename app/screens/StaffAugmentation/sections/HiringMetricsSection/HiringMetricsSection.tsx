@@ -34,32 +34,32 @@ const descriptionParagraphs = [
 
 export const HiringMetricsSection = (): JSX.Element => {
   return (
-    <section className="relative mt-[72px] w-full">
-      <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-12 px-6 py-0 md:px-10 lg:px-10">
-        <header className="flex w-full max-w-[760px] flex-col items-start gap-[16.99px]">
+    <section className="relative mt-12 w-full sm:mt-[72px]">
+      <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-10 px-4 py-0 sm:gap-12 sm:px-6 md:px-10 lg:px-10">
+        <header className="flex w-full max-w-[760px] flex-col items-start gap-4 sm:gap-[16.99px]">
           <Badge className="h-auto rounded-[999px] border border-[#f0e2ff] bg-magnolia px-3.5 pb-[7.69px] pt-[7.5px] font-montserrat-semibold-upper text-[length:var(--montserrat-semibold-upper-font-size)] font-[number:var(--montserrat-semibold-upper-font-weight)] tracking-[var(--montserrat-semibold-upper-letter-spacing)] text-purple-heart hover:bg-magnolia leading-[var(--montserrat-semibold-upper-line-height)] [font-style:var(--montserrat-semibold-upper-font-style)]">
             KEY STATS
           </Badge>
           <div className="flex w-full flex-col items-start pb-[0.67px] pt-0">
-            <h2 className="mt-[-1.00px] self-stretch [font-family:'Satoshi-Bold',Helvetica] text-[34px] font-bold leading-[38px] tracking-[-0.92px] text-ebony sm:text-[40px] sm:leading-[44px] lg:text-[46px] lg:leading-[49.7px]">
+            <h2 className="mt-[-1.00px] self-stretch [font-family:'Satoshi-Bold',Helvetica] text-[28px] font-bold leading-[34px] tracking-[-0.56px] text-ebony sm:text-[34px] sm:leading-[38px] sm:tracking-[-0.92px] md:text-[40px] md:leading-[44px] lg:text-[46px] lg:leading-[49.7px]">
               Fast, reliable hiring infrastructure.
             </h2>
           </div>
         </header>
-        <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid w-full grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
           {metricCards.map((metric) => (
             <Card
               key={metric.value}
               className="rounded-2xl border border-[#f0e2ff] bg-[linear-gradient(180deg,rgba(248,241,255,1)_0%,rgba(255,255,255,1)_100%)] shadow-none"
             >
-              <CardContent className="flex h-full flex-col items-start gap-2 p-7">
+              <CardContent className="flex h-full flex-col items-start gap-2 p-4 sm:p-7">
                 <div className="flex w-full flex-col items-start">
-                  <div className="mt-[-1.00px] self-stretch [font-family:'Satoshi-Bold',Helvetica] text-5xl font-bold leading-[48px] tracking-[-1.44px] text-purple-heart">
+                  <div className="mt-[-1.00px] self-stretch [font-family:'Satoshi-Bold',Helvetica] text-[36px] font-bold leading-[1.1] tracking-[-1.08px] text-purple-heart sm:text-5xl sm:leading-[48px] sm:tracking-[-1.44px]">
                     {metric.value}
                   </div>
                 </div>
                 <div className="flex w-full flex-col items-start">
-                  <p className="mt-[-1.00px] self-stretch font-montserrat-medium text-[length:var(--montserrat-medium-font-size)] font-[number:var(--montserrat-medium-font-weight)] leading-[var(--montserrat-medium-line-height)] tracking-[var(--montserrat-medium-letter-spacing)] text-tuna [font-style:var(--montserrat-medium-font-style)]">
+                  <p className="mt-[-1.00px] self-stretch font-montserrat-medium text-[13px] font-[number:var(--montserrat-medium-font-weight)] leading-[1.5] tracking-[var(--montserrat-medium-letter-spacing)] text-tuna sm:text-[length:var(--montserrat-medium-font-size)] sm:leading-[var(--montserrat-medium-line-height)] [font-style:var(--montserrat-medium-font-style)]">
                     {metric.label}
                   </p>
                 </div>
@@ -68,17 +68,17 @@ export const HiringMetricsSection = (): JSX.Element => {
           ))}
         </div>
         <div className="grid w-full grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,530px)_minmax(0,1fr)] lg:gap-[60px]">
-          <article className="flex w-full flex-col items-start gap-[15.48px]">
+          <article className="flex w-full flex-col items-start gap-4 sm:gap-[15.48px]">
             {descriptionParagraphs.map((paragraph) => (
               <div key={paragraph} className="flex w-full flex-col items-start">
-                <p className="mt-[-1.00px] self-stretch [font-family:'Montserrat',Helvetica] text-base font-normal leading-[25.6px] tracking-[0] text-tuna">
+                <p className="mt-[-1.00px] self-stretch [font-family:'Montserrat',Helvetica] text-[14px] font-normal leading-[1.6] tracking-[0] text-tuna sm:text-base sm:leading-[25.6px]">
                   {paragraph}
                 </p>
               </div>
             ))}
           </article>
           <Card className="w-full rounded-2xl border border-[#f0e2ff] bg-[linear-gradient(180deg,rgba(248,241,255,1)_0%,rgba(255,255,255,1)_100%)] shadow-none">
-            <CardContent className="flex flex-col items-start gap-3 p-7">
+            <CardContent className="flex flex-col items-start gap-3 p-4 sm:p-7">
               {processSteps.map((item) => (
                 <div
                   key={item.step}

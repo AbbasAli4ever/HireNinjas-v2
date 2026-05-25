@@ -1,5 +1,5 @@
-import { IndustriesEducation } from "@/app/screens/IndustriesEducation/IndustriesEducation";
+import { HospitalityAnd } from "@/app/screens/HospitalityAnd/HospitalityAnd";
 
 export default function HospitalityPage() {
-  return <IndustriesEducation />;
+  return <HospitalityAnd />;
 }

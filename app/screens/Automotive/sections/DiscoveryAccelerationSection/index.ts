@@ -1,0 +1,1 @@
+export {DiscoveryAccelerationSection} from "./DiscoveryAccelerationSection";

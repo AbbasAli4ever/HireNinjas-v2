@@ -11,11 +11,11 @@ const aiCapabilities = [
 
 export const AiIntegrationShowcaseSection = (): JSX.Element => {
   return (
-    <section className="w-full bg-white py-16 md:py-20 lg:py-24">
-      <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-10 px-6 md:px-8 lg:gap-12">
-        <div className="grid items-end gap-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(320px,0.92fr)] lg:gap-8">
-          <article className="flex flex-col items-start gap-8">
-            <header className="flex w-full max-w-[760px] flex-col items-start gap-4">
+    <section className="w-full bg-white py-10 sm:py-14 lg:py-24">
+      <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-8 px-5 sm:px-8 lg:gap-12 lg:px-8 xl:px-0">
+        <div className="grid items-end gap-8 xl:grid-cols-[minmax(0,1.08fr)_minmax(320px,0.92fr)] xl:gap-8">
+          <article className="flex flex-col items-start gap-6 sm:gap-8">
+            <header className="flex w-full max-w-[760px] flex-col items-start gap-3 sm:gap-4">
               <Badge
                 variant="outline"
                 className="inline-flex h-auto rounded-[999px] border border-[#00000029] bg-transparent px-3.5 py-[7px] text-black hover:bg-transparent"
@@ -27,11 +27,11 @@ export const AiIntegrationShowcaseSection = (): JSX.Element => {
                   TURN ARTIFICIAL INTELLIGENCE INTO A GROWTH ENGINE
                 </span>
               </Badge>
-              <h2 className="self-stretch font-h-2 text-[length:var(--h-2-font-size)] font-[number:var(--h-2-font-weight)] leading-[var(--h-2-line-height)] tracking-[var(--h-2-letter-spacing)] text-[#0f0a1f] [font-style:var(--h-2-font-style)] max-md:text-[40px] max-sm:text-[32px]">
+              <h2 className="self-stretch [font-family:'Satoshi-Bold',Helvetica] text-[28px] font-bold leading-[34px] tracking-[-0.56px] text-[#0f0a1f] sm:text-[34px] sm:leading-[38px] sm:tracking-[-0.68px] md:text-[40px] md:leading-[44px] lg:text-[46px] lg:leading-[49.7px] lg:tracking-[-0.92px]">
                 Practical, ROI-driven AI integration.
               </h2>
             </header>
-            <p className="max-w-[760px] self-stretch [font-family:'Montserrat',Helvetica] text-base font-normal leading-[25.6px] tracking-[0] text-[#3a3447]">
+            <p className="self-stretch [font-family:'Montserrat',Helvetica] text-[13px] font-normal leading-[1.6] tracking-[0] text-[#3a3447] sm:text-base sm:leading-[25.6px] xl:max-w-[760px]">
               HireNinjas provides growth-minded companies with practical,
               ROI-driven AI integration for their marketing systems, not
               experiments, but rather scalable automation that improves
@@ -51,7 +51,7 @@ export const AiIntegrationShowcaseSection = (): JSX.Element => {
             </p>
           </article>
           <Card className="rounded-2xl border border-[#f0e2ff] bg-[linear-gradient(180deg,rgba(248,241,255,1)_0%,rgba(255,255,255,1)_100%)] shadow-none">
-            <CardContent className="flex flex-col gap-3 p-7">
+            <CardContent className="flex flex-col gap-3 p-5 sm:p-6 lg:p-7">
               {aiCapabilities.map((item) => (
                 <button
                   key={item.title}

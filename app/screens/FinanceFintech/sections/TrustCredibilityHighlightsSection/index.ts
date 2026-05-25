@@ -1,0 +1,1 @@
+export {TrustCredibilityHighlightsSection} from "./TrustCredibilityHighlightsSection";

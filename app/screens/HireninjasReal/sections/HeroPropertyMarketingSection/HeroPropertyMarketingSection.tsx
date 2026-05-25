@@ -29,12 +29,12 @@ const statCards = [
       </>
     ),
     className: "right-2 top-6 sm:right-4 lg:-right-2 lg:top-5",
-    width: "w-[102px]",
+    width: "w-[122px]",
   },
   {
     title: "UNIT ABSORPTION",
     value: <>Faster</>,
-    className: "right-0 top-1/2 -translate-y-1/2 sm:right-2 lg:-right-10",
+    className: "right-0 top-[150px] -translate-y-1/2 sm:right-2 lg:right-0",
     width: "w-auto",
   },
   {
@@ -46,7 +46,7 @@ const statCards = [
   {
     title: "INVESTOR REACH",
     value: <>UAE · GCC · Intl</>,
-    className: "bottom-4 left-6 sm:left-10 lg:-left-24",
+    className: "bottom-4 left-6 sm:left-10 lg:left-12",
     width: "w-auto",
   },
 ];
@@ -81,7 +81,7 @@ const FloatingStatCard = ({
     className={`absolute z-10 ${className} ${width} rounded-xl border border-[#ece8f3] bg-white shadow-[0px_10px_24px_-22px_#140a282e]`}
   >
     <CardContent className="flex flex-col items-start gap-1 px-3.5 pb-[11.99px] pt-[11px]">
-      <div className="flex w-full items-center font-montserrat-semibold-upper text-[length:var(--montserrat-semibold-upper-font-size)] font-[number:var(--montserrat-semibold-upper-font-weight)] leading-[var(--montserrat-semibold-upper-line-height)] tracking-[var(--montserrat-semibold-upper-letter-spacing)] text-dolphin [font-style:var(--montserrat-semibold-upper-font-style)]">
+      <div className="flex w-full items-center [font-family:'Montserrat',Helvetica] text-[12px] font-[number:var(--montserrat-semibold-upper-font-weight)] leading-[var(--montserrat-semibold-upper-line-height)] tracking-[var(--montserrat-semibold-upper-letter-spacing)] text-dolphin [font-style:var(--montserrat-semibold-upper-font-style)]">
         {title}
       </div>
       {image ? (
@@ -107,7 +107,7 @@ export const HeroPropertyMarketingSection = (): JSX.Element => {
         <div className="absolute left-[-10%] top-[-21.5%] h-[150.51%] w-[120%] blur-[10px] [background:radial-gradient(50%_50%_at_20%_30%,rgba(139,58,229,0.18)_0%,rgba(139,58,229,0)_60%),radial-gradient(50%_50%_at_85%_20%,rgba(189,140,255,0.35)_0%,rgba(189,140,255,0)_60%)]" />
       </div>
       
-      <div className="relative z-10 mx-auto grid w-full max-w-[1440px] grid-cols-1 gap-10 px-4 pb-12 pt-10 sm:px-6 md:pt-14 lg:grid-cols-[minmax(0,1fr)_469px] lg:gap-14 lg:px-[140px] lg:pb-[93px] lg:pt-[78px]">
+      <div className="relative z-10 mx-auto items-center grid w-full max-w-[1440px] grid-cols-1 gap-10 px-4 pb-12 pt-10 sm:px-6 md:pt-14 lg:grid-cols-[minmax(0,1fr)_469px] lg:gap-14 lg:px-[140px] lg:pb-[93px] lg:pt-[78px]">
         <div className="flex flex-col items-start gap-[20.9px]">
           <div className="inline-flex items-center gap-2.5 rounded-[999px] border border-[#00000029] px-3.5 py-[7px]">
             <div className="flex h-1.5 w-1.5 items-start justify-center rounded-[3px] bg-[#6ce5b1]">
@@ -118,11 +118,42 @@ export const HeroPropertyMarketingSection = (): JSX.Element => {
             </div>
           </div>
           <div className="w-full max-w-[607px]">
-            <img
-              className="h-auto w-full"
-              alt="Real estate marketing that drives showroom visits and site tours"
-              src="https://c.animaapp.com/mpdwd6sgQyTogJ/img/real-estate-marketing-that-drives-showroom-visits-and-site-tours.svg"
-            />
+            
+            <header className="flex w-full flex-col items-start pb-[0.6px] xl:max-w-[600px]">
+            <h1
+              style={{
+                fontFamily: '"Satoshi", Helvetica, sans-serif',
+                fontWeight: 700,
+                lineHeight: "110%",
+                letterSpacing: "-1.5px",
+              }}
+              className="text-[34px] sm:text-[42px] md:text-[50px] lg:text-[56px] lg:[letter-spacing:-2.52px]"
+            >
+              <span style={{ color: "#0F0A1F" }}>
+                Real Estate Marketing That Drives{" "}
+              </span>
+               <span
+                style={{
+                  background: "linear-gradient(101deg, #8B3AE5 0%, #591F97 60%, #0F0A1F 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+                Showroom{" "}
+              </span>
+                <span
+                style={{
+                  background: "linear-gradient(101deg, #8B3AE5 0%, #591F97 60%, #0F0A1F 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+                Visits and Site Tours
+              </span>
+            </h1>
+          </header>
           </div>
           <div className="w-full max-w-[667.29px]">
             <p className="[font-family:'Montserrat',Helvetica] text-lg font-normal leading-[28.8px] tracking-[0] text-tuna">
@@ -157,10 +188,10 @@ export const HeroPropertyMarketingSection = (): JSX.Element => {
                   index > 0 ? "sm:border-l-2" : "border-l-2"
                 }`}
               >
-                <h3 className="font-satoshi-bold text-[length:var(--satoshi-bold-font-size)] font-[number:var(--satoshi-bold-font-weight)] leading-[var(--satoshi-bold-line-height)] tracking-[var(--satoshi-bold-letter-spacing)] text-ebony [font-style:var(--satoshi-bold-font-style)]">
+                <h3 className="font-satoshi text-[18px] font-bold leading-[28px] tracking-[-0.36px] text-[#0f0a1f] sm:text-[22px] sm:leading-[35.2px] sm:tracking-[-0.44px]">
                   {item.title}
                 </h3>
-                <p className="max-w-[170px] font-montserrat-regular text-[length:var(--montserrat-regular-font-size)] font-[number:var(--montserrat-regular-font-weight)] leading-[var(--montserrat-regular-line-height)] tracking-[var(--montserrat-regular-letter-spacing)] text-dolphin [font-style:var(--montserrat-regular-font-style)]">
+                <p className="font-montserrat text-[12px] font-normal leading-[19px] tracking-[0] text-[#6b6478] sm:text-[13px] sm:leading-[20.8px]">
                   {item.description}
                 </p>
               </div>
@@ -168,7 +199,7 @@ export const HeroPropertyMarketingSection = (): JSX.Element => {
           </div>
         </div>
         <div className="relative mx-auto w-full max-w-[469px] lg:mx-0">
-          <div className="relative h-[437px] overflow-visible rounded-3xl border border-[#ece8f3] [background:radial-gradient(50%_50%_at_0%_0%,rgba(248,241,255,1)_0%,rgba(255,255,255,1)_60%)]">
+          <div className="relative h-[437px] overflow-visible">
             <img
               className="absolute left-0 top-0 h-[100.69%] w-full"
               alt="Tower chart"

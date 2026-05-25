@@ -9,34 +9,28 @@ const brandItems = [
 ];
 export const BrandIdentityPreviewSection = (): JSX.Element => {
   return (
-    <section className="w-full bg-white py-[70px]">
-      <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-8 px-6 lg:gap-12">
-        <div className="grid w-full items-end gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(320px,0.9fr)]">
-          <article className="flex flex-col items-start justify-center gap-8">
-            <header className="flex w-full max-w-[760px] flex-col items-start gap-4">
+    <section className="w-full bg-white py-10 sm:py-14 lg:py-[70px]">
+      <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-8 px-5 sm:px-8 lg:gap-12 lg:px-8 xl:px-0">
+        <div className="grid w-full items-end gap-8 xl:grid-cols-[minmax(0,1.1fr)_minmax(320px,0.9fr)]">
+          <article className="flex flex-col items-start justify-center gap-6 sm:gap-8">
+            <header className="flex w-full max-w-[760px] flex-col items-start gap-3 sm:gap-4">
               <Badge
                 variant="outline"
-                className="inline-flex h-auto items-center gap-2.5 rounded-[999px] border border-solid border-[#00000029]
-bg-transparent px-3.5 py-[7px] hover:bg-transparent"
+                className="inline-flex h-auto items-center gap-2.5 rounded-[999px] border border-solid border-[#00000029] bg-transparent px-3.5 py-[7px] hover:bg-transparent"
               >
                 <span className="flex h-1.5 w-1.5 items-center justify-center rounded-[3px] bg-[#6ce5b1]">
                   <span className="h-1.5 w-1.5 rounded-[3px] bg-[#ffffff01] shadow-[0px_0px_0px_4px_#6ce5b12e]" />
                 </span>
-                <span className="font-inter text-xs font-normal tracking-[1.68px] leading-[18px] textblack">
+                <span className="font-inter text-xs font-normal tracking-[1.68px] leading-[18px] text-black">
                   BUILD A BRAND THAT STANDS OUT AND SCALES
                 </span>
               </Badge>
-              <h2
-                className="self-stretch text-[length:var(--h-2-font-size)] font-[number:var(--h-2-font-weight)]
-leading-[var(--h-2-line-height)] tracking-[var(--h-2-letter-spacing)] font-satoshi text-[#0f0a1f] [font-style:var(--h-2-fontstyle)]"
-              >
-                Clarity in design. <br /> Credibility in market.
+              <h2 className="self-stretch font-satoshi text-[28px] font-bold leading-[34px] tracking-[-0.56px] text-[#0f0a1f] sm:text-[34px] sm:leading-[38px] sm:tracking-[-0.68px] md:text-[40px] md:leading-[44px] lg:text-[46px] lg:leading-[49.7px] lg:tracking-[-0.92px]">
+                <span className="inline xl:block">Clarity in design.</span>{" "}
+                <span className="inline xl:block">Credibility in market.</span>
               </h2>
             </header>
-            <div
-              className="self-stretch font-montserrat text-base font-normal leading-[25.6px]
-tracking-[0] text-[#3a3447]"
-            >
+            <div className="self-stretch font-montserrat text-[13px] font-normal leading-[1.6] tracking-[0] text-[#3a3447] sm:text-base sm:leading-[25.6px]">
               <p>
                 HireNinjas&#39; strategic branding solutions help businesses
                 across Dubai, Abu Dhabi, and the wider UAE stand out and scale.
@@ -57,8 +51,8 @@ tracking-[0] text-[#3a3447]"
               </p>
             </div>
           </article>
-          <Card className="rounded-2xl border border-solid border-[#f0e2ff] bg-[lineargradient(180deg,rgba(248,241,255,1)_0%,rgba(255,255,255,1)_100%)] shadow-none">
-            <CardContent className="flex flex-col gap-3 p-7">
+          <Card className="rounded-2xl border border-solid border-[#f0e2ff] bg-[linear-gradient(180deg,rgba(248,241,255,1)_0%,rgba(255,255,255,1)_100%)] shadow-none">
+            <CardContent className="flex flex-col gap-3 p-5 sm:p-6 lg:p-7">
               {brandItems.map((item) => (
                 <button
                   key={item.title}

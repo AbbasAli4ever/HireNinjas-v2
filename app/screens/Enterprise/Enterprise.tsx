@@ -15,7 +15,7 @@ const sectionOrder = [
   {
     id: "structured-demand",
     component: StructuredDemandSection,
-    wrapperClassName: "relative w-full px-[8%]",
+    wrapperClassName: "relative w-full",
   },
   {
     id: "engagement-process",
@@ -25,7 +25,7 @@ const sectionOrder = [
   {
     id: "staff-augmentation-services",
     component: StaffAugmentationServicesSection,
-    wrapperClassName: "relative w-full px-[8%]",
+    wrapperClassName: "relative w-full",
   },
   {
     id: "staff-augmentation-benefits",
@@ -35,7 +35,7 @@ const sectionOrder = [
   {
     id: "talent-cta",
     component: TalentCTASection,
-    wrapperClassName: "relative w-full px-[10%]",
+    wrapperClassName: "relative w-full",
   },
 ];
 

@@ -1,0 +1,1 @@
+export {LeadGenerationHeroSection} from "./LeadGenerationHeroSection";

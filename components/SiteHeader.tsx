@@ -248,7 +248,7 @@ export const SiteHeader = () => {
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden min-w-0 flex-1 items-center justify-center xl:flex">
+        <nav className="hidden min-w-0 flex-1 items-center justify-center lg:flex">
           <NavigationMenu
             className="max-w-none"
             value={openMenu}
@@ -315,6 +315,16 @@ export const SiteHeader = () => {
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
+              {/* Pricing */}
+              <NavigationMenuItem>
+                <Link
+                  href="/packages"
+                  className="h-auto [font-family:'Montserrat',Helvetica] text-sm font-medium leading-[22.4px] text-[#3a3447] hover:text-[#0f0a1f]"
+                >
+                  Pricing
+                </Link>
+              </NavigationMenuItem>
+
               {/* Consult */}
               <NavigationMenuItem>
                 <Link
@@ -341,7 +351,7 @@ export const SiteHeader = () => {
         {/* Desktop CTA */}
         <Button
           asChild
-          className="hidden h-auto shrink-0 rounded-[999px] bg-[#8b39e5] py-2 pr-2 pl-[22px] hover:bg-[#7f31d7] xl:flex"
+          className="hidden h-auto shrink-0 rounded-[999px] bg-[#8b39e5] py-2 pr-2 pl-[22px] hover:bg-[#7f31d7] lg:flex"
         >
           <Link href="/contact">
             <span className="inline-flex items-center pl-3.5 [font-family:'Inter',Helvetica] text-[14.5px] font-medium text-white">
@@ -363,7 +373,7 @@ export const SiteHeader = () => {
         <button
           type="button"
           onClick={() => setMobileOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center rounded-lg text-[#3a3447] transition-colors hover:bg-[#f7f1ff] xl:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-lg text-[#3a3447] transition-colors hover:bg-[#f7f1ff] lg:hidden"
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
           {mobileOpen ? (
@@ -402,7 +412,7 @@ export const SiteHeader = () => {
 
       {/* Mobile Drawer */}
       {mobileOpen && (
-        <div className="border-t border-[#ece8f3] bg-white xl:hidden">
+        <div className="border-t border-[#ece8f3] bg-white lg:hidden">
           <nav className="mx-auto max-w-[1480px] px-4 py-4 sm:px-6">
             {/* Services accordion */}
             <div className="border-b border-[#f0edf8]">
@@ -511,6 +521,13 @@ export const SiteHeader = () => {
             </div>
 
             {/* Plain links */}
+            <Link
+              href="/packages"
+              onClick={() => setMobileOpen(false)}
+              className="block border-b border-[#f0edf8] py-3.5 [font-family:'Montserrat',Helvetica] text-sm font-medium text-[#3a3447] hover:text-[#0f0a1f]"
+            >
+              Pricing
+            </Link>
             <Link
               href="/contact"
               onClick={() => setMobileOpen(false)}

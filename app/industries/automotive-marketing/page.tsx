@@ -1,5 +1,5 @@
-import { IndustriesEducation } from "@/app/screens/IndustriesEducation/IndustriesEducation";
+import { Automotive } from "@/app/screens/Automotive/Automotive";
 
 export default function AutomotiveMarketingPage() {
-  return <IndustriesEducation />;
+  return <Automotive />;
 }

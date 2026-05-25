@@ -1,0 +1,1 @@
+export {IndustryServiceOfferingSection} from "./IndustryServiceOfferingSection";

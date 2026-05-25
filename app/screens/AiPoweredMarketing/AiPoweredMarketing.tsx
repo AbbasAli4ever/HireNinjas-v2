@@ -26,7 +26,7 @@ export const AiPoweredMarketing = (): JSX.Element => {
       <IntegratedGrowthHighlightsSection />
       <AiServicesBenefitGridSection />
       <section className="w-full bg-white py-5 sm:py-6 md:py-8">
-        <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-6 px-5 sm:px-8 md:px-10 lg:px-12">
+        <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-6 px-5 sm:px-8 md:px-8 lg:px-8 xl:px-12">
           {insetSections.map((section) => (
             <Card
               key={section.key}

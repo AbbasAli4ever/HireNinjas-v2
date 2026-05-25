@@ -1,0 +1,1 @@
+export {HeroValuePropositionSection} from "./HeroValuePropositionSection";
