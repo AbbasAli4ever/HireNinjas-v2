@@ -7,6 +7,7 @@ const serviceCards = [
     number: "02",
     title: "Paid Ads , Google & Meta",
     description: ["Performance media built around clean attribution", "and incremental lift, not vanity clicks."],
+    href: "/seo-ppc",
   },
   {
     number: "02",
@@ -17,11 +18,13 @@ const serviceCards = [
     number: "03",
     title: "Social Media Growth",
     description: ["Editorial calendars and creator partnerships that", "move beyond posts into pipeline."],
+    href: "/social-media",
   },
   {
     number: "04",
     title: "Content & Brand Positioning",
     description: ["Narrative, messaging and assets that turn", "category complexity into a clear story."],
+    href: "/branding",
   },
   {
     number: "05",
@@ -32,6 +35,7 @@ const serviceCards = [
     number: "06",
     title: "Marketing Team Augmentation",
     description: ["Senior operators embedded into your team ,", "strategy, ops or hands-on execution."],
+    href: "/staff-augmentation",
   },
 ];
 
@@ -74,13 +78,23 @@ export const PerformanceDrivenDigitalMarketingServicesSection = () => {
                     </span>
                   ))}
                 </p>
-                <button
-                  type="button"
-                  className="mt-auto inline-flex h-[38px] w-[38px] items-center justify-center rounded-[19px] border border-solid border-[#14101f14] bg-white transition-colors hover:bg-[#faf7ff]"
-                  aria-label={service.title}
-                >
-                  <Image width={16} height={16} alt="Arrow" src="/figmaAssets/arrow.svg" className="h-4 w-4" />
-                </button>
+                {service.href ? (
+                  <a
+                    href={service.href}
+                    className="mt-auto inline-flex h-[38px] w-[38px] items-center justify-center rounded-[19px] border border-solid border-[#14101f14] bg-white transition-colors hover:bg-[#faf7ff]"
+                    aria-label={service.title}
+                  >
+                    <Image width={16} height={16} alt="Arrow" src="/figmaAssets/arrow.svg" className="h-4 w-4" />
+                  </a>
+                ) : (
+                  <button
+                    type="button"
+                    className="mt-auto inline-flex h-[38px] w-[38px] items-center justify-center rounded-[19px] border border-solid border-[#14101f14] bg-white transition-colors hover:bg-[#faf7ff]"
+                    aria-label={service.title}
+                  >
+                    <Image width={16} height={16} alt="Arrow" src="/figmaAssets/arrow.svg" className="h-4 w-4" />
+                  </button>
+                )}
               </CardContent>
             </Card>
           ))}

@@ -1,3 +1,4 @@
+import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -78,7 +79,7 @@ const serviceCards = [
     description: [
       "Monthly performance reports provide clear metrics on engagement growth,",
       "reach, conversions, campaign effectiveness and campaign strategy, giving you",
-      "a deeper understanding of results. At Marketing Expertise we offer full service",
+      <>a deeper understanding of results. <a href="/" className="hover:underline font-medium">At Marketing Expertise</a> we offer full service</>,
       "management across several platforms for UAE Businesses.",
     ],
     icon: "/social-media/stat.svg",

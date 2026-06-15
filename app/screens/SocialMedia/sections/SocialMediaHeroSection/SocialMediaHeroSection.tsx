@@ -80,23 +80,25 @@ export const SocialMediaHeroSection = (): JSX.Element => {
             </p>
           </div>
           <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
-            <Button
-              type="button"
-              className="h-auto w-full justify-between rounded-[999px] bg-[#8b39e5] py-1.5 pl-[22px] pr-2 hover:bg-[#7d2fd1] sm:w-auto sm:justify-start sm:py-2"
-            >
-              <span className="inline-flex flex-1 items-center justify-center py-0 pl-3.5 pr-0 sm:flex-none sm:justify-start">
-                <span className="[font-family:'Inter',Helvetica] text-[13.5px] font-medium leading-[normal] tracking-[0] text-white sm:text-[14.5px]">
-                  Book a Free Consultation
+            <a href="/contact" className="w-full sm:w-auto">
+              <Button
+                type="button"
+                className="h-auto w-full justify-between rounded-[999px] bg-[#8b39e5] py-1.5 pl-[22px] pr-2 hover:bg-[#7d2fd1] sm:w-auto sm:justify-start sm:py-2"
+              >
+                <span className="inline-flex flex-1 items-center justify-center py-0 pl-3.5 pr-0 sm:flex-none sm:justify-start">
+                  <span className="[font-family:'Inter',Helvetica] text-[13.5px] font-medium leading-[normal] tracking-[0] text-white sm:text-[14.5px]">
+                    Book a Free Consultation
+                  </span>
                 </span>
-              </span>
-              <span className="ml-3 grid h-9 w-9 shrink-0 place-items-center rounded-[18px] bg-white">
-                <img
-                  className="h-4 w-4"
-                  alt="Arrow icon"
-                  src="https://c.animaapp.com/mp6yzze1tTdE4q/img/component-2.svg"
-                />
-              </span>
-            </Button>
+                <span className="ml-3 grid h-9 w-9 shrink-0 place-items-center rounded-[18px] bg-white">
+                  <img
+                    className="h-4 w-4"
+                    alt="Arrow icon"
+                    src="https://c.animaapp.com/mp6yzze1tTdE4q/img/component-2.svg"
+                  />
+                </span>
+              </Button>
+            </a>
             <Button
               type="button"
               variant="outline"

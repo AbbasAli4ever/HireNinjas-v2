@@ -11,7 +11,7 @@ const narrativePoints = [
 
 export const BuyerFocusNarrativeSection = (): JSX.Element => {
   return (
-    <section className="relative w-full px-4 py-0 sm:px-6 lg:px-10">
+    <section className="relative w-full px-4 py-8 sm:px-6 sm:py-10 lg:px-0 xl:px-10 lg:py-0">
       <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-12">
         <header className="flex w-full max-w-[760px] flex-col items-start gap-[16.83px]">
           <Badge
@@ -26,50 +26,18 @@ export const BuyerFocusNarrativeSection = (): JSX.Element => {
             </span>
           </Badge>
           <div className="flex w-full flex-col items-start">
-            <h2 className="mt-[-1.00px] self-stretch font-h-2 text-[36px] font-[number:var(--h-2-font-weight)] leading-[var(--h-2-line-height)] tracking-[var(--h-2-letter-spacing)] text-[#0f0a1f] [font-style:var(--h-2-font-style)] sm:text-[42px] lg:text-[length:var(--h-2-font-size)]">
-              Built for serious buyers
-              <br />— not low-quality leads.
+            <h2 className="mt-[-1.00px] self-stretch [font-family:'Satoshi-Bold',Helvetica] text-[28px] font-bold leading-[1.2] tracking-[-0.56px] text-[#0f0a1f] sm:text-[36px] sm:tracking-[-0.72px] md:text-[42px] lg:text-[46px] lg:leading-[49.7px] lg:tracking-[-0.92px]">
+              Built for serious buyers — not low-quality leads.
             </h2>
           </div>
         </header>
         <div className="grid w-full grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-[60px]">
           <article className="flex h-fit w-full max-w-[530px] flex-col items-start gap-4">
-            <p className="mt-[-1.00px] self-stretch [font-family:'Montserrat',Helvetica] text-base font-normal leading-[25.6px] tracking-[0] text-tuna">
-              Dubai is an increasingly fast-moving real estate market, and
-              <br />
-              competition for buyer attention can be fierce, particularly across
-              <br />
-              off-plan launches, investor campaigns, and premium residential
-              <br />
-              developments. HireNinjas helps developers, brokerages, and real
-              <br />
-              estate agencies attract qualified buyer enquiries instead of low-
-              <br />
-              quality leads through structured marketing systems tailored
-              <br />
-              specifically for them.
+            <p className="mt-[-1.00px] self-stretch [font-family:'Montserrat',Helvetica] text-[14px] font-normal leading-[1.6] tracking-[0] text-tuna sm:text-base sm:leading-[25.6px]">
+              Dubai is an increasingly fast-moving real estate market, and competition for buyer attention can be fierce, particularly across off-plan launches, investor campaigns, and premium residential developments. HireNinjas helps developers, brokerages, and real estate agencies attract qualified buyer enquiries instead of low-quality leads through structured marketing systems tailored specifically for them.
             </p>
-            <p className="mt-[-1.00px] self-stretch [font-family:'Montserrat',Helvetica] text-base font-normal leading-[25.6px] tracking-[0] text-tuna">
-              HireNinjas&#39; campaigns combine property lead generation
-              funnels,
-              <br />
-              paid acquisition across Google and Meta, video marketing
-              <br />
-              strategies that reach serious buyers both locally and globally,
-              <br />
-              search visibility optimization services and international investor
-              <br />
-              targeting strategies in order to reach serious buyers locally and
-              <br />
-              globally. Because HireNinjas also supports global hiring and
-              <br />
-              marketing execution teams, real estate organisations across
-              <br />
-              Dubai, Abu Dhabi and international investment corridors can
-              <br />
-              scale campaign performance quickly without increasing internal
-              <br />
-              overhead costs.
+            <p className="mt-[-1.00px] self-stretch [font-family:'Montserrat',Helvetica] text-[14px] font-normal leading-[1.6] tracking-[0] text-tuna sm:text-base sm:leading-[25.6px]">
+              HireNinjas&#39; campaigns combine property lead generation funnels, paid acquisition across Google and Meta, video marketing strategies that reach serious buyers both locally and globally, search visibility optimization services and international investor targeting strategies in order to reach serious buyers locally and globally. Because HireNinjas also supports global hiring and marketing execution teams, real estate organisations across Dubai, Abu Dhabi and international investment corridors can scale campaign performance quickly without increasing internal overhead costs.
             </p>
           </article>
           <Card className="w-full rounded-2xl border border-solid border-[#f0e2ff] bg-[linear-gradient(180deg,rgba(248,241,255,1)_0%,rgba(255,255,255,1)_100%)] p-7 shadow-none">

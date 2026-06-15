@@ -1,11 +1,17 @@
+import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
-const sectionContent = {
+const sectionContent: { eyebrow: string; title: string; description: React.ReactNode } = {
   eyebrow: "AI MARKETING SOLUTIONS THAT SCALE WITH YOUR TEAM",
   title: "Real workflows, not just tool experiments.",
-  description:
-    "Many companies experiment with artificial intelligence tools but struggle to integrate them into real workflows. HireNinjas provides structured AI marketing systems for growing organisations, aligning automation with recruitment, operations and campaign execution to ensure your marketing grows with the team across Dubai, the UAE and global markets.",
+  description: (
+    <>
+      {"Many companies experiment with artificial intelligence tools but struggle to integrate them into real workflows. HireNinjas provides "}
+      <a href="/" className="hover:underline font-medium">structured AI marketing</a>
+      {" systems for growing organisations, aligning automation with recruitment, operations and campaign execution to ensure your marketing grows with the team across Dubai, the UAE and global markets."}
+    </>
+  ),
 };
 
 export const GrowthSystemsCtaSection = (): JSX.Element => {

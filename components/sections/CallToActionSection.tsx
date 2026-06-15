@@ -30,18 +30,20 @@ export const CallToActionSection = () => {
                 No matter the situation, whether you are hiring talent or expanding brand recognition in Dubai and Abu Dhabi, our services help you move faster with confidence.
               </p>
               <nav aria-label="Call to action" className="flex w-full flex-col items-center gap-3 sm:w-auto sm:flex-row sm:gap-6">
-                <Button type="button" className="h-auto w-full rounded-[999px] bg-white py-1.5 pl-[22px] pr-2 text-[#14101f] hover:bg-white/95 sm:w-auto">
-                  <span className="inline-flex items-center gap-3">
-                    <span className="inline-flex flex-col items-center pl-3.5">
-                      <span className="[font-family:'Inter',Helvetica] text-[14.5px] font-medium leading-[normal] tracking-[0] text-center text-[#14101f]">
-                        Book consultation
+                <a href="/contact" className="w-full sm:w-auto">
+                  <Button type="button" className="h-auto w-full rounded-[999px] bg-white py-1.5 pl-[22px] pr-2 text-[#14101f] hover:bg-white/95 sm:w-auto">
+                    <span className="inline-flex items-center gap-3">
+                      <span className="inline-flex flex-col items-center pl-3.5">
+                        <span className="[font-family:'Inter',Helvetica] text-[14.5px] font-medium leading-[normal] tracking-[0] text-center text-[#14101f]">
+                          Book consultation
+                        </span>
+                      </span>
+                      <span className="grid h-9 w-9 place-items-center rounded-[18px] bg-[#3a0d8c]">
+                        <Image width={16} height={16} alt="Arrow" src="/figmaAssets/arrow-white.svg" className="h-4 w-4" />
                       </span>
                     </span>
-                    <span className="grid h-9 w-9 place-items-center rounded-[18px] bg-[#3a0d8c]">
-                      <Image width={16} height={16} alt="Arrow" src="/figmaAssets/arrow-white.svg" className="h-4 w-4" />
-                    </span>
-                  </span>
-                </Button>
+                  </Button>
+                </a>
                 <Button type="button" variant="ghost" className="h-auto w-full rounded-[999px] border border-solid border-[#f5efe629] bg-transparent px-[22px] py-3.5 [font-family:'Inter',Helvetica] text-[14.5px] font-medium leading-[normal] tracking-[0] text-[#f5efe6] hover:bg-white/5 hover:text-[#f5efe6] sm:w-auto">
                   See case studies
                 </Button>

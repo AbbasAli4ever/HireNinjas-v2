@@ -66,18 +66,20 @@ export const LeadGenerationHeroSection = (): JSX.Element => {
             of business expansion and sustained success.
           </p>
           <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:gap-4">
-            <Button className="h-auto w-full justify-between rounded-[999px] bg-[#8b39e5] py-1.5 pl-[22px] pr-2 hover:bg-[#7e31d7] sm:w-auto sm:justify-start">
-              <span className="inline-flex flex-1 items-center justify-center [font-family:'Inter',Helvetica] text-[13.5px] font-medium leading-[normal] text-white sm:flex-none sm:justify-start sm:text-[14.5px]">
-                Book a Free Consultation
-              </span>
-              <span className="ml-3 grid h-9 w-9 shrink-0 place-items-center rounded-[18px] bg-white">
-                <img
-                  className="h-4 w-4"
-                  alt="Arrow icon"
-                  src="https://c.animaapp.com/mpaw8ml1N6JcQv/img/component-2.svg"
-                />
-              </span>
-            </Button>
+            <a href="/contact" className="w-full sm:w-auto">
+              <Button className="h-auto w-full justify-between rounded-[999px] bg-[#8b39e5] py-1.5 pl-[22px] pr-2 hover:bg-[#7e31d7] sm:w-auto sm:justify-start">
+                <span className="inline-flex flex-1 items-center justify-center [font-family:'Inter',Helvetica] text-[13.5px] font-medium leading-[normal] text-white sm:flex-none sm:justify-start sm:text-[14.5px]">
+                  Book a Free Consultation
+                </span>
+                <span className="ml-3 grid h-9 w-9 shrink-0 place-items-center rounded-[18px] bg-white">
+                  <img
+                    className="h-4 w-4"
+                    alt="Arrow icon"
+                    src="https://c.animaapp.com/mpaw8ml1N6JcQv/img/component-2.svg"
+                  />
+                </span>
+              </Button>
+            </a>
             <Button
               variant="outline"
               className="h-12 w-full rounded-[999px] border-[#8b39e529] bg-transparent px-[22px] py-3.5 [font-family:'Inter',Helvetica] text-[13.5px] font-medium leading-[normal] text-[#8b39e5] hover:bg-[#f7f1ff] hover:text-[#8b39e5] sm:w-auto sm:text-[14.5px]"

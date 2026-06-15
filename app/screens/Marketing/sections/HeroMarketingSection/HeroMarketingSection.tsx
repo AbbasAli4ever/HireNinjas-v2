@@ -49,38 +49,40 @@ export const HeroMarketingSection = (): JSX.Element => {
             aria-label="Hero actions"
             className="flex w-full flex-col gap-3 pt-1 sm:w-auto sm:flex-row sm:items-center sm:gap-4 sm:pt-0"
           >
-            <Button className="h-12 w-full justify-between rounded-[999px] bg-[#8b39e5] pl-[22px] pr-2 py-3.5 text-white hover:bg-[#7d31d2] sm:w-auto sm:justify-start">
-              <span className="inline-flex flex-1 items-center justify-center pl-3.5 sm:flex-none sm:justify-start">
-                <span className="font-inter font-medium text-[13.5px] leading-normal tracking-[0] text-white sm:text-[14.5px]">
-                  Book a Free Consultation
+            <a href="/contact" className="w-full sm:w-auto">
+              <Button className="h-12 w-full justify-between rounded-[999px] bg-[#8b39e5] pl-[22px] pr-2 py-3.5 text-white hover:bg-[#7d31d2] sm:w-auto sm:justify-start">
+                <span className="inline-flex flex-1 items-center justify-center pl-3.5 sm:flex-none sm:justify-start">
+                  <span className="font-inter font-medium text-[13.5px] leading-normal tracking-[0] text-white sm:text-[14.5px]">
+                    Book a Free Consultation
+                  </span>
                 </span>
-              </span>
-              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-[18px] bg-white">
-                <svg
-                  className="h-4 w-4 text-[#8b39e5]"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <path
-                    d="M3.33594 8H12.6693"
-                    stroke="currentColor"
-                    strokeWidth="1.33333"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M8.66406 4L12.6641 8L8.66406 12"
-                    stroke="currentColor"
-                    strokeWidth="1.33333"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </Button>
+                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-[18px] bg-white">
+                  <svg
+                    className="h-4 w-4 text-[#8b39e5]"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M3.33594 8H12.6693"
+                      stroke="currentColor"
+                      strokeWidth="1.33333"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M8.66406 4L12.6641 8L8.66406 12"
+                      stroke="currentColor"
+                      strokeWidth="1.33333"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Button>
+            </a>
             <Button
               variant="outline"
               className="h-12 w-full rounded-[999px] border-[#8b39e529] px-[22px] py-3.5 font-medium text-[13.5px] leading-normal tracking-[0] text-[#8b39e5] hover:bg-[#f7f1ff] hover:text-[#8b39e5] sm:w-auto sm:text-[14.5px]"

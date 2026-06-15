@@ -30,7 +30,7 @@ export const LeadEngagementOverviewSection = (): JSX.Element => {
         <div className="grid w-full grid-cols-1 items-start gap-6 md:gap-8 xl:grid-cols-[minmax(0,530px)_minmax(0,1fr)] xl:gap-[60px]">
           <article className="flex w-full flex-col items-start xl:max-w-[530px]">
             <p className="[font-family:'Montserrat',Helvetica] text-sm font-normal leading-[1.6] tracking-[0] text-[#3a3447] sm:text-base sm:leading-[25.6px]">
-              HireNinjas&#39; expert lead generation services help businesses
+              HireNinjas&#39; <a href="/lead-generation" className="hover:underline">expert lead generation services</a> help businesses
               throughout Dubai and UAE generate qualified lead
               <br />
               <br />

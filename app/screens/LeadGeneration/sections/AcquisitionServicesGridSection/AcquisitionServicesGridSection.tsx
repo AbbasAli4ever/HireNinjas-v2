@@ -1,3 +1,4 @@
+import React from "react";
 import { Badge } from "../../../../../components/ui/badge";
 import { Card, CardContent } from "../../../../../components/ui/card";
 
@@ -8,6 +9,7 @@ const topRowCards = [
     description:
       "We specialize in creating and managing Google, Meta, and LinkedIn advertising campaigns designed to capture high-intent prospects while maintaining efficient cost-per-lead performance.",
     icon: "/lead-generation/globe.svg",
+    iconHref: "/seo-ppc",
   },
   {
     step: "02 — RECOVER",
@@ -48,19 +50,21 @@ const middleRowCards = [
 const featuredCard = {
   step: "06 — TRACK",
   title: "CRM Integration & Lead Tracking",
-  description:
-    "HireNinjas facilitates seamless CRM integration and lead tracking capabilities with all leads being automatically routed into your CRM with full attribution tracking across channels so your team has full visibility over campaign performance and ROI.",
+  description: (
+    <><a href="/" className="hover:underline font-medium text-[#c9b8e8]">HireNinjas</a>{" facilitates seamless CRM integration and lead tracking capabilities with all leads being automatically routed into your CRM with full attribution tracking across channels so your team has full visibility over campaign performance and ROI."}</>
+  ),
   icon: "/lead-generation/cart.svg",
 };
 
 type ServiceCardProps = {
   step: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
   icon: string;
   dark?: boolean;
   contentClassName?: string;
   bodyClassName?: string;
+  iconHref?: string;
 };
 
 const ServiceCard = ({
@@ -71,7 +75,16 @@ const ServiceCard = ({
   dark = false,
   contentClassName = "p-7",
   bodyClassName,
+  iconHref,
 }: ServiceCardProps): JSX.Element => {
+  const iconBox = (
+    <div
+      className={`flex h-10 w-10 items-center justify-center rounded-xl sm:h-[46px] sm:w-[46px] ${dark ? "bg-[#ffffff1a]" : "bg-[#f7f1ff]"}`}
+    >
+      <img className="h-5 w-5 sm:h-[22px] sm:w-[22px]" alt="" src={icon} />
+    </div>
+  );
+
   return (
     <Card
       className={
@@ -83,11 +96,7 @@ const ServiceCard = ({
       <CardContent
         className={`flex flex-col items-start gap-3 sm:gap-[18px] ${contentClassName}`}
       >
-        <div
-          className={`flex h-10 w-10 items-center justify-center rounded-xl sm:h-[46px] sm:w-[46px] ${dark ? "bg-[#ffffff1a]" : "bg-[#f7f1ff]"}`}
-        >
-          <img className="h-5 w-5 sm:h-[22px] sm:w-[22px]" alt="" src={icon} />
-        </div>
+        {iconHref ? <a href={iconHref}>{iconBox}</a> : iconBox}
         <div className="flex w-full flex-col items-start px-0 pt-1 pb-0">
           <p
             className={`[font-family:'Montserrat',Helvetica] text-[10px] font-semibold tracking-[1.2px] uppercase sm:text-xs sm:tracking-[1.68px] ${dark ? "text-[#a78bdb]" : "text-[#8a39e4]"}`}

@@ -1,3 +1,4 @@
+import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -5,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export interface CtaBannerProps {
   badge: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
   primaryLabel: string;
   primaryHref?: string;
   secondaryLabel: string;

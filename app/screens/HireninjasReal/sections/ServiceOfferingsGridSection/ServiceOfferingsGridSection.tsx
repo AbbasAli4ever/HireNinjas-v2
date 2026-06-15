@@ -35,7 +35,7 @@ const serviceOfferings = [
 
 export const ServiceOfferingsGridSection = (): JSX.Element => {
   return (
-    <section className="w-full border-y border-[#ece8f3] bg-titan-white px-6 py-16 sm:px-8 lg:px-[120px] lg:py-24">
+    <section className="w-full border-y border-[#ece8f3] bg-titan-white px-4 py-12 sm:px-6 sm:py-16 lg:px-[50px] lg:py-24">
       <div className="mx-auto flex w-full max-w-[1280px] flex-col items-start gap-7 lg:px-10">
         <header className="flex w-full max-w-[760px] flex-col items-start gap-[16.83px]">
           <div className="inline-flex items-center gap-2.5 rounded-[999px] border border-solid border-[#00000029] px-3.5 py-[7px]">
@@ -47,10 +47,8 @@ export const ServiceOfferingsGridSection = (): JSX.Element => {
             </span>
           </div>
           <div className="w-full">
-            <h2 className="mt-[-1px] [font-family:'Satoshi-Bold',Helvetica] text-[34px] font-bold leading-[38px] tracking-[-0.68px] text-ebony sm:text-[40px] sm:leading-[44px] lg:text-[46px] lg:leading-[49.7px] lg:tracking-[-0.92px]">
-              HireNinjas provides property
-              <br />
-              developers and agencies with:
+            <h2 className="mt-[-1px] [font-family:'Satoshi-Bold',Helvetica] text-[26px] font-bold leading-[1.2] tracking-[-0.52px] text-ebony sm:text-[34px] sm:tracking-[-0.68px] md:text-[40px] md:leading-[44px] lg:text-[46px] lg:leading-[49.7px] lg:tracking-[-0.92px]">
+              HireNinjas provides property developers and agencies with:
             </h2>
           </div>
         </header>
@@ -60,7 +58,7 @@ export const ServiceOfferingsGridSection = (): JSX.Element => {
               key={service.id}
               className="rounded-2xl border border-[#ece8f3] bg-white shadow-none"
             >
-              <CardContent className="relative flex h-full min-h-[220px] flex-col items-start gap-[13.3px] overflow-hidden px-7 pb-[38px] pt-7">
+              <CardContent className="relative flex h-full min-h-[180px] flex-col items-start gap-[13.3px] overflow-hidden px-5 pb-6 pt-5 sm:min-h-[220px] sm:px-7 sm:pb-[38px] sm:pt-7">
                 <div className="grid h-11 w-11 place-items-center rounded-[11px] bg-magnolia">
                   <img
                     className="h-[22px] w-[22px]"
@@ -74,7 +72,7 @@ export const ServiceOfferingsGridSection = (): JSX.Element => {
                   </div>
                 </div>
                 <div className="flex w-full flex-col items-start">
-                  <h3 className="mt-[-1px] [font-family:'Satoshi-Bold',Helvetica] text-[23px] font-bold leading-[27.6px] tracking-[-0.46px] text-ebony">
+                  <h3 className="mt-[-1px] [font-family:'Satoshi-Bold',Helvetica] text-[19px] font-bold leading-[1.3] tracking-[-0.38px] text-ebony sm:text-[23px] sm:leading-[27.6px] sm:tracking-[-0.46px]">
                     {service.title.map((line, index) => (
                       <span key={`${service.id}-${index}`}>
                         {line}
@@ -88,12 +86,8 @@ export const ServiceOfferingsGridSection = (): JSX.Element => {
           ))}
         </div>
         <div className="flex w-full max-w-[787.78px] flex-col items-start">
-          <p className="mt-[-1px] [font-family:'Montserrat',Helvetica] text-[15px] font-normal leading-[24px] tracking-[0] text-tuna sm:text-[17px] sm:leading-[27.2px]">
-            These services support both off-plan project launches and
-            ready-property investor
-            <br />
-            acquisition campaigns, offering unique marketing support services
-            tailored to both.
+          <p className="mt-[-1px] [font-family:'Montserrat',Helvetica] text-[14px] font-normal leading-[1.6] tracking-[0] text-tuna sm:text-[15px] sm:leading-[24px] lg:text-[17px] lg:leading-[27.2px]">
+            These services support both off-plan project launches and ready-property investor acquisition campaigns, offering unique marketing support services tailored to both.
           </p>
         </div>
       </div>

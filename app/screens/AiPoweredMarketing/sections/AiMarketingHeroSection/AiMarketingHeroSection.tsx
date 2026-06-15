@@ -75,12 +75,14 @@ export const AiMarketingHeroSection = (): JSX.Element => {
                   />
                 </span>
               </Button>
-              <Button
-                variant="outline"
-                className="h-12 w-full rounded-[999px] border-[#8b39e529] bg-transparent px-[22px] py-3.5 [font-family:'Inter',Helvetica] text-[13.5px] font-medium leading-normal tracking-[0] text-[#8b39e5] hover:bg-[#f7f1ff] hover:text-[#8b39e5] sm:w-auto sm:text-[14.5px]"
-              >
-                See Services
-              </Button>
+              <a href="/ai-marketing" className="w-full sm:w-auto">
+                <Button
+                  variant="outline"
+                  className="h-12 w-full rounded-[999px] border-[#8b39e529] bg-transparent px-[22px] py-3.5 [font-family:'Inter',Helvetica] text-[13.5px] font-medium leading-normal tracking-[0] text-[#8b39e5] hover:bg-[#f7f1ff] hover:text-[#8b39e5] sm:w-auto sm:text-[14.5px]"
+                >
+                  See Services
+                </Button>
+              </a>
             </nav>
             <dl className="grid w-full grid-cols-2 gap-4 pt-1 sm:grid-cols-3 sm:gap-6">
               {metrics.map((metric) => (

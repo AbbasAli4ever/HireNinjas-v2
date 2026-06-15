@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 
-const paragraphs = [
-  `At HireNinjas, we create custom digital marketing strategies tailored specifically for businesses in Dubai and throughout the UAE who seek direction, clarity, and measurable performance from their marketing investments.`,
+const paragraphs: (string | JSX.Element)[] = [
+  <><a href="/" className="hover:underline">At HireNinjas</a>{`, we create custom digital marketing strategies tailored specifically for businesses in Dubai and throughout the UAE who seek direction, clarity, and measurable performance from their marketing investments.`}</>,
   `Our strategy process leverages competitor intelligence, audience behavior insights, keyword opportunity mapping, and channel performance forecasting to create a strategic growth blueprint tailored specifically to your commercial goals. Instead of leaving growth plans up to chance or isolated tactics alone, we define how each marketing channel works together across the full customer journey and define our growth plans accordingly.`,
   `HireNinjas' strategy services range from brand positioning and acquisition strategy, conversion optimization and reporting framework development, all the way through to long-term scalability and measurable return on investment (ROI).`,
 ];

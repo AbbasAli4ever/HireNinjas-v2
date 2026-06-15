@@ -107,7 +107,7 @@ export const HeroPropertyMarketingSection = (): JSX.Element => {
         <div className="absolute left-[-10%] top-[-21.5%] h-[150.51%] w-[120%] blur-[10px] [background:radial-gradient(50%_50%_at_20%_30%,rgba(139,58,229,0.18)_0%,rgba(139,58,229,0)_60%),radial-gradient(50%_50%_at_85%_20%,rgba(189,140,255,0.35)_0%,rgba(189,140,255,0)_60%)]" />
       </div>
       
-      <div className="relative z-10 mx-auto items-center grid w-full max-w-[1440px] grid-cols-1 gap-10 px-4 pb-12 pt-10 sm:px-6 md:pt-14 lg:grid-cols-[minmax(0,1fr)_469px] lg:gap-14 lg:px-[140px] lg:pb-[93px] lg:pt-[78px]">
+      <div className="relative z-10 mx-auto items-center grid w-full max-w-[1440px] grid-cols-1 gap-10 px-4 pb-12 pt-10 sm:px-6 md:pt-14 lg:grid-cols-[minmax(0,1fr)_469px] lg:gap-14 xl:px-[120px] lg:pb-[93px] lg:pt-[78px]">
         <div className="flex flex-col items-start gap-[20.9px]">
           <div className="inline-flex items-center gap-2.5 rounded-[999px] border border-[#00000029] px-3.5 py-[7px]">
             <div className="flex h-1.5 w-1.5 items-start justify-center rounded-[3px] bg-[#6ce5b1]">
@@ -127,7 +127,7 @@ export const HeroPropertyMarketingSection = (): JSX.Element => {
                 lineHeight: "110%",
                 letterSpacing: "-1.5px",
               }}
-              className="text-[34px] sm:text-[42px] md:text-[50px] lg:text-[56px] lg:[letter-spacing:-2.52px]"
+              className="text-[34px] sm:text-[42px] md:text-[50px] lg:text-[50px] lg:[letter-spacing:-2px] xl:text-[56px] xl:[letter-spacing:-2.52px]"
             >
               <span style={{ color: "#0F0A1F" }}>
                 Real Estate Marketing That Drives{" "}
@@ -156,36 +156,32 @@ export const HeroPropertyMarketingSection = (): JSX.Element => {
           </header>
           </div>
           <div className="w-full max-w-[667.29px]">
-            <p className="[font-family:'Montserrat',Helvetica] text-lg font-normal leading-[28.8px] tracking-[0] text-tuna">
-              Supporting real estate developers,
-              <br />
-              agents and brokers across Dubai and Abu Dhabi.
+            <p className="[font-family:'Montserrat',Helvetica] text-base font-normal leading-[1.6] tracking-[0] text-tuna sm:text-lg sm:leading-[28.8px] lg:text-base lg:leading-[1.6] xl:text-lg xl:leading-[28.8px]">
+              Supporting real estate developers, agents and brokers across Dubai and Abu Dhabi.
             </p>
           </div>
-          <div className="flex flex-wrap items-start gap-4 sm:gap-6">
-            <Button className="h-auto rounded-[999px] bg-[#8b39e5] px-2 py-2 pl-[22px] pr-2 hover:bg-[#8b39e5]/90">
-              <span className="inline-flex items-center gap-3">
-                <span className="inline-flex flex-col items-center pl-3.5">
-                  <span className="[font-family:'Inter',Helvetica] text-[14.5px] font-medium leading-[normal] tracking-[0] text-white">
-                    Get a Free Strategy Call
-                  </span>
+          <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:items-start sm:gap-4 lg:gap-6">
+            <Button className="h-12 w-full justify-between rounded-[999px] bg-[#8b39e5] py-2 pl-[22px] pr-2 hover:bg-[#8b39e5]/90 sm:w-auto sm:justify-start">
+              <span className="inline-flex flex-1 items-center justify-center pl-3.5 sm:flex-none sm:justify-start">
+                <span className="[font-family:'Inter',Helvetica] text-[13.5px] font-medium leading-none tracking-[0] text-white sm:text-[14.5px]">
+                  Get a Free Strategy Call
                 </span>
-                <ArrowCircle />
               </span>
+              <ArrowCircle />
             </Button>
             <Button
               variant="outline"
-              className="h-12 rounded-[999px] border-[#8b39e529] px-[22px] py-3.5 [font-family:'Inter',Helvetica] text-[14.5px] font-medium leading-[normal] tracking-[0] text-[#8b39e5] hover:bg-[#8b39e5]/5 hover:text-[#8b39e5]"
+              className="h-12 w-full rounded-[999px] border-[#8b39e529] px-[22px] py-3.5 [font-family:'Inter',Helvetica] text-[13.5px] font-medium leading-none tracking-[0] text-[#8b39e5] hover:bg-[#8b39e5]/5 hover:text-[#8b39e5] sm:w-auto sm:text-[14.5px]"
             >
               See Services
             </Button>
           </div>
-          <div className="grid w-full max-w-[560px] grid-cols-1 gap-6 sm:grid-cols-3">
+          <div className="grid w-full max-w-[560px] grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6">
             {audienceItems.map((item, index) => (
               <div
                 key={item.title}
                 className={`flex min-h-[71px] flex-col items-start border-[#d9bbff] pl-4 ${
-                  index > 0 ? "sm:border-l-2" : "border-l-2"
+                  index > 0 ? "border-l-2" : "border-l-2"
                 }`}
               >
                 <h3 className="font-satoshi text-[18px] font-bold leading-[28px] tracking-[-0.36px] text-[#0f0a1f] sm:text-[22px] sm:leading-[35.2px] sm:tracking-[-0.44px]">

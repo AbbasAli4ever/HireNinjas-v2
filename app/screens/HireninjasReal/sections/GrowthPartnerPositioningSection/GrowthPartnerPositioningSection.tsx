@@ -13,7 +13,7 @@ const sectionCopy = {
 
 export const GrowthPartnerPositioningSection = (): JSX.Element => {
   return (
-    <section className="relative w-full px-4 py-0 sm:px-6 lg:px-10">
+    <section className="relative mx-auto w-full max-w-[1280px] px-0 py-0 sm:px-0 lg:px-0">
       <Card className="relative w-full overflow-hidden rounded-3xl border border-[#f0e2ff] bg-[linear-gradient(180deg,rgba(248,241,255,1)_0%,rgba(255,255,255,1)_100%)] shadow-none">
         <div className="pointer-events-none absolute inset-x-[20%] top-[-12%] h-[669px] blur-[10px] [background:radial-gradient(50%_50%_at_50%_50%,rgba(189,140,255,0.5)_0%,rgba(189,140,255,0)_70%)]" />
         <CardContent className="relative z-10 flex flex-col items-start gap-3 p-6 sm:p-10 lg:gap-[11.1px] lg:p-20">
@@ -28,8 +28,8 @@ export const GrowthPartnerPositioningSection = (): JSX.Element => {
               {sectionCopy.badge}
             </span>
           </Badge>
-          <header className="max-w-[460.37px] pt-[5.74px]">
-            <h2 className="[font-family:'Satoshi-Bold',Helvetica] text-[34px] font-bold leading-[1.08] tracking-[-0.92px] text-ebony sm:text-[40px] lg:text-[46px] lg:leading-[49.7px]">
+          <header className="w-full max-w-[460.37px] pt-[5.74px]">
+            <h2 className="[font-family:'Satoshi-Bold',Helvetica] text-[26px] font-bold leading-[1.2] tracking-[-0.52px] text-ebony sm:text-[34px] sm:tracking-[-0.68px] md:text-[40px] lg:text-[46px] lg:leading-[49.7px] lg:tracking-[-0.92px]">
               {sectionCopy.heading.map((line) => (
                 <span key={line} className="block">
                   {line}
@@ -37,11 +37,11 @@ export const GrowthPartnerPositioningSection = (): JSX.Element => {
               ))}
             </h2>
           </header>
-          <div className="max-w-[697.75px] space-y-3 pt-[4.18px]">
+          <div className="w-full max-w-[697.75px] space-y-3 pt-[4.18px]">
             {sectionCopy.paragraphs.map((paragraph) => (
               <p
                 key={paragraph}
-                className="[font-family:'Montserrat',Helvetica] text-[15px] font-normal leading-[27.2px] tracking-[0] text-tuna sm:text-[17px]"
+                className="[font-family:'Montserrat',Helvetica] text-[14px] font-normal leading-[1.6] tracking-[0] text-tuna sm:text-[15px] sm:leading-[27.2px] lg:text-[17px]"
               >
                 {paragraph}
               </p>

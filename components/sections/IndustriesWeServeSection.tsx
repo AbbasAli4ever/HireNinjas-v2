@@ -9,18 +9,22 @@ const industryCards = [
   {
     title: "SaaS/Tech Startups",
     image: "/figmaAssets/frame-2147224383.png",
+    href: "/industries/finance-fintech-marketing",
   },
   {
     title: "Ecommerce Brands",
     image: "/figmaAssets/frame-2147224387.png",
+    href: "/industries/ecommerce-marketing",
   },
   {
     title: "HealthTech Companies",
     image: "/figmaAssets/frame-2147224389.png",
+    href: "/industries/healthcare",
   },
   {
     title: "Fintech Platforms",
     image: "/figmaAssets/frame-2147224386.png",
+    href: "/industries/finance-fintech-marketing",
   },
   {
     title: "Enterprise Organizations",
@@ -88,25 +92,34 @@ export const IndustriesWeServeSection = () => {
             className="flex w-max items-start gap-3 sm:gap-5 will-change-transform"
             style={{ cursor: "grab" }}
           >
-            {industryCards.map((card) => (
-              <article
-                key={card.title}
-                className="relative h-[260px] w-[280px] shrink-0 overflow-hidden rounded-[22px] border-2 border-[#9644ed] sm:h-[315px] sm:w-[340px] sm:rounded-[30px]"
-              >
-                {/* Background image */}
-                <div
-                  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                  style={{ backgroundImage: `url(${card.image})` }}
-                  aria-hidden="true"
-                />
-                {/* Top gradient */}
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.72)_0%,rgba(0,0,0,0)_40%,rgba(0,0,0,0)_55%,rgba(0,0,0,0.80)_100%)]" />
-                {/* Title */}
-                <h3 className="absolute left-4 top-4 z-10 text-[18px] font-semibold leading-[1.3] tracking-[0] text-white [font-family:'Inter',Helvetica] sm:left-5 sm:top-5 sm:text-[22px]">
-                  {card.title}
-                </h3>
-              </article>
-            ))}
+            {industryCards.map((card) => {
+              const inner = (
+                <>
+                  {/* Background image */}
+                  <div
+                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                    style={{ backgroundImage: `url(${card.image})` }}
+                    aria-hidden="true"
+                  />
+                  {/* Top gradient */}
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.72)_0%,rgba(0,0,0,0)_40%,rgba(0,0,0,0)_55%,rgba(0,0,0,0.80)_100%)]" />
+                  {/* Title */}
+                  <h3 className="absolute left-4 top-4 z-10 text-[18px] font-semibold leading-[1.3] tracking-[0] text-white [font-family:'Inter',Helvetica] sm:left-5 sm:top-5 sm:text-[22px]">
+                    {card.title}
+                  </h3>
+                </>
+              );
+              const articleClass = "relative h-[260px] w-[280px] shrink-0 overflow-hidden rounded-[22px] border-2 border-[#9644ed] sm:h-[315px] sm:w-[340px] sm:rounded-[30px]";
+              return card.href ? (
+                <a key={card.title} href={card.href} className={articleClass}>
+                  {inner}
+                </a>
+              ) : (
+                <article key={card.title} className={articleClass}>
+                  {inner}
+                </article>
+              );
+            })}
           </div>
         </div>
 

@@ -11,7 +11,7 @@ const headingLines = [
 ];
 
 const descriptionLines = [
-  "HireNinjas provides more than simple optimization; their expert teams integrate technical infrastructure upgrades, keyword targeting strategies, multilingual optimization approaches and conversion-driven landing pages into their service to help businesses outperform competitors in both organic and paid search environments.",
+  <><a href="/" className="hover:underline font-medium">HireNinjas</a>{" provides more than simple optimization; their expert teams integrate technical infrastructure upgrades, keyword targeting strategies, multilingual optimization approaches and conversion-driven landing pages into their service to help businesses outperform competitors in both organic and paid search environments."}</>,
 ];
 
 export const CommerceFocusSection = (): JSX.Element => {

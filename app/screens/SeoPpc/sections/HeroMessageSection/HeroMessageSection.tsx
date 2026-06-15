@@ -86,7 +86,7 @@ export const HeroMessageSection = (): JSX.Element => {
           </div>
           <div className="w-full xl:max-w-[667.29px]">
             <p className="[font-family:'Montserrat',Helvetica] text-sm font-normal leading-[1.6] text-[#3a3447] sm:text-base sm:leading-[25.6px] lg:text-lg lg:leading-[28.8px]">
-              Increase search results across Dubai and the UAE by employing combined SEO and Google Ads strategies designed to drive high-intent traffic and measurable revenue growth.
+              Increase search results across Dubai and the UAE by employing <a href="/seo-ppc" className="hover:underline">combined SEO and Google Ads</a> strategies designed to drive high-intent traffic and measurable revenue growth.
             </p>
           </div>
           <nav className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">

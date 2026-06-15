@@ -32,7 +32,7 @@ export const BrandIdentityPreviewSection = (): JSX.Element => {
             </header>
             <div className="self-stretch font-montserrat text-[13px] font-normal leading-[1.6] tracking-[0] text-[#3a3447] sm:text-base sm:leading-[25.6px]">
               <p>
-                HireNinjas&#39; strategic branding solutions help businesses
+                HireNinjas&#39; <a href="/" className="font-medium hover:underline">strategic branding solutions</a> help businesses
                 across Dubai, Abu Dhabi, and the wider UAE stand out and scale.
                 We craft logos and visual systems with clarity in mind while
                 crafting messaging frameworks and brand guidelines for maximum

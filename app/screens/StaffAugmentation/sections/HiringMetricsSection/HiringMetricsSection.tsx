@@ -1,3 +1,4 @@
+import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -27,8 +28,8 @@ const processSteps = [
   { title: "Ongoing support", step: "Step 4" },
 ];
 
-const descriptionParagraphs = [
-  `HireNinjas provides fast and flexible staff augmentation solutions to companies looking to rapidly scale teams globally. With IT staff augmentation services and our business talent support model allowing organizations to access pre-vetted professionals without incurring delays and costs associated with traditional recruitment methods, companies can access staff quickly without incurring unnecessary expenses in traditional recruitment methods.`,
+const descriptionParagraphs: React.ReactNode[] = [
+  <>{"HireNinjas provides "}< a href="/" className="font-medium hover:underline">fast and flexible staff augmentation</a>{" solutions to companies looking to rapidly scale teams globally. With IT staff augmentation services and our business talent support model allowing organizations to access pre-vetted professionals without incurring delays and costs associated with traditional recruitment methods, companies can access staff quickly without incurring unnecessary expenses in traditional recruitment methods."}</>,
   `From marketing specialists and developers to designers and analysts, our IT staff augmentation agency quickly matches you with professionally assessed specialists within 48 hours. As your trusted IT staffing provider, we handle the sourcing, screening, onboarding, and ongoing support for your team as it expands at the precise pace you require.`,
 ];
 
@@ -69,8 +70,8 @@ export const HiringMetricsSection = (): JSX.Element => {
         </div>
         <div className="grid w-full grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,530px)_minmax(0,1fr)] lg:gap-[60px]">
           <article className="flex w-full flex-col items-start gap-4 sm:gap-[15.48px]">
-            {descriptionParagraphs.map((paragraph) => (
-              <div key={paragraph} className="flex w-full flex-col items-start">
+            {descriptionParagraphs.map((paragraph, index) => (
+              <div key={index} className="flex w-full flex-col items-start">
                 <p className="mt-[-1.00px] self-stretch [font-family:'Montserrat',Helvetica] text-[14px] font-normal leading-[1.6] tracking-[0] text-tuna sm:text-base sm:leading-[25.6px]">
                   {paragraph}
                 </p>

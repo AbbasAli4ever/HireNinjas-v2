@@ -12,31 +12,31 @@ const sections = [
     component: HeroPropertyMarketingSection,
     contained: false,
   },
-  {
-    id: "buyer-focus-narrative",
-    component: BuyerFocusNarrativeSection,
-    contained: true,
-  },
-  {
-    id: "service-offerings-grid",
-    component: ServiceOfferingsGridSection,
-    contained: false,
-  },
-  {
-    id: "awareness-to-consultation-cards",
-    component: AwarenessToConsultationCardsSection,
-    contained: true,
-  },
-  {
-    id: "growth-partner-positioning",
-    component: GrowthPartnerPositioningSection,
-    contained: true,
-  },
-  {
-    id: "pipeline-cta-banner",
-    component: PipelineCTABannerSection,
-    contained: true,
-  },
+  // {
+  //   id: "buyer-focus-narrative",
+  //   component: BuyerFocusNarrativeSection,
+  //   contained: true,
+  // },
+  // {
+  //   id: "service-offerings-grid",
+  //   component: ServiceOfferingsGridSection,
+  //   contained: false,
+  // },
+  // {
+  //   id: "awareness-to-consultation-cards",
+  //   component: AwarenessToConsultationCardsSection,
+  //   contained: true,
+  // },
+  // {
+  //   id: "growth-partner-positioning",
+  //   component: GrowthPartnerPositioningSection,
+  //   contained: true,
+  // },
+  // {
+  //   id: "pipeline-cta-banner",
+  //   component: PipelineCTABannerSection,
+  //   contained: true,
+  // },
 ] as const;
 
 export const HireninjasReal = (): JSX.Element => {
@@ -46,7 +46,7 @@ export const HireninjasReal = (): JSX.Element => {
         {sections.map(({ id, component: Section, contained }) => (
           <section
             key={id}
-            className={contained ? "w-full px-9 py-8" : "w-full"}
+            className={contained ? "w-full px-4 py-6 sm:px-6 sm:py-8 xl:px-9 lg:py-8" : "w-full"}
             data-id={id}
           >
             {contained ? (

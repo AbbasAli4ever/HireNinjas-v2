@@ -44,7 +44,7 @@ export const ExpertRoleHighlightsSection = (): JSX.Element => {
             </h2>
           </div>
           <p className="[font-family:'Montserrat',Helvetica] text-[13px] font-normal leading-[1.6] tracking-[0] text-[#3a3447] sm:text-[15px] sm:leading-[25.6px]">
-            HireNinjas&#39; video production services allow businesses in Dubai,
+            <a href="/" className="hover:underline font-medium">HireNinjas&#39; video production</a> services allow businesses in Dubai,
             UAE and MENA region to bring their brand story to life on screen,
             from concept development through final delivery. Our production team
             crafts cinematic content designed to support marketing performance

@@ -75,20 +75,22 @@ export const VideoHeroSection = (): JSX.Element => {
             aria-label="Primary hero actions"
             className="flex w-full flex-col gap-3 pt-1 sm:w-auto sm:flex-row sm:items-center sm:gap-4 sm:pt-0"
           >
-            <Button className="h-12 w-full justify-between rounded-[999px] bg-[#8b39e5] pl-[22px] pr-2 text-white hover:bg-[#7d31d6] sm:w-auto sm:justify-start">
-              <span className="inline-flex flex-1 items-center justify-center pl-3.5 sm:flex-none sm:justify-start">
-                <span className="[font-family:'Inter',Helvetica] text-[13.5px] font-medium leading-[normal] tracking-[0] text-white sm:text-[14.5px]">
-                  Book a Free Consultation
+            <a href="/contact" className="w-full sm:w-auto">
+              <Button className="h-12 w-full justify-between rounded-[999px] bg-[#8b39e5] pl-[22px] pr-2 text-white hover:bg-[#7d31d6] sm:w-auto sm:justify-start">
+                <span className="inline-flex flex-1 items-center justify-center pl-3.5 sm:flex-none sm:justify-start">
+                  <span className="[font-family:'Inter',Helvetica] text-[13.5px] font-medium leading-[normal] tracking-[0] text-white sm:text-[14.5px]">
+                    Book a Free Consultation
+                  </span>
                 </span>
-              </span>
-              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-[18px] bg-white">
-                <img
-                  className="h-4 w-4"
-                  alt="Component"
-                  src="/figmaAssets/arrow-purple.svg"
-                />
-              </span>
-            </Button>
+                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-[18px] bg-white">
+                  <img
+                    className="h-4 w-4"
+                    alt="Component"
+                    src="/figmaAssets/arrow-purple.svg"
+                  />
+                </span>
+              </Button>
+            </a>
             <Button
               variant="outline"
               className="h-12 w-full rounded-[999px] border-[#8b39e529] px-[22px] py-3.5 [font-family:'Inter',Helvetica] text-[13.5px] font-medium leading-[normal] tracking-[0] text-[#8b39e5] hover:bg-[#f7f1ff] hover:text-[#8b39e5] sm:w-auto sm:text-[14.5px]"

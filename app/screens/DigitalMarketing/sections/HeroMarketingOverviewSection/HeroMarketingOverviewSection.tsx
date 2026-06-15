@@ -87,20 +87,22 @@ export const HeroMarketingOverviewSection = (): JSX.Element => {
             aria-label="Hero actions"
             className="flex w-full flex-col items-stretch gap-4 sm:w-auto sm:flex-row sm:flex-wrap sm:items-start sm:gap-6"
           >
-            <Button className="relative h-14 sm:h-auto w-full sm:w-auto rounded-[999px] bg-[#8b39e5] py-2 pr-2 pl-[22px] hover:bg-[#7d2fda]">
-              <span className="relative flex w-full sm:w-auto items-center justify-center sm:justify-start gap-3">
-                <span className="[font-family:'Inter',Helvetica] text-center text-[14.5px] font-medium leading-[normal] tracking-[0] text-white">
-                  Book a Free Consultation
+            <a href="/contact" className="w-full sm:w-auto">
+              <Button className="relative h-14 sm:h-auto w-full sm:w-auto rounded-[999px] bg-[#8b39e5] py-2 pr-2 pl-[22px] hover:bg-[#7d2fda]">
+                <span className="relative flex w-full sm:w-auto items-center justify-center sm:justify-start gap-3">
+                  <span className="[font-family:'Inter',Helvetica] text-center text-[14.5px] font-medium leading-[normal] tracking-[0] text-white">
+                    Book a Free Consultation
+                  </span>
+                  <span className="grid h-9 w-9 place-items-center rounded-[18px] bg-white absolute right-0 sm:static">
+                    <img
+                      className="h-4 w-4"
+                      alt="Component"
+                      src="/figmaAssets/arrow-purple.svg"
+                    />
+                  </span>
                 </span>
-                <span className="grid h-9 w-9 place-items-center rounded-[18px] bg-white absolute right-0 sm:static">
-                  <img
-                    className="h-4 w-4"
-                    alt="Component"
-                    src="/figmaAssets/arrow-purple.svg"
-                  />
-                </span>
-              </span>
-            </Button>
+              </Button>
+            </a>
             <Button
               variant="ghost"
               className="h-12 w-full sm:w-auto rounded-[999px] border border-solid border-[#8b39e529] px-[22px] py-3.5 [font-family:'Inter',Helvetica] text-[14.5px] font-medium leading-[normal] tracking-[0] text-[#8b39e5] hover:bg-[#f7f1ff] hover:text-[#8b39e5]"
